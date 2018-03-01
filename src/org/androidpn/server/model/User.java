@@ -46,17 +46,11 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "idcard", length = 64, unique = true)
-    private String idcard;
-
     @Column(name = "username", nullable = false, length = 64, unique = true)
     private String username;
 
     @Column(name = "password", length = 64)
     private String password;
-
-    @Column(name = "sex", length = 8)
-    private String sex;
 
     @Column(name = "mobile", length = 64)
     private String mobile;
@@ -72,6 +66,9 @@ public class User implements Serializable {
 
     @Column(name = "updated_date")
     private Date updatedDate;
+
+    @Column(name = "is_real_name")
+    private Boolean isRealUser;
 
     @Transient
     private boolean online;
@@ -91,14 +88,6 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getIdcard() {
-        return idcard;
-    }
-
-    public void setIdcard(String idcard) {
-        this.idcard = idcard;
-    }
-
     public String getUsername() {
         return username;
     }
@@ -113,14 +102,6 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
     }
 
     public String getMobile() {
@@ -145,6 +126,14 @@ public class User implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Boolean getRealUser() {
+        return isRealUser;
+    }
+
+    public void setRealUser(Boolean realUser) {
+        isRealUser = realUser;
     }
 
     public Date getCreatedDate() {

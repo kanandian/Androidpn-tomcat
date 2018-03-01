@@ -81,9 +81,7 @@ public class IQRegistrationHandler extends IQHandler {
                     String localPassword = query.elementText("localPassword");
                     String name = query.elementText("name");
                     String email = query.elementText("email");
-                    String idCard = query.elementText("idCard");
                     String mobile = query.elementText("mobile");
-                    String sex = query.elementText("sex");
 //                    String username = query.elementText("username");
 //                    String password = query.elementText("password");
 //                    String email = query.elementText("email");
@@ -120,10 +118,8 @@ public class IQRegistrationHandler extends IQHandler {
                     user.setUsername(userName);
                     user.setPassword(password);
                     user.setName(name);
-                    user.setIdcard(idCard);
                     user.setEmail(email);
                     user.setMobile(mobile);
-                    user.setSex(sex);
                     userService.saveUser(user);
 
                     reply = IQ.createResultIQ(packet);

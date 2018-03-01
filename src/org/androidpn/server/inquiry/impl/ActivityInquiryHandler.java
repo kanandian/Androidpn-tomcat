@@ -32,6 +32,11 @@ public class ActivityInquiryHandler implements InquiryHandler {
             for(Bussiness bussiness : bussinessList) {
                 addItem(bussiness);
             }
+        } else if ("shoplist".equals(title)) {
+            List<Bussiness> bussinessList = bussinessService.getBussinesses();
+            for(Bussiness bussiness : bussinessList) {
+                addItem(bussiness);
+            }
         }
 
         reply.setChildElement(probeResponse);
