@@ -8,22 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f75beb2c-bd09-439c-932e-887ace7c8b2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/model/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQAuthHandler.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQAuthHandler.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQRegisterHandler.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQRegisterHandler.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager$ClientSessionListener.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager$ClientSessionListener.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/model/User.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/model/User.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQAuthHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQAuthHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQRegisterHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQRegisterHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager$ClientSessionListener.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager$ClientSessionListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/session/SessionManager.class" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/InfoInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/InfoInquiryHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/model/User.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegisterHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegisterHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/SessionManager.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/SessionManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +41,8 @@
       <file leaf-file-name="IQRegisterHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegisterHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="156" column="17" lean-forward="true" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
+            <state relative-caret-position="206">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,21 +51,12 @@
       <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="128" column="23" lean-forward="true" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
               <folding>
+                <element signature="e#3462#3463#0" expanded="true" />
                 <element signature="e#3492#3493#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityInquiryHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,18 +74,18 @@
       <file leaf-file-name="IQRouter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="114" column="74" lean-forward="true" selection-start-line="114" selection-start-column="74" selection-end-line="114" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IQRegistrationHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IQRegistrationHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="159" column="37" lean-forward="false" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,21 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IQ.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/tinder-1.2.1.jar!/org/xmpp/packet/IQ.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="171" column="33" lean-forward="true" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NotificationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+            <state relative-caret-position="58">
+              <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -159,7 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>probeResponse</find>
       <find>2wcYO-6</find>
       <find>my response</find>
       <find>my resp</find>
@@ -172,6 +137,7 @@
       <find>Error</find>
       <find>qzf</find>
       <find>setError</find>
+      <find>probeResponse</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -396,7 +362,7 @@
     <property name="settings.editor.selected.configurable" value="play.paths.configuration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="User&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/User.java&#10;Us&#9;null&#9;null&#10;iqregis&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java&#10;iqinq&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;noti&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/push/NotificationManager.java&#10;auth&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java&#10;notifica&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/push/NotificationManager.java&#10;sessionma&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/SessionManager.java&#10;getusername&#9;PSI&#9;JAVA://org.androidpn.server.model.User#getUsername&#10;clien&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/ClientSession.java&#10;clientsess&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/ClientSession.java&#10;register&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQRegisterHandler&#10;cli&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/ClientSession.java&#10;notifi&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/console/controller/NotificationController.java&#10;regist&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQRegisterHandler&#10;iqhandler&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;inquiry&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;bussine&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/inquiry/impl/BussinessInquiryHandler.java&#10;buss&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;bussiness&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/inquiry/impl/BussinessInquiryHandler.java&#10;user&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/User.java&#10;Bussine&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;Bussiness&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;servicelo&#9;PSI&#9;JAVA://org.androidpn.server.service.ServiceLocator&#10;BUssine&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/dao/BussinessDao.java&#10;hibernate&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/resources/hibernate.cfg.xml" />
+    <property name="SearchEverywhereHistoryKey" value="addItem&#9;PSI&#9;JAVA://org.androidpn.server.inquiry.impl.ActivityInquiryHandler#addItem&#10;User&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/User.java&#10;Us&#9;null&#9;null&#10;iqregis&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java&#10;iqinq&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;noti&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/push/NotificationManager.java&#10;auth&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java&#10;notifica&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/push/NotificationManager.java&#10;sessionma&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/SessionManager.java&#10;getusername&#9;PSI&#9;JAVA://org.androidpn.server.model.User#getUsername&#10;clien&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/ClientSession.java&#10;clientsess&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/ClientSession.java&#10;register&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQRegisterHandler&#10;cli&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/session/ClientSession.java&#10;notifi&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/console/controller/NotificationController.java&#10;regist&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQRegisterHandler&#10;iqhandler&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;inquiry&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;bussine&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/inquiry/impl/BussinessInquiryHandler.java&#10;buss&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;bussiness&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/inquiry/impl/BussinessInquiryHandler.java&#10;user&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/User.java&#10;Bussine&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;Bussiness&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;servicelo&#9;PSI&#9;JAVA://org.androidpn.server.service.ServiceLocator&#10;BUssine&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/src/org/androidpn/server/dao/BussinessDao.java&#10;hibernate&#9;FILE&#9;file:///Users/pro1/Desktop/others/androidpn-master/androidpn-server-bin-tomcat/resources/hibernate.cfg.xml" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -676,7 +642,7 @@
       <workItem from="1519806559193" duration="3802000" />
       <workItem from="1519874921786" duration="441000" />
       <workItem from="1519883038324" duration="13282000" />
-      <workItem from="1519952129800" duration="12239000" />
+      <workItem from="1519952129800" duration="14595000" />
     </task>
     <task id="LOCAL-00001" summary="初始化导入">
       <created>1517992739201</created>
@@ -699,11 +665,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519885126246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改">
+      <created>1519976341692</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1519976341695</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86550000" />
+    <option name="totallyTimeSpent" value="88906000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,12 +741,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegisterHandler.java</url>
           <line>128</line>
           <properties />
@@ -781,7 +748,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java</url>
-          <line>183</line>
+          <line>194</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -791,39 +758,12 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java</url>
-          <line>146</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRosterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/PacketRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1065,26 +1005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/tinder-1.2.1.jar!/org/xmpp/packet/IQ.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="171" column="33" lean-forward="true" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/tinder-1.2.1.jar!/org/xmpp/packet/Packet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="104" column="58" lean-forward="true" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1138,13 +1062,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="163" column="35" lean-forward="true" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
+          <folding>
+            <element signature="e#5665#5666#0" expanded="true" />
+            <element signature="e#5707#5708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/SQLError.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/tinder-1.2.1.jar!/org/xmpp/packet/IQ.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="165" column="21" lean-forward="false" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="248">
+          <caret line="128" column="23" lean-forward="true" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
           <folding>
+            <element signature="e#3462#3463#0" expanded="true" />
             <element signature="e#3492#3493#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar!/org/dom4j/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="136" column="25" lean-forward="true" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,46 +1134,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="114" column="74" lean-forward="true" selection-start-line="114" selection-start-column="74" selection-end-line="114" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java">
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar!/org/dom4j/Branch.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="163" column="35" lean-forward="true" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
-          <folding>
-            <element signature="e#5665#5666#0" expanded="true" />
-            <element signature="e#5707#5708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="159" column="37" lean-forward="false" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="257">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegisterHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="156" column="17" lean-forward="true" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
+        <state relative-caret-position="206">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

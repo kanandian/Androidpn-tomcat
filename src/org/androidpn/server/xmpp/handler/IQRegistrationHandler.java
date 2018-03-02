@@ -80,7 +80,6 @@ public class IQRegistrationHandler extends IQHandler {
                         throw new UnauthorizedException();
                     }
                 } else {
-                    System.out.println("qzf 1");
                     String userName = query.elementText("userName");
                     String password = query.elementText("password");
                     String localName = query.elementText("localName");
@@ -95,7 +94,6 @@ public class IQRegistrationHandler extends IQHandler {
 
 //                    String localName = query.elementText("localName");
 //                    String localPassword = query.elementText("localPassword");
-                    System.out.println("qzf 2");
 
                     // Deny registration of users with no password
                     if (password == null || password.trim().length() == 0) {
@@ -115,16 +113,12 @@ public class IQRegistrationHandler extends IQHandler {
                         name = null;
                     }
 
-                    System.out.println("qzf 3");
-
                     User user;
                     if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
-                        System.out.println("qzf "+session.getUsername());
                         user = userService.getUserByUsername(session.getUsername());
                         if (user.getRealUser()) {
                             user = new User();
                         }
-                        System.out.println("qzf 3.1");
                     } else {
                         throw new UserNotFoundException("User '" + session.getUsername() + "' not found");
                     }
@@ -136,21 +130,20 @@ public class IQRegistrationHandler extends IQHandler {
                     user.setRealUser(true);
                     userService.saveUser(user);
 
-                    System.out.println("qzf 4");
-
                     JID from = session.getAddress();
                     JID newFrom = new JID(userName, from.getDomain(), from.getResource());
                     changeUserInfo(session, newFrom, password);
 
-                    System.out.println("qzf 5");
+                    reply = createResultIQ(packet, newFrom, user);
 
-                    reply = IQ.createResultIQ(packet);
+//                    reply = IQ.createResultIQ(packet);
+//
+//                    Element resp = DocumentHelper.createElement(QName.get("registeration",
+//                            NAMESPACE));
+//
+//                    reply.setChildElement(resp);
+//                    reply.setTo(newFrom);
 
-                    Element resp = DocumentHelper.createElement(QName.get("registeration",
-                            NAMESPACE));
-
-                    reply.setChildElement(resp);
-                    reply.setTo(newFrom);
 
                 }
             } catch (Exception ex) {
@@ -174,9 +167,27 @@ public class IQRegistrationHandler extends IQHandler {
 
         // Send the response directly to the session
         if (reply != null) {
+            System.out.println("my response : "+reply.toXML());
             session.process(reply);
         }
         return null;
+    }
+
+    private IQ createResultIQ(IQ packet, JID newFrom, User user) {
+        IQ reply = IQ.createResultIQ(packet);;
+
+        Element resp = DocumentHelper.createElement(QName.get("registeration",
+                NAMESPACE));
+
+        resp.addElement("userName").setText(user.getUsername());
+        resp.addElement("password").setText(user.getPassword());
+        resp.addElement("name").setText(user.getName());
+        resp.addElement("mobile").setText(user.getMobile());
+
+        reply.setChildElement(resp);
+        reply.setTo(newFrom);
+
+        return reply;
     }
 
     private void changeUserInfo(ClientSession session, JID newFrom, String password) throws UnauthenticatedException {
