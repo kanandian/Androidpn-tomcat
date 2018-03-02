@@ -7,9 +7,13 @@ import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserExistsException;
 import org.androidpn.server.service.UserNotFoundException;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.xmpp.UnauthenticatedException;
 import org.androidpn.server.xmpp.UnauthorizedException;
+import org.androidpn.server.xmpp.auth.AuthManager;
+import org.androidpn.server.xmpp.auth.AuthToken;
 import org.androidpn.server.xmpp.session.ClientSession;
 import org.androidpn.server.xmpp.session.Session;
+import org.androidpn.server.xmpp.session.SessionManager;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
@@ -18,7 +22,7 @@ import org.xmpp.packet.JID;
 import org.xmpp.packet.PacketError;
 
 public class IQRegistrationHandler extends IQHandler {
-    private static final String NAMESPACE = "androidpn:iq:registraion";
+    private static final String NAMESPACE = "androidpn:iq:registeration";
 
     private UserService userService;
 
@@ -29,12 +33,13 @@ public class IQRegistrationHandler extends IQHandler {
      */
     public IQRegistrationHandler() {
         userService = ServiceLocator.getUserService();
-        probeResponse = DocumentHelper.createElement(QName.get("query",
+        probeResponse = DocumentHelper.createElement(QName.get("registeration",
                 NAMESPACE));
         probeResponse.addElement("username");
         probeResponse.addElement("password");
         probeResponse.addElement("email");
         probeResponse.addElement("name");
+        probeResponse.addElement("mobile");
     }
 
     /**
@@ -53,6 +58,7 @@ public class IQRegistrationHandler extends IQHandler {
             reply = IQ.createResultIQ(packet);
             reply.setChildElement(packet.getChildElement().createCopy());
             reply.setError(PacketError.Condition.internal_server_error);
+            System.out.println("qzf session == null");
             return reply;
         }
 
@@ -74,7 +80,7 @@ public class IQRegistrationHandler extends IQHandler {
                         throw new UnauthorizedException();
                     }
                 } else {
-
+                    System.out.println("qzf 1");
                     String userName = query.elementText("userName");
                     String password = query.elementText("password");
                     String localName = query.elementText("localName");
@@ -87,10 +93,9 @@ public class IQRegistrationHandler extends IQHandler {
 //                    String email = query.elementText("email");
 //                    String name = query.elementText("name");
 
-                    // Verify the username
-                    if (localName != null) {
-                        Stringprep.nodeprep(localName);
-                    }
+//                    String localName = query.elementText("localName");
+//                    String localPassword = query.elementText("localPassword");
+                    System.out.println("qzf 2");
 
                     // Deny registration of users with no password
                     if (password == null || password.trim().length() == 0) {
@@ -98,6 +103,7 @@ public class IQRegistrationHandler extends IQHandler {
                         reply.setChildElement(packet.getChildElement()
                                 .createCopy());
                         reply.setError(PacketError.Condition.not_acceptable);
+                        System.out.println("qzf password is no use");
                         return reply;
                     }
 
@@ -109,25 +115,49 @@ public class IQRegistrationHandler extends IQHandler {
                         name = null;
                     }
 
+                    System.out.println("qzf 3");
+
                     User user;
                     if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
-                        user = userService.getUser(session.getUsername());
+                        System.out.println("qzf "+session.getUsername());
+                        user = userService.getUserByUsername(session.getUsername());
+                        if (user.getRealUser()) {
+                            user = new User();
+                        }
+                        System.out.println("qzf 3.1");
                     } else {
-                        user = new User();
+                        throw new UserNotFoundException("User '" + session.getUsername() + "' not found");
                     }
                     user.setUsername(userName);
                     user.setPassword(password);
                     user.setName(name);
                     user.setEmail(email);
                     user.setMobile(mobile);
+                    user.setRealUser(true);
                     userService.saveUser(user);
 
+                    System.out.println("qzf 4");
+
+                    JID from = session.getAddress();
+                    JID newFrom = new JID(userName, from.getDomain(), from.getResource());
+                    changeUserInfo(session, newFrom, password);
+
+                    System.out.println("qzf 5");
+
                     reply = IQ.createResultIQ(packet);
+
+                    Element resp = DocumentHelper.createElement(QName.get("registeration",
+                            NAMESPACE));
+
+                    reply.setChildElement(resp);
+                    reply.setTo(newFrom);
+
                 }
             } catch (Exception ex) {
                 log.error(ex);
                 reply = IQ.createResultIQ(packet);
                 reply.setChildElement(packet.getChildElement().createCopy());
+                System.out.println("qzf exception");
                 if (ex instanceof UserExistsException) {
                     reply.setError(PacketError.Condition.conflict);
                 } else if (ex instanceof UserNotFoundException) {
@@ -147,6 +177,17 @@ public class IQRegistrationHandler extends IQHandler {
             session.process(reply);
         }
         return null;
+    }
+
+    private void changeUserInfo(ClientSession session, JID newFrom, String password) throws UnauthenticatedException {
+
+        JID from = session.getAddress();
+
+        SessionManager.getInstance().changeUserName(from.toString(), newFrom.toString());
+
+        AuthToken authToken = AuthManager.authenticate(newFrom.getNode(), password);
+        session.setAuthToken(authToken);
+        session.setAddress(newFrom);
     }
 
     /**

@@ -25,6 +25,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.sun.xml.internal.ws.api.policy.PolicyResolver;
 import org.androidpn.server.xmpp.XmppServer;
 import org.androidpn.server.xmpp.net.Connection;
 import org.androidpn.server.xmpp.net.ConnectionCloseListener;
@@ -177,6 +178,14 @@ public class SessionManager {
             return true;
         }
         return false;
+    }
+
+    public void changeUserName (String name, String newName) {
+        ClientSession session = clientSessions.get(name);
+        if(session != null) {
+            clientSessions.remove(name);
+            clientSessions.put(newName, session);
+        }
     }
 
     /**

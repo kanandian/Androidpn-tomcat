@@ -47,10 +47,8 @@ public class InfoInquiryHandler implements InquiryHandler {
 
         //设置内容
         id.setText(String.valueOf(user.getId()));
-        idcard.setText(user.getIdcard());
         username.setText(user.getUsername());
         name.setText(user.getName());
-        sex.setText(user.getSex());
         mobile.setText(user.getMobile());
         email.setText(user.getEmail());
 

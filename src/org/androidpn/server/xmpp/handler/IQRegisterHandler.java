@@ -127,6 +127,7 @@ public class IQRegisterHandler extends IQHandler {
 
                     User user;
                     if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
+                        System.out.println("qzf "+session.getUsername());
                         user = userService.getUser(session.getUsername());
                     } else {
                         user = new User();

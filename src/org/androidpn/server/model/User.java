@@ -67,17 +67,19 @@ public class User implements Serializable {
     @Column(name = "updated_date")
     private Date updatedDate;
 
-    @Column(name = "is_real_name")
+    @Column(name = "is_real_user")
     private Boolean isRealUser;
 
     @Transient
     private boolean online;
 
     public User() {
+        this.isRealUser = false;
     }
 
     public User(final String username) {
         this.username = username;
+        this.isRealUser = false;
     }
 
     public Long getId() {
