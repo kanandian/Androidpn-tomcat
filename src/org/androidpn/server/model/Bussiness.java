@@ -18,6 +18,8 @@ public class Bussiness implements Serializable {
     private String tag;
     private Location location;
     private String mobile;
+    private double price;
+    private int level;
     private String des;
 
 
@@ -81,6 +83,22 @@ public class Bussiness implements Serializable {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public String getDes() {

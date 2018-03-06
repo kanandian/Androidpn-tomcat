@@ -1,7 +1,10 @@
 package org.androidpn.server.util;
 
-public class Location {
+import java.io.Serializable;
 
+public class Location implements Serializable {
+
+    private String address;
     private double longitude;
     private double latitude;
 
@@ -10,7 +13,18 @@ public class Location {
     }
 
     public Location (String location) {
+        String[] locationContents = location.split("[:,]");
+        this.address = locationContents[0];
+        this.longitude = Double.parseDouble(locationContents[1]);
+        this.latitude = Double.parseDouble(locationContents[2]);
+    }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public double getLongitude() {
@@ -31,6 +45,6 @@ public class Location {
 
     @Override
     public String toString() {
-        return "30,30";
+        return this.address+":"+this.longitude+","+this.latitude;
     }
 }
