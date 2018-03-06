@@ -174,7 +174,7 @@ public class IQRegistrationHandler extends IQHandler {
     }
 
     private IQ createResultIQ(IQ packet, JID newFrom, User user) {
-        IQ reply = IQ.createResultIQ(packet);;
+        IQ reply = IQ.createResultIQ(packet);
 
         Element resp = DocumentHelper.createElement(QName.get("registeration",
                 NAMESPACE));

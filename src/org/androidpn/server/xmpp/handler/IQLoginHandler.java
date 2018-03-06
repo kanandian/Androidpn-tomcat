@@ -9,9 +9,13 @@ import org.androidpn.server.model.User;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserNotFoundException;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.xmpp.UnauthenticatedException;
 import org.androidpn.server.xmpp.UnauthorizedException;
+import org.androidpn.server.xmpp.auth.AuthManager;
+import org.androidpn.server.xmpp.auth.AuthToken;
 import org.androidpn.server.xmpp.session.ClientSession;
 import org.androidpn.server.xmpp.session.Session;
+import org.androidpn.server.xmpp.session.SessionManager;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
@@ -66,12 +70,17 @@ public class IQLoginHandler extends IQHandler {
                         probeResponse.addElement("message").setText("密码不正确");
                     } else {
                         createResultElement(probeResponse, user);
+                        JID from = session.getAddress();
+                        JID newFrom = new JID(userName, from.getDomain(), from.getResource());
+                        changeUserInfo(session, newFrom, password);
                     }
 
                 } catch (UserNotFoundException e) {
                     e.printStackTrace();
 
                     probeResponse.addElement("message").setText("该用户不存在");
+                } catch (UnauthenticatedException e) {
+                    e.printStackTrace();
                 }
 
                 reply.setChildElement(probeResponse);
@@ -91,6 +100,17 @@ public class IQLoginHandler extends IQHandler {
             System.out.println();
         }
         return null;
+    }
+
+    private void changeUserInfo(ClientSession session, JID newFrom, String password) throws UnauthenticatedException {
+
+        JID from = session.getAddress();
+
+        SessionManager.getInstance().changeUserName(from.toString(), newFrom.toString());
+
+        AuthToken authToken = AuthManager.authenticate(newFrom.getNode(), password);
+        session.setAuthToken(authToken);
+        session.setAddress(newFrom);
     }
 
     private void createResultElement(Element probeResponse, User user) {
