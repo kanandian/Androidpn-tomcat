@@ -28,4 +28,11 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
         getHibernateTemplate().flush();
         return bussiness;
     }
+
+    @Override
+    public List<Bussiness> getBussinessesByClassification(String classification) {
+        return getHibernateTemplate().find("from Bussiness b where b.classification = '"+classification+"'");
+    }
+
+
 }

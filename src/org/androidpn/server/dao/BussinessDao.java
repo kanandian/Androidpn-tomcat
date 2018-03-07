@@ -8,4 +8,6 @@ public interface BussinessDao {
     public Bussiness getBussiness(long id);
     public List<Bussiness> getBussinesses();
     public Bussiness saveBussiness(Bussiness bussiness);
+
+    public List<Bussiness> getBussinessesByClassification(String classification);
 }

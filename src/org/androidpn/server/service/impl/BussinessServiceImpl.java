@@ -23,6 +23,11 @@ public class BussinessServiceImpl implements BussinessService {
         return bussinessDao.getBussinesses();
     }
 
+    @Override
+    public List<Bussiness> getBussinessByClassification(String classification) {
+        return bussinessDao.getBussinessesByClassification(classification);
+    }
+
     public BussinessDao getBussinessDao() {
         return bussinessDao;
     }
