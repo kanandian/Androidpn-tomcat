@@ -34,5 +34,25 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
         return getHibernateTemplate().find("from Bussiness b where b.classification = '"+classification+"'");
     }
 
+    @Override
+    public List<Bussiness> getBussinessesByTag(List<String> tagList) {
+        StringBuilder tags = new StringBuilder();
+
+        tags.append("(");
+        boolean isFirst = true;
+        for (String tag : tagList) {
+            if (isFirst) {
+                isFirst = false;
+            } else {
+                tags.append(",");
+            }
+            tags.append("'"+tag+"'");
+        }
+
+        tags.append(")");
+
+        return getHibernateTemplate().find("from Bussiness b where b.tag in "+tags.toString());
+    }
+
 
 }

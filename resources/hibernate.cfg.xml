@@ -38,6 +38,7 @@
 		<!-- Mapping Files -->
 		<mapping class="org.androidpn.server.model.User" />
 		<mapping class="org.androidpn.server.model.Bussiness" />
+		<mapping class="org.androidpn.server.util.UserPerference" />
 
 	</session-factory>
 </hibernate-configuration>

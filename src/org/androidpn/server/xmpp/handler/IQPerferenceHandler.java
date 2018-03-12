@@ -5,7 +5,6 @@ import org.androidpn.server.inquiry.impl.ActivityInquiryHandler;
 import org.androidpn.server.inquiry.impl.BussinessInquiryHandler;
 import org.androidpn.server.inquiry.impl.InfoInquiryHandler;
 import org.androidpn.server.inquiry.impl.SearchInquiryHandler;
-import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
 import org.androidpn.server.xmpp.UnauthorizedException;
@@ -15,13 +14,13 @@ import org.dom4j.Element;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.PacketError;
 
-public class IQInquiryHandler extends IQHandler {
+public class IQPerferenceHandler extends IQHandler {
 
-    private static final String NAMESPACE = "androidpn:iq:inquiry";
+    private static final String NAMESPACE = "androidpn:iq:perference";
 
     private UserService userService;
 
-    public IQInquiryHandler () {
+    public IQPerferenceHandler() {
         userService = ServiceLocator.getUserService();
     }
 
@@ -43,27 +42,15 @@ public class IQInquiryHandler extends IQHandler {
             return reply;
         }
 
-        if (IQ.Type.get.equals(packet.getType())) {
+        if (IQ.Type.set.equals(packet.getType())) {
             reply = IQ.createResultIQ(packet);
             if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
                 // TODO
                 Element query = packet.getChildElement();
-                String target = query.elementText("target");
-                String title = query.elementText("title");
+                String userName = query.elementText("username");
+                String tag = query.elementText("tag");
 
-                if("activity".equals(target)) {
-                    InquiryHandler activityInquiryHandler = new ActivityInquiryHandler();
-                    reply = activityInquiryHandler.handle(reply, title);
-                } else if("bussiness".equals(target)) {
-                    InquiryHandler bussinessInquiryHandler = new BussinessInquiryHandler();
-                    reply = bussinessInquiryHandler.handle(reply, title);
-                } else if("search".equals(target)) {
-                    InquiryHandler searchInquiryHandler = new SearchInquiryHandler();
-                    reply = searchInquiryHandler.handle(reply, title);
-                } else if("info".equals(target)) {
-                    InquiryHandler infoInquiryHandler = new InfoInquiryHandler();
-                    reply = infoInquiryHandler.handle(reply, title);
-                }
+                userService.addPerferences(userName, tag);
             }
         }
         // Send the response directly to the session

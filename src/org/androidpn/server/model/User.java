@@ -61,6 +61,9 @@ public class User implements Serializable {
     @Column(name = "name", length = 64)
     private String name;
 
+    @Column(name = "balance")
+    private double balance;
+
     @Column(name = "created_date", updatable = false)
     private Date createdDate = new Date();
 
@@ -112,6 +115,14 @@ public class User implements Serializable {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     public String getEmail() {

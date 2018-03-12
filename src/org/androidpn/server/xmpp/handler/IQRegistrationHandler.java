@@ -35,11 +35,11 @@ public class IQRegistrationHandler extends IQHandler {
         userService = ServiceLocator.getUserService();
         probeResponse = DocumentHelper.createElement(QName.get("registeration",
                 NAMESPACE));
-        probeResponse.addElement("username");
-        probeResponse.addElement("password");
-        probeResponse.addElement("email");
-        probeResponse.addElement("name");
-        probeResponse.addElement("mobile");
+//        probeResponse.addElement("username");
+//        probeResponse.addElement("password");
+//        probeResponse.addElement("email");
+//        probeResponse.addElement("name");
+//        probeResponse.addElement("mobile");
     }
 
     /**
@@ -95,46 +95,34 @@ public class IQRegistrationHandler extends IQHandler {
 //                    String localName = query.elementText("localName");
 //                    String localPassword = query.elementText("localPassword");
 
-                    // Deny registration of users with no password
-                    if (password == null || password.trim().length() == 0) {
+                    if (userService.existUser(userName)) {
+                        probeResponse.addElement("message").setText("用户名已存在");
                         reply = IQ.createResultIQ(packet);
-                        reply.setChildElement(packet.getChildElement()
-                                .createCopy());
-                        reply.setError(PacketError.Condition.not_acceptable);
-                        System.out.println("qzf password is no use");
-                        return reply;
-                    }
-
-                    if (email != null && email.matches("\\s*")) {
-                        email = null;
-                    }
-
-                    if (name != null && name.matches("\\s*")) {
-                        name = null;
-                    }
-
-                    User user;
-                    if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
-                        user = userService.getUserByUsername(session.getUsername());
-                        if (user.getRealUser()) {
-                            user = new User();
-                        }
+                        reply.setChildElement(probeResponse);
                     } else {
-                        throw new UserNotFoundException("User '" + session.getUsername() + "' not found");
-                    }
-                    user.setUsername(userName);
-                    user.setPassword(password);
-                    user.setName(name);
-                    user.setEmail(email);
-                    user.setMobile(mobile);
-                    user.setRealUser(true);
-                    userService.saveUser(user);
 
-                    JID from = session.getAddress();
-                    JID newFrom = new JID(userName, from.getDomain(), from.getResource());
-                    changeUserInfo(session, newFrom, password);
+                        User user;
+                        if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
+                            user = userService.getUserByUsername(session.getUsername());
+                            if (user.getRealUser()) {
+                                user = new User();
+                            }
+                        } else {
+                            throw new UserNotFoundException("User '" + session.getUsername() + "' not found");
+                        }
+                        user.setUsername(userName);
+                        user.setPassword(password);
+                        user.setName(name);
+                        user.setEmail(email);
+                        user.setMobile(mobile);
+                        user.setRealUser(true);
+                        userService.saveUser(user);
 
-                    reply = createResultIQ(packet, newFrom, user);
+                        JID from = session.getAddress();
+                        JID newFrom = new JID(userName, from.getDomain(), from.getResource());
+                        changeUserInfo(session, newFrom, password);
+
+                        reply = createResultIQ(packet, newFrom, user);
 
 //                    reply = IQ.createResultIQ(packet);
 //
@@ -143,6 +131,7 @@ public class IQRegistrationHandler extends IQHandler {
 //
 //                    reply.setChildElement(resp);
 //                    reply.setTo(newFrom);
+                    }
 
 
                 }

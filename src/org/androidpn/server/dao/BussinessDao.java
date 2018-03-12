@@ -10,4 +10,5 @@ public interface BussinessDao {
     public Bussiness saveBussiness(Bussiness bussiness);
 
     public List<Bussiness> getBussinessesByClassification(String classification);
+    public List<Bussiness> getBussinessesByTag(List<String> tagList);
 }

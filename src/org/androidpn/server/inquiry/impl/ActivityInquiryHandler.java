@@ -4,6 +4,7 @@ import org.androidpn.server.inquiry.InquiryHandler;
 import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
+import org.androidpn.server.service.UserService;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
@@ -15,10 +16,12 @@ public class ActivityInquiryHandler implements InquiryHandler {
 
     private static final String NAMESPACE = "androidpn:iq:inquiry";
 
+    private UserService userService;
     private BussinessService bussinessService;
     private Element probeResponse;
 
     public ActivityInquiryHandler() {
+        userService = ServiceLocator.getUserService();
         bussinessService = ServiceLocator.getBussinessService();
     }
 
@@ -37,8 +40,25 @@ public class ActivityInquiryHandler implements InquiryHandler {
             for(Bussiness bussiness : bussinessList) {
                 addItem(bussiness);
             }
+        } else if (title.contains("perference")) {
+            List<String> tagList = userService.getPerferences(title.split(":")[1]);
+
+            if (tagList != null && !tagList.isEmpty()) {
+                List<Bussiness> bussinessList = bussinessService.getBussinessesByTag(tagList);
+
+                if (bussinessList != null && !bussinessList.isEmpty()) {
+                    for (Bussiness bussiness : bussinessList) {
+                        addItem(bussiness);
+                    }
+                } else {
+                    bussinessList = bussinessService.getBussinesses();
+                    for (Bussiness bussiness : bussinessList) {
+                        addItem(bussiness);
+                    }
+                }
+            }
         } else {
-            List<Bussiness> bussinessList = bussinessService.getBussinessByClassification(title);
+            List<Bussiness> bussinessList = bussinessService.getBussinessesByClassification(title);
             for (Bussiness bussiness : bussinessList) {
                 addItem(bussiness);
             }

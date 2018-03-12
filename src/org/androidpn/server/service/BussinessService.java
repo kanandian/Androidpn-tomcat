@@ -8,5 +8,6 @@ public interface BussinessService {
     public Bussiness getBussiness(String bussinessId);
     public List<Bussiness> getBussinesses();
 
-    public List<Bussiness> getBussinessByClassification(String classification);
+    public List<Bussiness> getBussinessesByClassification(String classification);
+    public List<Bussiness> getBussinessesByTag(List<String> tagList);
 }

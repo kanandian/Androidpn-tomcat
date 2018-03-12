@@ -21,6 +21,9 @@ import java.util.Date;
 import java.util.List;
 
 import org.androidpn.server.model.User;
+import org.androidpn.server.util.ResultModel;
+
+import javax.swing.text.html.HTML;
 
 /** 
  * Business service interface for the user management.
@@ -40,5 +43,13 @@ public interface UserService {
     public User getUserByUsername(String username) throws UserNotFoundException;
 
     public void removeUser(Long userId);
+
+    public ResultModel payment(String fromUserName, String toUserName, double price) throws UserNotFoundException;
+
+    public boolean existUser(String userName);
+
+    public List<String> getPerferences(String userName);
+
+    public void addPerferences(String userName, String tag);
 
 }

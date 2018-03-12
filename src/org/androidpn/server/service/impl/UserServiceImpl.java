@@ -17,30 +17,43 @@
  */
 package org.androidpn.server.service.impl;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import javax.persistence.EntityExistsException;
 
 import org.androidpn.server.dao.UserDao;
+import org.androidpn.server.dao.UserPerferenceDao;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.UserExistsException;
 import org.androidpn.server.service.UserNotFoundException;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.ResultModel;
+import org.androidpn.server.util.UserPerference;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /** 
  * This class is the implementation of UserService.
  *
  * @author Sehwan Noh (devnoh@gmail.com)
  */
+@Service
 public class UserServiceImpl implements UserService {
 
     protected final Log log = LogFactory.getLog(getClass());
 
     private UserDao userDao;
+
+    private UserPerferenceDao userPerferenceDao;
+
+    public void setUserPerferenceDao(UserPerferenceDao userPerferenceDao) {
+        this.userPerferenceDao = userPerferenceDao;
+    }
 
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
@@ -81,6 +94,77 @@ public class UserServiceImpl implements UserService {
     public void removeUser(Long userId) {
         log.debug("removing user: " + userId);
         userDao.removeUser(userId);
+    }
+
+    @Override
+    @Transactional
+    public ResultModel payment(String fromUserName, String toUserName, double price) throws UserNotFoundException {
+        ResultModel resultModel = new ResultModel();
+
+        User fromUser = userDao.getUserByUsername(fromUserName);
+
+        if (!fromUser.getRealUser()) {
+            resultModel.setErrcode(0);
+            resultModel.setErrMessage("用户未登录");
+            return resultModel;
+        }
+
+        if (fromUser.getBalance() < price) {
+            resultModel.setErrcode(0);
+            resultModel.setErrMessage("余额不足");
+            return resultModel;
+        }
+
+        User toUser = userDao.getUserByUsername(toUserName);
+
+        fromUser.setBalance(fromUser.getBalance() - price);
+        toUser.setBalance(toUser.getBalance() + price);
+
+        userDao.saveUser(fromUser);
+        userDao.saveUser(toUser);
+
+        return resultModel;
+    }
+
+    @Override
+    public boolean existUser(String userName) {
+        try {
+            User user = userDao.getUserByUsername(userName);
+        } catch (UserNotFoundException e) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public List<String> getPerferences(String userName) {
+        List<String> tagList = new ArrayList<String>();
+        List<UserPerference> userPerferenceList = userPerferenceDao.getUserPerferencesByUserNameOrderByNum(userName);
+
+        if (userPerferenceList == null || userPerferenceList.isEmpty()) {
+            return tagList;
+        }
+
+        for (UserPerference up : userPerferenceList) {
+            tagList.add(up.getTag());
+        }
+
+        return tagList;
+    }
+
+    @Override
+    public void addPerferences(String userName, String tag) {
+        UserPerference userPerference = userPerferenceDao.getUserPerference(userName, tag);
+        if (userPerference == null) {
+            userPerference = new UserPerference();
+            userPerference.setUserName(userName);
+            userPerference.setTag(tag);
+            userPerference.setNum(0);
+        }
+
+        userPerference.setNum(userPerference.getNum() + 1);
+
+        userPerferenceDao.saveUserPerference(userPerference);
     }
 
 }
