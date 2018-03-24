@@ -32,7 +32,6 @@ public class IQPerferenceHandler extends IQHandler {
         System.out.println("my received" + packet.toXML());
         System.out.println();
 
-
         ClientSession session = sessionManager.getSession(packet.getFrom());
         if (session == null) {
             log.error("Session not found for key " + packet.getFrom());
