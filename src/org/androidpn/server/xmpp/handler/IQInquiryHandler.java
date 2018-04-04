@@ -1,10 +1,8 @@
 package org.androidpn.server.xmpp.handler;
 
+import org.androidpn.server.inquiry.AdminHandler;
 import org.androidpn.server.inquiry.InquiryHandler;
-import org.androidpn.server.inquiry.impl.ActivityInquiryHandler;
-import org.androidpn.server.inquiry.impl.BussinessInquiryHandler;
-import org.androidpn.server.inquiry.impl.InfoInquiryHandler;
-import org.androidpn.server.inquiry.impl.SearchInquiryHandler;
+import org.androidpn.server.inquiry.impl.*;
 import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
@@ -63,6 +61,11 @@ public class IQInquiryHandler extends IQHandler {
                 } else if("info".equals(target)) {
                     InquiryHandler infoInquiryHandler = new InfoInquiryHandler();
                     reply = infoInquiryHandler.handle(reply, title);
+                } else if ("comment".equals(target)) {
+                    String content = query.elementText("content");
+
+                    AdminHandler commentHandler = new CommentHandler();
+                    commentHandler.handle(title, content);
                 }
             }
         }

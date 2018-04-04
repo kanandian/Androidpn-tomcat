@@ -26,7 +26,7 @@ public class IQPaymentHandler extends IQHandler {
 
     public IQPaymentHandler() {
         userService = ServiceLocator.getUserService();
-        probeResponse = DocumentHelper.createElement(QName.get("query",
+        probeResponse = DocumentHelper.createElement(QName.get("payment",
                 NAMESPACE));
     }
 
