@@ -14,8 +14,8 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="WebRoot:WEB-INF:classes:hibernate.cfg.xml" />
-          <unit-entry name="resources:hibernate.cfg.xml" />
+          <unit-entry name="WebRoot:WEB-INF:classes:hibernate.cfg.xml" value="fdd253c5-bb4b-4c06-98ef-33801aa7f3f8" />
+          <unit-entry name="resources:hibernate.cfg.xml" value="1807490d-14d7-4334-917e-59677e82078f" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml" />

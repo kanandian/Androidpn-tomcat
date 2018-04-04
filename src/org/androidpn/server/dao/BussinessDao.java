@@ -1,6 +1,7 @@
 package org.androidpn.server.dao;
 
 import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.model.Comment;
 
 import java.util.List;
 
@@ -11,4 +12,6 @@ public interface BussinessDao {
 
     public List<Bussiness> getBussinessesByClassification(String classification);
     public List<Bussiness> getBussinessesByTag(List<String> tagList);
+
+    public void addCommont(long bussinessId, Comment comment);
 }

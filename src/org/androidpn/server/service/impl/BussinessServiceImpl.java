@@ -2,6 +2,7 @@ package org.androidpn.server.service.impl;
 
 import org.androidpn.server.dao.BussinessDao;
 import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.model.Comment;
 import org.androidpn.server.service.BussinessService;
 
 import java.util.List;
@@ -13,6 +14,13 @@ public class BussinessServiceImpl implements BussinessService {
 
     }
 
+
+    @Override
+    public Bussiness saveBussiness(Bussiness bussiness) {
+        bussinessDao.saveBussiness(bussiness);
+        return bussiness;
+    }
+
     @Override
     public Bussiness getBussiness(String bussinessId) {
         return bussinessDao.getBussiness(new Long(bussinessId));
@@ -21,6 +29,12 @@ public class BussinessServiceImpl implements BussinessService {
     @Override
     public List<Bussiness> getBussinesses() {
         return bussinessDao.getBussinesses();
+    }
+
+    @Override
+    public void addComment(String bussinessId, Comment comment) {
+        long bussinessID = Long.parseLong(bussinessId);
+        bussinessDao.addCommont(bussinessID, comment);
     }
 
     @Override

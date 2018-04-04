@@ -4,9 +4,12 @@ import org.androidpn.server.util.Location;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
+import org.springframework.core.annotation.Order;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "apn_bussiness")
@@ -21,6 +24,8 @@ public class Bussiness implements Serializable {
     private double price;
     private int level;
     private String des;
+
+    private List<Comment> commentList = new ArrayList<Comment>();
 
 
     public Bussiness() {
@@ -109,7 +114,17 @@ public class Bussiness implements Serializable {
         this.des = des;
     }
 
-//    public String toXMLInummary(String NAMESPACE) {
+    @OneToMany(mappedBy = "bussiness", fetch = FetchType.EAGER)
+    @OrderBy
+    public List<Comment> getCommentList() {
+        return commentList;
+    }
+
+    public void setCommentList(List<Comment> commentList) {
+        this.commentList = commentList;
+    }
+
+    //    public String toXMLInummary(String NAMESPACE) {
 //        //需要发送imageURL、bussinessame、location、tag
 //        Element probeResponse = DocumentHelper.createElement(QName.get("query",
 //                NAMESPACE));

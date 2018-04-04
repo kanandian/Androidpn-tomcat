@@ -2,6 +2,7 @@ package org.androidpn.server.dao.hibernate;
 
 import org.androidpn.server.dao.BussinessDao;
 import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.model.Comment;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import java.util.List;
@@ -54,5 +55,16 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
         return getHibernateTemplate().find("from Bussiness b where b.tag in "+tags.toString());
     }
 
+    @Override
+    public void addCommont(long bussinessId, Comment comment) {
+        Bussiness bussiness = (Bussiness) getHibernateTemplate().get(Bussiness.class, bussinessId);
+
+        List<Comment> commentList = bussiness.getCommentList();
+
+        comment.setBussiness(bussiness);
+        commentList.add(comment);
+
+        getHibernateTemplate().save(comment);
+    }
 
 }

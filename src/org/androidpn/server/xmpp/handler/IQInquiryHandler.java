@@ -4,6 +4,7 @@ import org.androidpn.server.inquiry.AdminHandler;
 import org.androidpn.server.inquiry.InquiryHandler;
 import org.androidpn.server.inquiry.impl.*;
 import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
 import org.androidpn.server.xmpp.UnauthorizedException;
@@ -62,9 +63,23 @@ public class IQInquiryHandler extends IQHandler {
                     InquiryHandler infoInquiryHandler = new InfoInquiryHandler();
                     reply = infoInquiryHandler.handle(reply, title);
                 } else if ("comment".equals(target)) {
-                    String content = query.elementText("content");
+                    InquiryHandler commentInquiryHandler = new CommentInquiryHandler();
+                    reply = commentInquiryHandler.handle(reply, title);
+                }
+            }
+        } else if (IQ.Type.set.equals(packet.getType())) {
+            reply = IQ.createResultIQ(packet);
+            if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
+                // TODO
+                Element query = packet.getChildElement();
+                String target = query.elementText("target");
+                String title = query.elementText("title");
 
-                    AdminHandler commentHandler = new CommentHandler();
+                String userName = query.elementText("username");
+                String content = query.elementText("content");
+
+                if ("comment".equals(target)) {
+                    AdminHandler commentHandler = new CommentHandler(title, userName);
                     commentHandler.handle(title, content);
                 }
             }
