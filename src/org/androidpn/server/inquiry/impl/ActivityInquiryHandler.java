@@ -41,19 +41,28 @@ public class ActivityInquiryHandler implements InquiryHandler {
                 addItem(bussiness);
             }
         } else if (title.contains("perference")) {
-            List<String> tagList = userService.getPerferences(title.split(":")[1]);
+            String userName = title.split(":")[1];
 
-            if (tagList != null && !tagList.isEmpty()) {
-                List<Bussiness> bussinessList = bussinessService.getBussinessesByTag(tagList);
+            if (userName == null || "null".equals(userName)) {
+                List<Bussiness> bussinessList = bussinessService.getBussinesses();
+                for (Bussiness bussiness : bussinessList) {
+                    addItem(bussiness);
+                }
+            } else {
+                List<String> tagList = userService.getPerferences(userName);
 
-                if (bussinessList != null && !bussinessList.isEmpty()) {
-                    for (Bussiness bussiness : bussinessList) {
-                        addItem(bussiness);
-                    }
-                } else {
-                    bussinessList = bussinessService.getBussinesses();
-                    for (Bussiness bussiness : bussinessList) {
-                        addItem(bussiness);
+                if (tagList != null && !tagList.isEmpty()) {
+                    List<Bussiness> bussinessList = bussinessService.getBussinessesByTag(tagList);
+
+                    if (bussinessList != null && !bussinessList.isEmpty()) {
+                        for (Bussiness bussiness : bussinessList) {
+                            addItem(bussiness);
+                        }
+                    } else {
+                        bussinessList = bussinessService.getBussinesses();
+                        for (Bussiness bussiness : bussinessList) {
+                            addItem(bussiness);
+                        }
                     }
                 }
             }
