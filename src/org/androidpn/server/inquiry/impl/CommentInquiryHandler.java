@@ -25,7 +25,7 @@ public class CommentInquiryHandler implements InquiryHandler {
 
     @Override
     public IQ handle(IQ reply, String title) {
-        probeResponse = DocumentHelper.createElement(QName.get("activity",
+        probeResponse = DocumentHelper.createElement(QName.get("comment",
                 NAMESPACE));
 
         Bussiness bussiness = bussinessService.getBussiness(title);
@@ -34,6 +34,8 @@ public class CommentInquiryHandler implements InquiryHandler {
         for (Comment comment : commentList) {
             addItem(comment);
         }
+
+        reply.setChildElement(probeResponse);
 
         return reply;
     }
