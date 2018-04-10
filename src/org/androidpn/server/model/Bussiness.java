@@ -5,6 +5,7 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
 import org.springframework.core.annotation.Order;
+import org.springframework.web.servlet.theme.SessionThemeResolver;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -27,6 +28,8 @@ public class Bussiness implements Serializable {
 
     private List<Comment> commentList = new ArrayList<Comment>();
 
+
+    private String userName;
 
     public Bussiness() {
 
@@ -122,6 +125,14 @@ public class Bussiness implements Serializable {
 
     public void setCommentList(List<Comment> commentList) {
         this.commentList = commentList;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     //    public String toXMLInummary(String NAMESPACE) {

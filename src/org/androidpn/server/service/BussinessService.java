@@ -15,4 +15,6 @@ public interface BussinessService {
 
     public List<Bussiness> getBussinessesByClassification(String classification);
     public List<Bussiness> getBussinessesByTag(List<String> tagList);
+
+    public List<Bussiness> getBussinessesByUserName(String userName);
 }

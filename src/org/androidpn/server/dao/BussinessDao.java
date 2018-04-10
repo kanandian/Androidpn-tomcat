@@ -14,4 +14,6 @@ public interface BussinessDao {
     public List<Bussiness> getBussinessesByTag(List<String> tagList);
 
     public void addCommont(long bussinessId, Comment comment);
+
+    public List<Bussiness> getBussinessesByUserName(String userName);
 }

@@ -20,6 +20,9 @@ package org.androidpn.server.xmpp.handler;
 import gnu.inet.encoding.Stringprep;
 import gnu.inet.encoding.StringprepException;
 
+import org.androidpn.server.model.User;
+import org.androidpn.server.service.ServiceLocator;
+import org.androidpn.server.service.UserService;
 import org.androidpn.server.xmpp.UnauthenticatedException;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.auth.AuthManager;
@@ -44,6 +47,8 @@ public class IQAuthHandler extends IQHandler {
 
     private Element probeResponse;
 
+    private UserService userService;
+
     /**
      * Constructor.
      */
@@ -58,6 +63,9 @@ public class IQAuthHandler extends IQHandler {
             probeResponse.addElement("digest");
         }
         probeResponse.addElement("resource");
+        probeResponse.addElement("isrealuser");
+
+        userService = ServiceLocator.getUserService();
     }
 
     /**
@@ -88,6 +96,9 @@ public class IQAuthHandler extends IQHandler {
                 String username = query.elementText("username");
                 if (username != null) {
                     queryResponse.element("username").setText(username);
+
+                    User user = userService.getUserByUsername(username);
+                    queryResponse.element("isrealuser").setText(String.valueOf(user.getRealUser()));
                 }
                 reply = IQ.createResultIQ(packet);
                 reply.setChildElement(queryResponse);

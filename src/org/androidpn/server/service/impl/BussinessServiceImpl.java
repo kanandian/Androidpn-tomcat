@@ -47,6 +47,11 @@ public class BussinessServiceImpl implements BussinessService {
         return bussinessDao.getBussinessesByTag(tagList);
     }
 
+    @Override
+    public List<Bussiness> getBussinessesByUserName(String userName) {
+        return bussinessDao.getBussinessesByUserName(userName);
+    }
+
     public BussinessDao getBussinessDao() {
         return bussinessDao;
     }
