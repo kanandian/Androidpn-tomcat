@@ -26,6 +26,8 @@ public class Bussiness implements Serializable {
     private int level;
     private String des;
 
+    private String holder;
+
     private List<Comment> commentList = new ArrayList<Comment>();
 
 
@@ -133,6 +135,14 @@ public class Bussiness implements Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
     }
 
     //    public String toXMLInummary(String NAMESPACE) {

@@ -58,6 +58,7 @@ public class HolderInquiryHandler implements InquiryHandler {
         item.addAttribute("price", String.valueOf(bussiness.getPrice()));
         item.addAttribute("level", String.valueOf(bussiness.getLevel()));
         item.addAttribute("des", bussiness.getDes());
+        item.addAttribute("holder", bussiness.getHolder());
         probeResponse.add(item);
     }
 }

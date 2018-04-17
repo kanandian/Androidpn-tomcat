@@ -62,7 +62,11 @@ public class SearchInquiryHandler implements InquiryHandler {
         item.addAttribute("imageURL", bussiness.getImageURL());
         item.addAttribute("tag", bussiness.getTag());
         item.addAttribute("location", bussiness.getLocation());
+        item.addAttribute("mobile", bussiness.getMobile());
+        item.addAttribute("price", String.valueOf(bussiness.getPrice()));
+        item.addAttribute("level", String.valueOf(bussiness.getLevel()));
         item.addAttribute("des", bussiness.getDes());
+        item.addAttribute("holder", bussiness.getHolder());
         probeResponse.add(item);
     }
 }

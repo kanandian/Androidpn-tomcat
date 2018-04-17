@@ -44,6 +44,7 @@ public class BussinessInquiryHandler implements InquiryHandler {
         Element tag = DocumentHelper.createElement("tag");
         Element mobile = DocumentHelper.createElement("mobile");
         Element des = DocumentHelper.createElement("des");
+        Element holder = DocumentHelper.createElement("holder");
 
         //设置内容
         id.setText(String.valueOf(bussiness.getBussinessId()));
@@ -54,6 +55,7 @@ public class BussinessInquiryHandler implements InquiryHandler {
         tag.setText(bussiness.getTag());
         mobile.setText(bussiness.getMobile());
         des.setText(bussiness.getDes());
+        holder.setText(bussiness.getHolder());
 
         //添加到probeResponse中
         probeResponse.add(id);
@@ -64,6 +66,7 @@ public class BussinessInquiryHandler implements InquiryHandler {
         probeResponse.add(tag);
         probeResponse.add(mobile);
         probeResponse.add(des);
+        probeResponse.add(holder);
     }
 
 }
