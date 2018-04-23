@@ -65,6 +65,14 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
+	<bean id="userPerferenceDao" class="org.androidpn.server.dao.hibernate.UserPerferenceDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="foodMenuDao" class="org.androidpn.server.dao.hibernate.FoodMenuDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
 	<!-- =============================================================== -->
@@ -76,6 +84,10 @@
 	<bean id="bussinessService" class="org.androidpn.server.service.impl.BussinessServiceImpl">
 		<property name="bussinessDao" ref="bussinessDao" />
  	</bean>
+
+	<bean id="foodMenuService" class="org.androidpn.server.service.impl.FoodMenuServiceImpl">
+		<property name="foodMenuDao" ref="foodMenuDao" />
+	</bean>
 
 	<!-- =============================================================== -->
 	<!-- SSL                                                             -->

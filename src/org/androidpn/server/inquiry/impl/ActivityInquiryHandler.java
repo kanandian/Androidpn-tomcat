@@ -23,13 +23,12 @@ public class ActivityInquiryHandler implements InquiryHandler {
     public ActivityInquiryHandler() {
         userService = ServiceLocator.getUserService();
         bussinessService = ServiceLocator.getBussinessService();
+        probeResponse = DocumentHelper.createElement(QName.get("activity",
+                NAMESPACE));
     }
 
     @Override
     public IQ handle(IQ reply, String title) {
-        probeResponse = DocumentHelper.createElement(QName.get("activity",
-                NAMESPACE));
-
         if("main".equals(title)) {
             List<Bussiness> bussinessList = bussinessService.getBussinesses();
             for(Bussiness bussiness : bussinessList) {
