@@ -52,6 +52,7 @@ public class HolderInquiryHandler implements InquiryHandler {
         item.addAttribute("id", String.valueOf(bussiness.getBussinessId()));
         item.addAttribute("name", bussiness.getBusinessName());
         item.addAttribute("imageURL", bussiness.getImageURL());
+        item.addAttribute("classification", bussiness.getClassification());
         item.addAttribute("tag", bussiness.getTag());
         item.addAttribute("location", bussiness.getLocation());
         item.addAttribute("mobile", bussiness.getMobile());

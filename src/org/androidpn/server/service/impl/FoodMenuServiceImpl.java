@@ -12,7 +12,7 @@ public class FoodMenuServiceImpl implements FoodMenuService {
 
     @Override
     public List<FoodMenu> getFoodMenusByBussinessId(String bussinessId) {
-        return foodMenuDao.getFoodMenusByBussinessId(Long.valueOf(bussinessId));
+        return foodMenuDao.getFoodMenusByBussinessId(Long.parseLong(bussinessId));
     }
 
     @Override

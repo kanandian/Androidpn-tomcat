@@ -85,6 +85,7 @@ public class ActivityInquiryHandler implements InquiryHandler {
         item.addAttribute("name", bussiness.getBusinessName());
         item.addAttribute("imageURL", bussiness.getImageURL());
         item.addAttribute("tag", bussiness.getTag());
+        item.addAttribute("classification", bussiness.getClassification());
         item.addAttribute("location", bussiness.getLocation());
         item.addAttribute("mobile", bussiness.getMobile());
         item.addAttribute("price", String.valueOf(bussiness.getPrice()));
