@@ -8,10 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4baf44e5-ac90-45e3-9f1f-0153507a98c7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/hibernate.cfg.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQInquiryHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQInquiryHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/router/IQRouter.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/router/IQRouter.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/spring-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/spring-config.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +47,7 @@
       <file leaf-file-name="HolderInquiryHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="207">
               <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
               <folding />
             </state>
@@ -561,7 +563,7 @@
       <workItem from="1524445749651" duration="1401000" />
       <workItem from="1524447324007" duration="92000" />
       <workItem from="1524447664714" duration="737000" />
-      <workItem from="1524453712771" duration="16405000" />
+      <workItem from="1524453712771" duration="17367000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1522805393311</created>
@@ -612,11 +614,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524477006841</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="外卖点餐">
+      <created>1524561034823</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524561034823</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69511000" />
+    <option name="totallyTimeSpent" value="70473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,7 +688,8 @@
     <MESSAGE value="商家添加店铺" />
     <MESSAGE value="用户关联商家" />
     <MESSAGE value="添加商家、外卖菜单（未完成，先保存一下）" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加商家、外卖菜单（未完成，先保存一下）" />
+    <MESSAGE value="外卖点餐" />
+    <option name="LAST_COMMIT_MESSAGE" value="外卖点餐" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1110,7 +1120,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="207">
           <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding />
         </state>
