@@ -40,6 +40,8 @@
 		<mapping class="org.androidpn.server.model.Bussiness" />
 		<mapping class="org.androidpn.server.model.Comment" />
 		<mapping class="org.androidpn.server.model.FoodMenu" />
+		<mapping class="org.androidpn.server.model.TakeoutOrder" />
+		<mapping class="org.androidpn.server.model.TakeoutOrderItem" />
 		<mapping class="org.androidpn.server.util.UserPerference" />
 
 	</session-factory>

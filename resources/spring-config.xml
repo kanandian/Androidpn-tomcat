@@ -73,6 +73,10 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
+	<bean id="takeoutOrderDao" class="org.androidpn.server.dao.hibernate.TakeoutOrderDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
 	<!-- =============================================================== -->
@@ -88,6 +92,10 @@
 
 	<bean id="foodMenuService" class="org.androidpn.server.service.impl.FoodMenuServiceImpl">
 		<property name="foodMenuDao" ref="foodMenuDao" />
+	</bean>
+
+	<bean id="takeoutOrderService" class="org.androidpn.server.service.impl.TakeoutOrderServiceImpl">
+		<property name="takeoutOrderDao" ref="takeoutOrderDao" />
 	</bean>
 
 

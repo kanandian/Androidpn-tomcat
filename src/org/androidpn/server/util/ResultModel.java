@@ -6,7 +6,8 @@ public class ResultModel {
     private String errMessage;
 
     public ResultModel() {
-        this.errcode = 1;
+        this.errcode = 0;
+        this.errMessage = "成功";
     }
 
     public int getErrcode() {

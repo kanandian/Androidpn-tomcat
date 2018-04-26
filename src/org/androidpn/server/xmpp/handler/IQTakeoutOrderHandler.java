@@ -1,10 +1,9 @@
 package org.androidpn.server.xmpp.handler;
 
 import gnu.inet.encoding.StringprepException;
-import org.androidpn.server.service.ServiceLocator;
-import org.androidpn.server.service.UserExistsException;
-import org.androidpn.server.service.UserNotFoundException;
-import org.androidpn.server.service.UserService;
+import org.androidpn.server.model.TakeoutOrder;
+import org.androidpn.server.model.TakeoutOrderItem;
+import org.androidpn.server.service.*;
 import org.androidpn.server.util.ResultModel;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.session.ClientSession;
@@ -16,18 +15,24 @@ import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.PacketError;
 
-public class IQPaymentHandler extends IQHandler {
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
-    private static final String NAMESPACE = "androidpn:iq:payment";
+public class IQTakeoutOrderHandler extends IQHandler {
+
+    private static String NAMESPACE = "androidpn:takeout:order";
 
     private UserService userService;
-
+    private TakeoutOrderService takeoutOrderService;
     private Element probeResponse;
 
-    public IQPaymentHandler() {
+    public IQTakeoutOrderHandler() {
         userService = ServiceLocator.getUserService();
+        takeoutOrderService = ServiceLocator.getTakeoutOrderService();
         probeResponse = DocumentHelper.createElement(QName.get("payment",
-                NAMESPACE));
+                "androidpn:iq:payment"));
     }
 
     @Override
@@ -64,11 +69,57 @@ public class IQPaymentHandler extends IQHandler {
                 } else {
                     reply = IQ.createResultIQ(packet);
 
-                    String fromUserName = query.elementText("fromusername");
-                    String toUserName = query.elementText("tousername");
-                    double price = Double.parseDouble(query.elementText("price"));
+                    TakeoutOrder takeoutOrder = new TakeoutOrder();
+                    List<TakeoutOrderItem> takeoutOrderItemList = new ArrayList<TakeoutOrderItem>();
+
+                    long orderId = new Date().getTime();
+
+                    takeoutOrder.setOrderId(orderId);
+
+                    for (Iterator<Element> iterator = query.elementIterator();iterator.hasNext();) {
+                        Element element = iterator.next();
+
+                        if ("orderitem".equals(element.getName())) {
+//                            for (int i=0;i<element.attributeCount();i++) {
+//
+//                            }
+                            TakeoutOrderItem takeoutOrderItem = new TakeoutOrderItem();
+                            takeoutOrderItem.setBussinessId(Long.parseLong(element.attributeValue("bussinessId")));
+                            takeoutOrderItem.setCount(Integer.parseInt(element.attributeValue("count")));
+                            takeoutOrderItem.setFoodName(element.attributeValue("foodName"));
+                            takeoutOrderItem.setPrice(Double.parseDouble(element.attributeValue("price")));
+
+                            takeoutOrderItem.setOrderId(orderId);
+
+                            takeoutOrderItemList.add(takeoutOrderItem);
+                        } else if ("address".equals(element.getName())) {
+                            takeoutOrder.setAddress(element.getText());
+                        } else if ("note".equals(element.getName())) {
+                            takeoutOrder.setNote(element.getText());
+                        } else if ("mobile".equals(element.getName())) {
+                            takeoutOrder.setMobile(element.getText());
+                        } else if ("totalprice".equals(element.getName())) {
+                            takeoutOrder.setTotalPrice(Double.parseDouble(element.getText()));
+                        } else if ("fromusername".equals(element.getName())) {
+                            takeoutOrder.setFromUserName(element.getText());
+                        } else if ("tousername".equals(element.getName())) {
+                            takeoutOrder.setToUserName(element.getText());
+                        } else if ("bussinessid".equals(element.getName())) {
+                            takeoutOrder.setBussinessId(Long.parseLong(element.getText()));
+                        }
+                    }
+
+                    takeoutOrder.setTakeoutOrderItemList(takeoutOrderItemList);
+
+                    String fromUserName = takeoutOrder.getFromUserName();
+                    String toUserName = takeoutOrder.getToUserName();
+                    double price = takeoutOrder.getTotalPrice();
 
                     ResultModel resultModel = userService.payment(fromUserName, toUserName, price);
+
+                    if (resultModel.getErrcode() == 0) {
+                        takeoutOrderService.saveTakeoutOrder(takeoutOrder);
+                    }
 
                     probeResponse.addElement("errcode").setText(String.valueOf(resultModel.getErrcode()));
                     probeResponse.addElement("errmessage").setText(resultModel.getErrMessage());

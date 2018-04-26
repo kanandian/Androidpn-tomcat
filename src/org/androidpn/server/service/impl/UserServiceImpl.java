@@ -104,13 +104,13 @@ public class UserServiceImpl implements UserService {
         User fromUser = userDao.getUserByUsername(fromUserName);
 
         if (!fromUser.getRealUser()) {
-            resultModel.setErrcode(0);
+            resultModel.setErrcode(1);
             resultModel.setErrMessage("用户未登录");
             return resultModel;
         }
 
         if (fromUser.getBalance() < price) {
-            resultModel.setErrcode(0);
+            resultModel.setErrcode(1);
             resultModel.setErrMessage("余额不足");
             return resultModel;
         }

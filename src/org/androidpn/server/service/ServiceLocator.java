@@ -30,6 +30,7 @@ public class ServiceLocator {
     public static String USER_SERVICE = "userService";
     public static String BUSSINESS_SERVICE = "bussinessService";
     public static String MENU_FOOD_SERVICE = "foodMenuService";
+    public static String TAKEOUT_ORDER_SERVICE = "takeoutOrderService";
 
     /**
      * Generic method to obtain a service object for a given name. 
@@ -56,6 +57,10 @@ public class ServiceLocator {
 
     public static FoodMenuService getFoodMenuService() {
         return (FoodMenuService) XmppServer.getInstance().getBean(MENU_FOOD_SERVICE);
+    }
+
+    public static TakeoutOrderService getTakeoutOrderService() {
+        return (TakeoutOrderService) XmppServer.getInstance().getBean(TAKEOUT_ORDER_SERVICE);
     }
 
 }
