@@ -71,6 +71,9 @@ public class IQInquiryHandler extends IQHandler {
                 } else if ("menu_food".equals(target)) {
                     InquiryHandler foodMenuHandler = new FoodMenuInquiryHandler();
                     reply = foodMenuHandler.handle(reply, title);
+                } else if ("takeout".equals(target)) {
+                    InquiryHandler takeoutHandler = new TakeoutOrderInquiryHandler();
+                    reply = takeoutHandler.handle(reply, title);
                 }
             }
         } else if (IQ.Type.set.equals(packet.getType())) {

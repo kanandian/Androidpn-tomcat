@@ -15,8 +15,18 @@ public class TakeoutOrderServiceImpl implements TakeoutOrderService {
     }
 
     @Override
+    public TakeoutOrder getTakeoutOrderById(String orderId) {
+        return takeoutOrderDao.getTakeoutOrderById(Long.parseLong(orderId));
+    }
+
+    @Override
     public List<TakeoutOrder> getTakeoutOrderListByBussinessId(String bussinessId) {
         return takeoutOrderDao.getTakeoutOrderListByBussinessId(Long.parseLong(bussinessId));
+    }
+
+    @Override
+    public List<TakeoutOrder> getTakeourOrderListByUserName(String userName) {
+        return takeoutOrderDao.getTakeourOrderListByUserName(userName);
     }
 
     public TakeoutOrderDao getTakeoutOrderDao() {

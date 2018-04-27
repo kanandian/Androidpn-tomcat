@@ -106,6 +106,8 @@ public class IQTakeoutOrderHandler extends IQHandler {
                             takeoutOrder.setToUserName(element.getText());
                         } else if ("bussinessid".equals(element.getName())) {
                             takeoutOrder.setBussinessId(Long.parseLong(element.getText()));
+                        } else if ("bussinessname".equals(element.getName())) {
+                            takeoutOrder.setBussinessName(element.getText());
                         }
                     }
 

@@ -17,6 +17,7 @@ public class TakeoutOrder {
     private double totalPrice;
 
     private long bussinessId;
+    private String bussinessName;
 
     private String fromUserName;
     private String toUserName;
@@ -83,6 +84,14 @@ public class TakeoutOrder {
 
     public void setBussinessId(long bussinessId) {
         this.bussinessId = bussinessId;
+    }
+
+    public String getBussinessName() {
+        return bussinessName;
+    }
+
+    public void setBussinessName(String bussinessName) {
+        this.bussinessName = bussinessName;
     }
 
     public String getFromUserName() {
