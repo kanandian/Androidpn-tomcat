@@ -8,4 +8,6 @@ public interface FoodMenuDao {
     public List<FoodMenu> getFoodMenusByBussinessId(long bussinessId);
     public void addFoodMenu(List<FoodMenu> foodMenuList);
 
+    public void deleteFoodMenuByMenuId(long menuId);
+
 }

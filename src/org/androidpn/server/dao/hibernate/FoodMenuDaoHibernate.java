@@ -19,4 +19,11 @@ public class FoodMenuDaoHibernate extends HibernateDaoSupport implements FoodMen
         }
         getHibernateTemplate().flush();
     }
+
+    @Override
+    public void deleteFoodMenuByMenuId(long menuId) {
+        FoodMenu foodMenu = new FoodMenu();
+        foodMenu.setMenuId(menuId);
+        getHibernateTemplate().delete(foodMenu);
+    }
 }

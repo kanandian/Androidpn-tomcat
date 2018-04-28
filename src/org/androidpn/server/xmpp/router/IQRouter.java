@@ -62,6 +62,7 @@ public class IQRouter {
         iqHandlers.add(new IQPaymentHandler());
         iqHandlers.add(new IQAddBussinessHandler());
         iqHandlers.add(new IQTakeoutOrderHandler());
+        iqHandlers.add(new TakeoutMenuManageHandler());
     }
 
     /**

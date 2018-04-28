@@ -20,6 +20,11 @@ public class FoodMenuServiceImpl implements FoodMenuService {
         foodMenuDao.addFoodMenu(foodMenuList);
     }
 
+    @Override
+    public void deleteFoodMenuByMenuId(String menuId) {
+        foodMenuDao.deleteFoodMenuByMenuId(Long.parseLong(menuId));
+    }
+
     public FoodMenuDao getFoodMenuDao() {
         return foodMenuDao;
     }

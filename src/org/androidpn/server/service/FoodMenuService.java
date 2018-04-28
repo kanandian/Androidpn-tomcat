@@ -8,4 +8,5 @@ public interface FoodMenuService {
 
     public List<FoodMenu> getFoodMenusByBussinessId(String bussinessId);
     public void addFoodMenu(List<FoodMenu> foodMenuList);
+    public void deleteFoodMenuByMenuId(String menuId);
 }

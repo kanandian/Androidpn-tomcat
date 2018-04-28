@@ -6,14 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4baf44e5-ac90-45e3-9f1f-0153507a98c7" name="Default" comment="我的店铺">
+    <list default="true" id="4baf44e5-ac90-45e3-9f1f-0153507a98c7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/TakeoutMenuManageHandler.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/spring-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/spring-config.xml" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/router/IQRouter.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/router/IQRouter.class" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,94 +45,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ActivityInquiryHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
+      <file leaf-file-name="TakeoutMenuManageHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/TakeoutMenuManageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQAddBussinessHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="84" column="53" lean-forward="true" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bussiness.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="68" column="27" lean-forward="false" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
-                <element signature="e#1916#1917#0" expanded="true" />
-                <element signature="e#1970#1971#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4292#4293#0" expanded="true" />
+                <element signature="e#4324#4325#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BussinessService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/BussinessService.java">
+      <file leaf-file-name="FoodMenuDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BussinessServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/BussinessServiceImpl.java">
+      <file leaf-file-name="FoodMenuDaoHibernate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BussinessDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/BussinessDao.java">
+      <file leaf-file-name="FoodMenuService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/spring-config.xml">
+      <file leaf-file-name="FoodMenuServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#561#562#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQPaymentHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml">
+      <file leaf-file-name="IQInquiryHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="362">
+              <caret line="102" column="20" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="102" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -180,18 +166,13 @@
         <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/BussinessInquiryHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/BussinessDao.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/model/FoodMenu.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/FoodMenuHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/FoodMenuHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/FoodMenuInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java" />
         <option value="$PROJECT_DIR$/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/resources/spring-config.xml" />
@@ -212,6 +193,12 @@
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/TakeoutMenuManageHandler.java" />
       </list>
     </option>
   </component>
@@ -328,7 +315,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
@@ -580,7 +575,7 @@
       <workItem from="1524812149421" duration="5279000" />
       <workItem from="1524824947671" duration="1338000" />
       <workItem from="1524878302923" duration="4004000" />
-      <workItem from="1524893989122" duration="4443000" />
+      <workItem from="1524893989122" duration="6977000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1522805393311</created>
@@ -666,11 +661,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524881050261</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加店铺">
+      <created>1524900963010</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1524900963010</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117923000" />
+    <option name="totallyTimeSpent" value="120457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -762,17 +764,12 @@
     <MESSAGE value="外卖点餐" />
     <MESSAGE value="订单列表" />
     <MESSAGE value="我的店铺" />
-    <option name="LAST_COMMIT_MESSAGE" value="我的店铺" />
+    <MESSAGE value="添加店铺" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加店铺" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java</url>
           <line>68</line>
@@ -780,56 +777,11 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/BussinessInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/FoodMenuHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/FoodMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegisterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/FoodMenuInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mina-core-2.0.0-RC1.jar!/org/apache/mina/transport/socket/nio/NioSocketAcceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/net/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -881,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -934,13 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/TakeoutOrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -973,14 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,6 +955,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,6 +977,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,14 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="586" column="0" lean-forward="false" selection-start-line="586" selection-start-column="0" selection-end-line="586" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="163" column="26" lean-forward="false" selection-start-line="163" selection-start-column="26" selection-end-line="163" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,14 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -1094,29 +1009,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#1970#1971#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="false" />
+            <element signature="e#1970#1971#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1125,14 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="126" column="90" lean-forward="true" selection-start-line="126" selection-start-column="90" selection-end-line="126" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1169,6 +1060,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1177,11 +1084,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="84" column="53" lean-forward="true" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+        <state relative-caret-position="146">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="64" column="55" lean-forward="false" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/FoodMenuHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="102" column="20" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="102" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/FoodMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/TakeoutMenuManageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="68" column="27" lean-forward="false" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4292#4293#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
