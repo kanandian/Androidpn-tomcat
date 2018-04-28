@@ -83,6 +83,7 @@
 
 	<bean id="userService" class="org.androidpn.server.service.impl.UserServiceImpl">
 		<property name="userDao" ref="userDao" />
+		<property name="userPerferenceDao" ref="userPerferenceDao"></property>
 	</bean>
 
 	<bean id="bussinessService" class="org.androidpn.server.service.impl.BussinessServiceImpl">

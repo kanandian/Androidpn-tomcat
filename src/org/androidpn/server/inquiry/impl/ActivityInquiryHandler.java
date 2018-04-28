@@ -10,6 +10,7 @@ import org.dom4j.Element;
 import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ActivityInquiryHandler implements InquiryHandler {
@@ -62,6 +63,12 @@ public class ActivityInquiryHandler implements InquiryHandler {
                         for (Bussiness bussiness : bussinessList) {
                             addItem(bussiness);
                         }
+                    }
+                } else {
+                    List<Bussiness> bussinessList = new ArrayList<Bussiness>();
+                    bussinessList = bussinessService.getBussinesses();
+                    for (Bussiness bussiness : bussinessList) {
+                        addItem(bussiness);
                     }
                 }
             }

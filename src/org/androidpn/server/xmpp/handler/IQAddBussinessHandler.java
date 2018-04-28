@@ -21,8 +21,8 @@ public class IQAddBussinessHandler extends IQHandler {
 
     public IQAddBussinessHandler() {
         bussinessService = ServiceLocator.getBussinessService();
-        probeResponse = DocumentHelper.createElement(QName.get("bussiness",
-                NAMESPACE));
+        probeResponse = DocumentHelper.createElement(QName.get("payment",
+                "androidpn:iq:payment"));
     }
 
     @Override
@@ -64,6 +64,7 @@ public class IQAddBussinessHandler extends IQHandler {
                 String location = query.elementText("location");
                 String mobile = query.elementText("mobile");
                 String des = query.elementText("des");
+                String holder = query.elementText("holder");
 
                 Bussiness bussiness = new Bussiness();
 
@@ -74,8 +75,12 @@ public class IQAddBussinessHandler extends IQHandler {
                 bussiness.setLocation(location);
                 bussiness.setMobile(mobile);
                 bussiness.setDes(des);
+                bussiness.setHolder(holder);
 
                 bussinessService.saveBussiness(bussiness);
+
+                probeResponse.addElement("errcode").setText("0");
+                probeResponse.addElement("errmessage").setText("成功");
 
                 reply.setChildElement(probeResponse);
 //                String title = query.elementText("title");
