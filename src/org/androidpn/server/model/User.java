@@ -70,6 +70,9 @@ public class User implements Serializable {
     @Column(name = "updated_date")
     private Date updatedDate;
 
+    @Column(name = "user_type")
+    private int userType;
+
     @Column(name = "is_real_user")
     private Boolean isRealUser;
 
@@ -147,6 +150,14 @@ public class User implements Serializable {
 
     public void setRealUser(Boolean realUser) {
         isRealUser = realUser;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
     public Date getCreatedDate() {

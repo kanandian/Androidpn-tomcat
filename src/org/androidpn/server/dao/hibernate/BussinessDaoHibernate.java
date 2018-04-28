@@ -69,7 +69,7 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
 
     @Override
     public List<Bussiness> getBussinessesByUserName(String userName) {
-        return getHibernateTemplate().find("from Bussiness b where b.userName = '"+userName+"'");
+        return getHibernateTemplate().find("from Bussiness b where b.holder = '"+userName+"'");
     }
 
 }
