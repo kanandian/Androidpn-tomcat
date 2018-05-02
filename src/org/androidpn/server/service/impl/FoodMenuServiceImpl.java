@@ -4,6 +4,7 @@ import org.androidpn.server.dao.FoodMenuDao;
 import org.androidpn.server.model.FoodMenu;
 import org.androidpn.server.service.FoodMenuService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FoodMenuServiceImpl implements FoodMenuService {
@@ -23,6 +24,14 @@ public class FoodMenuServiceImpl implements FoodMenuService {
     @Override
     public void deleteFoodMenuByMenuId(String menuId) {
         foodMenuDao.deleteFoodMenuByMenuId(Long.parseLong(menuId));
+    }
+
+    @Override
+    public void addFoodMenu(FoodMenu foodMenu) {
+        List<FoodMenu> foodMenuList = new ArrayList<FoodMenu>();
+        foodMenuList.add(foodMenu);
+
+        foodMenuDao.addFoodMenu(foodMenuList);
     }
 
     public FoodMenuDao getFoodMenuDao() {

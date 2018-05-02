@@ -19,6 +19,9 @@ public class TakeoutOrder {
     private long bussinessId;
     private String bussinessName;
 
+    private String createTime;
+    private int orderStatus;
+
     private String fromUserName;
     private String toUserName;
 
@@ -92,6 +95,22 @@ public class TakeoutOrder {
 
     public void setBussinessName(String bussinessName) {
         this.bussinessName = bussinessName;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public int getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(int orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public String getFromUserName() {

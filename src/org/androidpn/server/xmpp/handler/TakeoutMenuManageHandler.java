@@ -1,6 +1,10 @@
 package org.androidpn.server.xmpp.handler;
 
+import com.sun.org.apache.xalan.internal.xsltc.dom.SimpleResultTreeImpl;
 import gnu.inet.encoding.StringprepException;
+import org.androidpn.server.inquiry.InquiryHandler;
+import org.androidpn.server.inquiry.impl.FoodMenuInquiryHandler;
+import org.androidpn.server.model.FoodMenu;
 import org.androidpn.server.service.FoodMenuService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserExistsException;
@@ -15,6 +19,7 @@ import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.PacketError;
+import sun.util.resources.ga.LocaleNames_ga;
 
 public class TakeoutMenuManageHandler extends IQHandler {
 
@@ -65,18 +70,25 @@ public class TakeoutMenuManageHandler extends IQHandler {
                     reply = IQ.createResultIQ(packet);
 
                     String target = query.elementText("target");
+                    String bussinessId = query.elementText("bussinessid");
                     if ("delete".equals(target)) {
                         String itemid = query.elementText("itemid");
                         foodMenuService.deleteFoodMenuByMenuId(itemid);
                     } else if ("add".equals(target)) {
+                        String foodName = query.elementText("foodname");
+                        String price = query.elementText("price");
 
+                        FoodMenu foodMenu = new FoodMenu();
+                        foodMenu.setBussinessId(Long.parseLong(bussinessId));
+                        foodMenu.setFoodName(foodName);
+                        foodMenu.setPrice(Double.parseDouble(price));
+
+                        foodMenuService.addFoodMenu(foodMenu);
                     }
 
 
-                    probeResponse.addElement("errcode").setText("0");
-                    probeResponse.addElement("errmessage").setText("成功");
-
-                    reply.setChildElement(probeResponse);
+                    InquiryHandler foodMenuHandler = new FoodMenuInquiryHandler();
+                    reply = foodMenuHandler.handle(reply, bussinessId);
 
                 }
             } catch (Exception ex) {

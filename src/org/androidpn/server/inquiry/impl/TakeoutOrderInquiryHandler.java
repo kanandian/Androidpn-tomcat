@@ -38,6 +38,15 @@ public class TakeoutOrderInquiryHandler implements InquiryHandler {
             for (TakeoutOrder takeoutOrder : takeoutOrderList) {
                 addTakeoutOrder(takeoutOrder);
             }
+        } else if (title.contains("bussiness")) {
+            String bussinessId = title.split("[:]")[1];
+
+            List<TakeoutOrder> takeoutOrderList = takeoutOrderService.getTakeoutOrderListByBussinessId(bussinessId);
+
+            for (TakeoutOrder takeoutOrder : takeoutOrderList) {
+                addTakeoutOrder(takeoutOrder);
+            }
+
         } else {
             TakeoutOrder takeoutOrder = takeoutOrderService.getTakeoutOrderById(title);
             for (TakeoutOrderItem takeoutOrderItem : takeoutOrder.getTakeoutOrderItemList()) {
