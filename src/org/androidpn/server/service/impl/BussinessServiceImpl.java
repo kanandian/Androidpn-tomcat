@@ -4,6 +4,7 @@ import org.androidpn.server.dao.BussinessDao;
 import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.model.Comment;
 import org.androidpn.server.service.BussinessService;
+import org.androidpn.server.util.ResultModel;
 
 import java.util.List;
 
@@ -32,9 +33,10 @@ public class BussinessServiceImpl implements BussinessService {
     }
 
     @Override
-    public void addComment(String bussinessId, Comment comment) {
+    public ResultModel addComment(String bussinessId, Comment comment) {
         long bussinessID = Long.parseLong(bussinessId);
-        bussinessDao.addCommont(bussinessID, comment);
+        bussinessDao.updateByComment(bussinessID, comment);
+        return bussinessDao.addCommont(bussinessID, comment);
     }
 
     @Override

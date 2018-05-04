@@ -24,6 +24,7 @@ public class Bussiness implements Serializable {
     private String mobile;
     private double price;
     private int level;
+    private int personCount;
     private String des;
 
     private String holder;
@@ -95,6 +96,22 @@ public class Bussiness implements Serializable {
         this.mobile = mobile;
     }
 
+    @Transient
+    public double getAvgPrice() {
+        if (personCount == 0) {
+            return 0;
+        }
+        return price/personCount;
+    }
+
+    @Transient
+    public int getAvgLevel() {
+        if (personCount == 0) {
+            return 0;
+        }
+        return level/personCount;
+    }
+
     public double getPrice() {
         return price;
     }
@@ -143,6 +160,14 @@ public class Bussiness implements Serializable {
 
     public void setHolder(String holder) {
         this.holder = holder;
+    }
+
+    public int getPersonCount() {
+        return personCount;
+    }
+
+    public void setPersonCount(int personCount) {
+        this.personCount = personCount;
     }
 
     //    public String toXMLInummary(String NAMESPACE) {

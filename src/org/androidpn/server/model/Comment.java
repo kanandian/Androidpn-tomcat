@@ -11,6 +11,9 @@ public class Comment {
 
     private String createTime;
 
+    private int star;
+    private double amount;
+
     private Bussiness bussiness;
 
     public Comment() {
@@ -58,4 +61,22 @@ public class Comment {
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
+
+    public int getStar() {
+        return star;
+    }
+
+    public void setStar(int star) {
+        this.star = star;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+
 }
