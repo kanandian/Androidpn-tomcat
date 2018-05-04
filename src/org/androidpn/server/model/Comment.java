@@ -9,6 +9,8 @@ public class Comment {
     private String userName;
     private String content;
 
+    private String createTime;
+
     private Bussiness bussiness;
 
     public Comment() {
@@ -47,5 +49,13 @@ public class Comment {
 
     public void setBussiness(Bussiness bussiness) {
         this.bussiness = bussiness;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
     }
 }

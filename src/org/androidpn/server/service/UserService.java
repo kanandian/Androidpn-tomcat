@@ -52,4 +52,6 @@ public interface UserService {
 
     public void addPerferences(String userName, String tag);
 
+    public ResultModel updateUserInfo(String userName, String name, String mobile);
+
 }

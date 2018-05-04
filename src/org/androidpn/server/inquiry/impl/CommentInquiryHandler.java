@@ -46,6 +46,7 @@ public class CommentInquiryHandler implements InquiryHandler {
         item.addAttribute("id", String.valueOf(comment.getCommentId()));
         item.addAttribute("username", comment.getUserName());
         item.addAttribute("content", comment.getContent());
+        item.addAttribute("createtime", comment.getCreateTime());
         probeResponse.add(item);
     }
 }

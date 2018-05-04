@@ -167,4 +167,22 @@ public class UserServiceImpl implements UserService {
         userPerferenceDao.saveUserPerference(userPerference);
     }
 
+    @Override
+    public ResultModel updateUserInfo(String userName, String name, String mobile) {
+        ResultModel resultModel = new ResultModel();
+        try {
+            User user = userDao.getUserByUsername(userName);
+            user.setName(name);
+            user.setMobile(mobile);
+
+            userDao.saveUser(user);
+        } catch (UserNotFoundException e) {
+            e.printStackTrace();
+            resultModel.setErrcode(1);
+            resultModel.setErrMessage("未找到用户!");
+        }
+
+        return resultModel;
+    }
+
 }
