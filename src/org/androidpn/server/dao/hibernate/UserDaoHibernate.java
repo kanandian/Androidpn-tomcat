@@ -17,10 +17,13 @@
  */
 package org.androidpn.server.dao.hibernate;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import org.androidpn.server.dao.UserDao;
+import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.model.Collection;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.UserNotFoundException;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
@@ -73,6 +76,47 @@ public class UserDaoHibernate extends HibernateDaoSupport implements UserDao {
 		} else {
 			return (User) users.get(0);
 		}
+	}
+
+	@Override
+	public void addCollection(Collection collection) {
+		getHibernateTemplate().saveOrUpdate(collection);
+	}
+
+	@Override
+	public void removeCollection(String userName, long bussinessId) {
+		List<Collection> collectionList = getHibernateTemplate().find("from Collection c where c.userName = ? and c.bussinessId = ?", new Object[]{userName, bussinessId});
+		getHibernateTemplate().deleteAll(collectionList);
+	}
+
+	@Override
+	public List<Long> getCollectedBussinessesId(String userName) {
+		List<Collection> collectionList = getHibernateTemplate().find("from Collection c where c.userName = ?", userName);
+		List<Long> idlist = new ArrayList<Long>();
+		for (Collection collection : collectionList) {
+			idlist.add(collection.getBussinessId());
+		}
+
+		return idlist;
+	}
+
+	@Override
+	public List<Bussiness> getBussinessesByIds(List<Long> idlist) {
+		if (idlist == null || idlist.isEmpty()) {
+			return new ArrayList<Bussiness>();
+		}
+
+		StringBuilder buf = new StringBuilder();
+		buf.append("('").append(idlist.get(0)).append("'");
+
+		for (int i=1;i<idlist.size();i++) {
+			buf.append(",'").append(idlist.get(i).intValue()).append("'");
+		}
+		buf.append(")");
+
+		String query = "from Bussiness b where b.bussinessId in "+buf.toString();
+
+		return getHibernateTemplate().find("from Bussiness b where b.bussinessId in "+buf.toString());
 	}
 
 	// @SuppressWarnings("unchecked")

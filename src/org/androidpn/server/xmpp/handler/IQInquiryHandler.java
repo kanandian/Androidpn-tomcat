@@ -77,6 +77,9 @@ public class IQInquiryHandler extends IQHandler {
                 } else if ("orderdetail".equals(target)) {
                     InquiryHandler orderDetailInquiryHandler = new OrderDetailInquiryHandler();
                     reply = orderDetailInquiryHandler.handle(reply, title);
+                } else if ("collection".equals(target)) {
+                    InquiryHandler collectedBussinessInquiryHandler = new CollectedBussinessesInquiryHandler();
+                    reply = collectedBussinessInquiryHandler.handle(reply, title);
                 }
             }
         } else if (IQ.Type.set.equals(packet.getType())) {
@@ -90,9 +93,14 @@ public class IQInquiryHandler extends IQHandler {
                 String userName = query.elementText("username");
                 String content = query.elementText("content");
 
+                String status = query.elementText("status");
+
                 if ("comment".equals(target)) {
                     AdminHandler commentHandler = new CommentHandler(title, userName);
                     commentHandler.handle(title, content);
+                } else if ("collection".equals(target)) {
+                    AdminHandler adminHandler = new CollectionAdminHandler(status);
+                    adminHandler.handle(title, content);
                 }
             }
         }

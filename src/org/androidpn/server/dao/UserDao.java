@@ -20,6 +20,8 @@ package org.androidpn.server.dao;
 import java.util.Date;
 import java.util.List;
 
+import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.model.Collection;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.UserNotFoundException;
 
@@ -43,5 +45,13 @@ public interface UserDao {
     public List<User> getUsersFromCreatedDate(Date createDate);
 
     public User getUserByUsername(String username) throws UserNotFoundException;
+
+    public void addCollection(Collection collection);
+
+    public void removeCollection(String userName, long bussinessId);
+
+    public List<Long> getCollectedBussinessesId(String userName);
+
+    public List<Bussiness> getBussinessesByIds(List<Long> idlist);
 
 }

@@ -25,6 +25,8 @@ import javax.persistence.EntityExistsException;
 
 import org.androidpn.server.dao.UserDao;
 import org.androidpn.server.dao.UserPerferenceDao;
+import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.model.Collection;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.UserExistsException;
 import org.androidpn.server.service.UserNotFoundException;
@@ -184,5 +186,26 @@ public class UserServiceImpl implements UserService {
 
         return resultModel;
     }
+
+    @Override
+    public void addCollection(String userName, String bussinessId) {
+        Collection collection = new Collection();
+        collection.setUserName(userName);
+        collection.setBussinessId(Long.parseLong(bussinessId));
+        userDao.addCollection(collection);
+    }
+
+    @Override
+    public void removeCollection(String userName, String bussinessId) {
+        long bussinessID = Long.parseLong(bussinessId);
+        userDao.removeCollection(userName, bussinessID);
+    }
+
+    @Override
+    public List<Bussiness> getCollectedBussinesses(String userName) {
+        List<Long> idlist = userDao.getCollectedBussinessesId(userName);
+        return userDao.getBussinessesByIds(idlist);
+    }
+
 
 }

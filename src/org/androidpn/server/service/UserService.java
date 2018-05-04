@@ -20,6 +20,7 @@ package org.androidpn.server.service;
 import java.util.Date;
 import java.util.List;
 
+import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.model.User;
 import org.androidpn.server.util.ResultModel;
 
@@ -53,5 +54,11 @@ public interface UserService {
     public void addPerferences(String userName, String tag);
 
     public ResultModel updateUserInfo(String userName, String name, String mobile);
+
+    public void addCollection(String userName, String bussinessId);
+
+    public void removeCollection(String userName, String bussinessId);
+
+    public List<Bussiness> getCollectedBussinesses(String userName);
 
 }
