@@ -12,10 +12,15 @@
 				/index.do=filenameController
 				/user.do=userController
 				/session.do=sessionController
-				/notification.do=notificationController		
+				/notification.do=notificationController
+				/image.do=imageUploadController
 			</value>
 		</property>
 		<property name="order" value="1" />
+	</bean>
+
+	<bean id="imageUploadController" class="org.androidpn.server.console.controller.ImageUploadController">
+		<property name="methodNameResolver" ref="paramResolver" />
 	</bean>
 	
 	<bean id="userapiController" class="org.androidpn.server.console.api.UserApiController">

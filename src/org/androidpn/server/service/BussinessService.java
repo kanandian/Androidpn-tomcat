@@ -18,4 +18,6 @@ public interface BussinessService {
     public List<Bussiness> getBussinessesByTag(List<String> tagList);
 
     public List<Bussiness> getBussinessesByUserName(String userName);
+
+    public void updateImageForBussiness(String bussinessId, String imageURL);
 }

@@ -54,6 +54,16 @@ public class BussinessServiceImpl implements BussinessService {
         return bussinessDao.getBussinessesByUserName(userName);
     }
 
+    @Override
+    public void updateImageForBussiness(String bussinessId, String imageURL) {
+        long bussinessID = Long.parseLong(bussinessId);
+        Bussiness bussiness = bussinessDao.getBussiness(bussinessID);
+
+        bussiness.setImageURL(imageURL);
+
+        bussinessDao.saveBussiness(bussiness);
+    }
+
     public BussinessDao getBussinessDao() {
         return bussinessDao;
     }
