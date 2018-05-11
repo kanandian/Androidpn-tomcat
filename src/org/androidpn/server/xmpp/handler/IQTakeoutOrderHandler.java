@@ -5,6 +5,7 @@ import org.androidpn.server.model.TakeoutOrder;
 import org.androidpn.server.model.TakeoutOrderItem;
 import org.androidpn.server.service.*;
 import org.androidpn.server.util.ResultModel;
+import org.androidpn.server.util.TimeUtil;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.session.ClientSession;
 import org.androidpn.server.xmpp.session.Session;
@@ -31,13 +32,14 @@ public class IQTakeoutOrderHandler extends IQHandler {
     public IQTakeoutOrderHandler() {
         userService = ServiceLocator.getUserService();
         takeoutOrderService = ServiceLocator.getTakeoutOrderService();
-        probeResponse = DocumentHelper.createElement(QName.get("payment",
-                "androidpn:iq:payment"));
+
     }
 
     @Override
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
         IQ reply = null;
+        probeResponse = DocumentHelper.createElement(QName.get("payment",
+                "androidpn:iq:payment"));
 
         ClientSession session = sessionManager.getSession(packet.getFrom());
         if (session == null) {
@@ -70,6 +72,7 @@ public class IQTakeoutOrderHandler extends IQHandler {
                     reply = IQ.createResultIQ(packet);
 
                     TakeoutOrder takeoutOrder = new TakeoutOrder();
+                    takeoutOrder.setCreateTime(TimeUtil.getCurrentDateStr());
                     List<TakeoutOrderItem> takeoutOrderItemList = new ArrayList<TakeoutOrderItem>();
 
                     long orderId = new Date().getTime();
