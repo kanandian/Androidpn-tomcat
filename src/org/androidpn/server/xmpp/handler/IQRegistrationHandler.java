@@ -7,6 +7,7 @@ import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserExistsException;
 import org.androidpn.server.service.UserNotFoundException;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.ResultModel;
 import org.androidpn.server.xmpp.UnauthenticatedException;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.auth.AuthManager;
@@ -33,8 +34,6 @@ public class IQRegistrationHandler extends IQHandler {
      */
     public IQRegistrationHandler() {
         userService = ServiceLocator.getUserService();
-        probeResponse = DocumentHelper.createElement(QName.get("registeration",
-                NAMESPACE));
 //        probeResponse.addElement("username");
 //        probeResponse.addElement("password");
 //        probeResponse.addElement("email");
@@ -51,6 +50,8 @@ public class IQRegistrationHandler extends IQHandler {
      */
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
         IQ reply = null;
+        probeResponse = DocumentHelper.createElement(QName.get("admin",
+                "androidpn:admin:operation"));
 
         ClientSession session = sessionManager.getSession(packet.getFrom());
         if (session == null) {
@@ -87,6 +88,7 @@ public class IQRegistrationHandler extends IQHandler {
                     String name = query.elementText("name");
                     String email = query.elementText("email");
                     String mobile = query.elementText("mobile");
+                    String vcode = query.elementText("vcode");
 //                    String username = query.elementText("username");
 //                    String password = query.elementText("password");
 //                    String email = query.elementText("email");
@@ -95,34 +97,41 @@ public class IQRegistrationHandler extends IQHandler {
 //                    String localName = query.elementText("localName");
 //                    String localPassword = query.elementText("localPassword");
 
+                    ResultModel resultModel = new ResultModel();
+
+
                     if (userService.existUser(userName)) {
                         probeResponse.addElement("message").setText("用户名已存在");
                         reply = IQ.createResultIQ(packet);
                         reply.setChildElement(probeResponse);
                     } else {
 
-                        User user;
-                        if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
-                            user = userService.getUserByUsername(session.getUsername());
-                            if (user.getRealUser()) {
-                                user = new User();
+                        String currentVCode = (String) session.getAttributes("vcode");
+
+                        if (currentVCode == null) {
+                            resultModel.setErrcode(1);
+                            resultModel.setErrMessage("请先获取验证码");
+                        } else if (currentVCode.equals(vcode)){
+                            User user;
+                            if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
+                                user = userService.getUserByUsername(session.getUsername());
+                                if (user.getRealUser()) {
+                                    user = new User();
+                                }
+                            } else {
+                                throw new UserNotFoundException("User '" + session.getUsername() + "' not found");
                             }
-                        } else {
-                            throw new UserNotFoundException("User '" + session.getUsername() + "' not found");
-                        }
-                        user.setUsername(userName);
-                        user.setPassword(password);
-                        user.setName(name);
-                        user.setEmail(email);
-                        user.setMobile(mobile);
-                        user.setRealUser(true);
-                        userService.saveUser(user);
+                            user.setUsername(userName);
+                            user.setPassword(password);
+                            user.setName(name);
+                            user.setEmail(email);
+                            user.setMobile(mobile);
+                            user.setRealUser(true);
+                            userService.saveUser(user);
 
-                        JID from = session.getAddress();
-                        JID newFrom = new JID(userName, from.getDomain(), from.getResource());
-                        changeUserInfo(session, newFrom, password);
-
-                        reply = createResultIQ(packet, newFrom, user);
+                            JID from = session.getAddress();
+                            JID newFrom = new JID(userName, from.getDomain(), from.getResource());
+                            changeUserInfo(session, newFrom, password);
 
 //                    reply = IQ.createResultIQ(packet);
 //
@@ -131,6 +140,18 @@ public class IQRegistrationHandler extends IQHandler {
 //
 //                    reply.setChildElement(resp);
 //                    reply.setTo(newFrom);
+                        } else {
+                            resultModel.setErrcode(1);
+                            resultModel.setErrMessage("验证码不正确");
+                        }
+
+                        reply = IQ.createResultIQ(packet);
+
+                        probeResponse.addElement("errcode").setText(String.valueOf(resultModel.getErrcode()));
+                        probeResponse.addElement("errmessage").setText(resultModel.getErrMessage());
+                        probeResponse.addElement("action").setText("registration");
+
+                        reply.setChildElement(probeResponse);
                     }
 
 

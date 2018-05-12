@@ -27,11 +27,8 @@ public class IQInquiryHandler extends IQHandler {
 
     private UserService userService;
 
-    private Map<String, String> vcodeMap;
-
     public IQInquiryHandler () {
         userService = ServiceLocator.getUserService();
-        vcodeMap = new HashMap<String, String>();
     }
 
     @Override
@@ -127,7 +124,7 @@ public class IQInquiryHandler extends IQHandler {
                     }
                 } else if ("sendmessage".equals(target)) {
                     content = getRandNum(6);
-                    vcodeMap.put(userName, content);
+                    session.addAttributes("vcode", content);
 
                     AdminHandler sendMessageHandler = new SendMessageHandler();
                     ResultModel resultModel = sendMessageHandler.handle(title, content);

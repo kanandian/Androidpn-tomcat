@@ -27,6 +27,9 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.Presence;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /** 
  * This class represents a session between the server and a client.
  *
@@ -46,6 +49,8 @@ public class ClientSession extends Session {
 
     private Presence presence = null;
 
+    private Map<String, Object> attributes;
+
     /**
      * Constructor.
      * 
@@ -58,6 +63,7 @@ public class ClientSession extends Session {
         super(serverName, connection, streamID);
         presence = new Presence();
         presence.setType(Presence.Type.unavailable);
+        attributes = new HashMap<String, Object>();
     }
 
     /**
@@ -252,6 +258,18 @@ public class ClientSession extends Session {
     @Override
     public String toString() {
         return super.toString() + " presence: " + presence;
+    }
+
+    public void addAttributes(String key, Object value) {
+        attributes.put(key, value);
+    }
+
+    public void removeAttributes(String key) {
+        attributes.remove(key);
+    }
+
+    public Object getAttributes(String key) {
+        return attributes.get(key);
     }
 
 }
