@@ -17,14 +17,21 @@ import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.PacketError;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 public class IQInquiryHandler extends IQHandler {
 
     private static final String NAMESPACE = "androidpn:iq:inquiry";
 
     private UserService userService;
 
+    private Map<String, String> vcodeMap;
+
     public IQInquiryHandler () {
         userService = ServiceLocator.getUserService();
+        vcodeMap = new HashMap<String, String>();
     }
 
     @Override
@@ -118,6 +125,16 @@ public class IQInquiryHandler extends IQHandler {
                         InquiryHandler inquiryHandler = new TakeoutOrderInquiryHandler();
                         reply = inquiryHandler.handle(reply, "bussiness:"+userName);
                     }
+                } else if ("sendmessage".equals(target)) {
+                    content = getRandNum(6);
+                    vcodeMap.put(userName, content);
+
+                    AdminHandler sendMessageHandler = new SendMessageHandler();
+                    ResultModel resultModel = sendMessageHandler.handle(title, content);
+
+                    probeResponse.addElement("errcode").setText(String.valueOf(resultModel.getErrcode()));
+                    probeResponse.addElement("errmessage").setText(resultModel.getErrMessage());
+                    reply.setChildElement(probeResponse);
                 }
             }
 
@@ -131,6 +148,19 @@ public class IQInquiryHandler extends IQHandler {
             System.out.println();
         }
         return null;
+    }
+
+    public String getRandNum(int charCount) {
+        String charValue = "";
+        for (int i = 0; i < charCount; i++) {
+            char c = (char) (randomInt(0, 10) + '0');
+            charValue += String.valueOf(c);
+        }
+        return charValue;
+    }
+    public int randomInt(int from, int to) {
+        Random r = new Random();
+        return from + r.nextInt(to - from);
     }
 
     @Override
