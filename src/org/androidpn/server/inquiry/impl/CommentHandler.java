@@ -4,6 +4,7 @@ import org.androidpn.server.inquiry.AdminHandler;
 import org.androidpn.server.model.Comment;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
+import org.androidpn.server.util.ResultModel;
 import org.androidpn.server.util.TimeUtil;
 
 public class CommentHandler implements AdminHandler {
@@ -21,12 +22,16 @@ public class CommentHandler implements AdminHandler {
     }
 
     @Override
-    public void handle(String title, String content) {
+    public ResultModel handle(String title, String content) {
+        ResultModel resultModel = new ResultModel();
+
         Comment comment = new Comment();
         comment.setUserName(fromUserName);
         comment.setContent(content);
         comment.setCreateTime(TimeUtil.getCurrentDateStr());
 
         bussinessService.addComment(bussinessId, comment);
+
+        return resultModel;
     }
 }

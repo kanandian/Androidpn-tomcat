@@ -69,7 +69,7 @@ public class TakeoutOrderInquiryHandler implements InquiryHandler {
         item.addAttribute("note", takeoutOrder.getNote());
         item.addAttribute("totalprice", String.valueOf(takeoutOrder.getTotalPrice()));
         item.addAttribute("itemcount", String.valueOf(takeoutOrder.getTakeoutOrderItemList().size()));
-        item.addAttribute("orderStatus", String.valueOf(takeoutOrder.getOrderStatus()));
+        item.addAttribute("orderstatus", String.valueOf(takeoutOrder.getOrderStatus()));
         item.addAttribute("createtime", takeoutOrder.getCreateTime());
 
         if (takeoutOrder.getTakeoutOrderItemList().size() >= 1) {

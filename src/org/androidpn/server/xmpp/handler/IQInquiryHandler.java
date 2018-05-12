@@ -7,10 +7,13 @@ import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.ResultModel;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.session.ClientSession;
 import org.androidpn.server.xmpp.session.Session;
+import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
+import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.PacketError;
 
@@ -84,6 +87,8 @@ public class IQInquiryHandler extends IQHandler {
             }
         } else if (IQ.Type.set.equals(packet.getType())) {
             reply = IQ.createResultIQ(packet);
+            Element probeResponse = DocumentHelper.createElement(QName.get("admin",
+                    "androidpn:admin:operation"));
             if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
                 // TODO
                 Element query = packet.getChildElement();
@@ -101,8 +106,22 @@ public class IQInquiryHandler extends IQHandler {
                 } else if ("collection".equals(target)) {
                     AdminHandler adminHandler = new CollectionAdminHandler(status);
                     adminHandler.handle(title, content);
+                } else if ("orderstatus".equals(target)) {
+                    AdminHandler orderStatusHandler = new OrderStatusHandler();
+                    ResultModel resultModel = orderStatusHandler.handle(title, content);
+
+                    if (resultModel.getErrcode() == 1) {
+                        probeResponse.addElement("errcode").setText(String.valueOf(resultModel.getErrcode()));
+                        probeResponse.addElement("errmessage").setText(resultModel.getErrMessage());
+                        reply.setChildElement(probeResponse);
+                    } else {
+                        InquiryHandler inquiryHandler = new TakeoutOrderInquiryHandler();
+                        reply = inquiryHandler.handle(reply, "bussiness:"+userName);
+                    }
                 }
             }
+
+
         }
         // Send the response directly to the session
         if (reply != null) {

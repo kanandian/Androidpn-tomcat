@@ -4,6 +4,7 @@ import org.androidpn.server.inquiry.AdminHandler;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.ResultModel;
 
 public class CollectionAdminHandler implements AdminHandler {
 
@@ -16,11 +17,13 @@ public class CollectionAdminHandler implements AdminHandler {
     }
 
     @Override
-    public void handle(String title, String content) {
+    public ResultModel handle(String title, String content) {
+        ResultModel resultModel = new ResultModel();
         if (status == 1) {
             userService.addCollection(title, content);
         } else if (status == 0){
             userService.removeCollection(title, content);
         }
+        return resultModel;
     }
 }

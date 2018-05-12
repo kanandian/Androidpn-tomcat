@@ -1,7 +1,9 @@
 package org.androidpn.server.inquiry;
 
+import org.androidpn.server.util.ResultModel;
+
 public interface AdminHandler {
 
-    public void handle(String title, String content);
+    public ResultModel handle(String title, String content);
 
 }
