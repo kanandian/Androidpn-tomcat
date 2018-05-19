@@ -6,11 +6,52 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4baf44e5-ac90-45e3-9f1f-0153507a98c7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="7b1f6783-e1ab-4938-b507-37679e0525e5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-pool2-2.4.2.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/jedis-2.9.0.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-core-0.9.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-integration-0.9.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-math-0.9.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/androidpn/server/util/Constant.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/androidpn/server/util/MahoutUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/androidpn/server/util/RedisUtil.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/qcloudsms_1_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Androidpn-tomcat.iml" afterPath="$PROJECT_DIR$/Androidpn-tomcat.iml" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-pool-1.3.jar" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-pool-1.3.jar" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/META-INF/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/dao/BussinessDao.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/dao/BussinessDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/model/User.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/model/User.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/BussinessService.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/BussinessService.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/UserService.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/impl/BussinessServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/impl/BussinessServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQInquiryHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQInquiryHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/net/XmppIoHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/net/XmppIoHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/session/ClientSession.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/session/ClientSession.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/lib/commons-pool-1.3.jar" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/lib/commons-pool-1.3.jar" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/BussinessDao.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/BussinessDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/model/User.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/BussinessService.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/BussinessService.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/UserService.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/BussinessServiceImpl.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/BussinessServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/net/XmppIoHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/net/XmppIoHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,35 +61,174 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="dataSource" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SendMessageHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SendMessageHandler.java">
+      <file leaf-file-name="FileDataModel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-core-0.9.jar!/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#758#766#0" expanded="true" />
+                <marker date="1526623394000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1526623394000" expanded="false" signature="166:1523" ph="..." />
+                <marker date="1526623394000" expanded="true" signature="2295:2341" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="2425:2487" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="2593:2670" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="2799:4895" ph="{...}" />
+                <marker date="1526623394000" expanded="false" signature="4926:4937" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="4958:4964" ph=" }" />
+                <marker date="1526623394000" expanded="true" signature="4994:5304" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="5362:8244" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="8320:9328" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="8679:8795" ph="{...}" />
+                <marker date="1526623394000" expanded="false" signature="8725:8744" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="8771:8785" ph=" }" />
+                <marker date="1526623394000" expanded="true" signature="9376:9732" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="9789:10166" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="10329:10843" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="10976:16830" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="16987:17494" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="17621:19144" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="19269:19702" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="19813:19992" ph="{...}" />
+                <marker date="1526623394000" expanded="false" signature="20047:20058" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="20087:20093" ph=" }" />
+                <marker date="1526623394000" expanded="false" signature="20148:20159" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="20188:20194" ph=" }" />
+                <marker date="1526623394000" expanded="false" signature="20252:20263" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="20292:20298" ph=" }" />
+                <marker date="1526623394000" expanded="true" signature="20368:20418" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="20505:20573" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="20650:20714" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="20784:20834" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="20920:20987" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21073:21145" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21229:21300" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21353:21404" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21457:21508" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21589:21663" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21759:21843" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="21936:22003" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="22086:22149" ph="{...}" />
+                <marker date="1526623394000" expanded="true" signature="22217:22504" ph="{...}" />
+                <marker date="1526623394000" expanded="false" signature="22546:22557" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="22600:22606" ph=" }" />
+                <marker date="1526623394000" expanded="false" signature="22643:22654" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="22694:22700" ph=" }" />
+                <marker date="1526623394000" expanded="false" signature="22737:22748" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="22788:22794" ph=" }" />
+                <marker date="1526623394000" expanded="false" signature="22824:22835" ph=" { " />
+                <marker date="1526623394000" expanded="false" signature="22890:22896" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultIoFilterChain.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mina-core-2.0.0-RC1.jar!/org/apache/mina/core/filterchain/DefaultIoFilterChain.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="697" column="28" lean-forward="false" selection-start-line="697" selection-start-column="28" selection-end-line="697" selection-end-column="28" />
+              <folding>
+                <marker date="1521884882821" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1521884882821" expanded="false" signature="156:796" ph="..." />
+                <marker date="1521884882821" expanded="true" signature="1358:1898" ph="{...}" />
+                <marker date="1521884882821" expanded="false" signature="1933:1944" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="1964:1970" ph=" }" />
+                <marker date="1521884882821" expanded="true" signature="2011:2107" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="2152:2377" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="2443:2698" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="2737:2832" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="2896:2997" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="3048:3147" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="3202:3303" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="3379:3484" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="3554:3642" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="3711:3809" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="3897:4075" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="4162:4330" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="4385:4530" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="4585:4919" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="4999:5418" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="5494:5683" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="5762:6106" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="6210:6639" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="6695:7153" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="7253:8070" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="8138:8776" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="8845:9114" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="9189:9456" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="9501:9669" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="9708:9804" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="9878:10153" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="10191:10286" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="10359:10633" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="10671:10925" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="10998:11272" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="11325:11502" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="11592:11872" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="11926:12197" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="12288:12573" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="12629:12965" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="13063:13349" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="13404:13508" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="13600:14177" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="14238:14349" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="14451:14794" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="14830:14927" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="15002:15274" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="15308:15520" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="15562:15774" ph="{...}" />
+                <marker date="1521884882821" expanded="false" signature="15816:15827" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="15862:15868" ph=" }" />
+                <marker date="1521884882821" expanded="false" signature="15914:15925" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="15962:15968" ph=" }" />
+                <marker date="1521884882821" expanded="false" signature="16035:16046" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="16087:16093" ph=" }" />
+                <marker date="1521884882821" expanded="true" signature="16124:16763" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="16810:22066" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="17182:20197" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="17603:20172" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="17671:17856" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="17923:18107" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="18174:18358" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="18442:18632" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="18718:18911" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="18996:19191" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="19283:19479" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="19571:19771" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="19836:20022" ph="{...}" />
+                <marker date="1521884882821" expanded="false" signature="20068:20095" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="20132:20154" ph=" }" />
+                <marker date="1521884882821" expanded="false" signature="20230:20245" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="20262:20272" ph=" }" />
+                <marker date="1521884882821" expanded="false" signature="20309:20324" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="20343:20353" ph=" }" />
+                <marker date="1521884882821" expanded="true" signature="20403:20579" ph="{...}" />
+                <marker date="1521884882821" expanded="false" signature="20622:20637" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="20660:20670" ph=" }" />
+                <marker date="1521884882821" expanded="true" signature="20705:21519" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="21580:21669" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="21731:21821" ph="{...}" />
+                <marker date="1521884882821" expanded="false" signature="21851:21866" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="21915:21925" ph=" }" />
+                <marker date="1521884882821" expanded="false" signature="21974:21989" ph=" { " />
+                <marker date="1521884882821" expanded="false" signature="22050:22060" ph=" }" />
+                <marker date="1521884882821" expanded="true" signature="22128:25898" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="22159:22170" ph="{}" />
+                <marker date="1521884882821" expanded="true" signature="22266:22994" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="23089:23157" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="23252:24025" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="24137:24211" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="24325:24643" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="24756:25340" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="25460:25553" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="25673:25743" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="25836:25892" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="25953:27056" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="25984:25995" ph="{}" />
+                <marker date="1521884882821" expanded="true" signature="26115:26854" ph="{...}" />
+                <marker date="1521884882821" expanded="true" signature="26947:27050" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -57,90 +237,72 @@
       <file leaf-file-name="IQInquiryHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-128">
-              <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-              <folding>
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateUserInfoHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/UpdateUserInfoHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="76" selection-end-column="96" />
+            <state relative-caret-position="690">
+              <caret line="66" column="91" lean-forward="false" selection-start-line="66" selection-start-column="91" selection-end-line="66" selection-end-column="91" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IQRegistrationHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserApiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/api/UserApiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageUploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="707">
+              <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQLoginHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+              <folding>
+                <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#5003#5004#0" expanded="true" />
+                <element signature="e#5035#5036#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQRegistrationHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="126" column="49" lean-forward="true" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+            <state relative-caret-position="1545">
+              <caret line="123" column="51" lean-forward="false" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="271" column="35" lean-forward="false" selection-start-line="271" selection-start-column="35" selection-end-line="271" selection-end-column="35" />
-              <folding>
-                <element signature="e#8677#8678#0" expanded="true" />
-                <element signature="e#8719#8720#0" expanded="true" />
-                <element signature="e#8767#8768#0" expanded="true" />
-                <element signature="e#8805#8806#0" expanded="true" />
-                <element signature="e#8852#8853#0" expanded="true" />
-                <element signature="e#8894#8895#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Jsp File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>qzf</find>
-      <find>bindPhone</find>
-      <find>Long.value</find>
-      <find>addItem</find>
-      <find>addItem(Bussiness bussiness)</find>
-      <find>payment</find>
-      <find>androidpn:order:takeout</find>
-      <find>androidpn:iq:payment</find>
-      <find>menu_food</find>
-      <find>probeResponse</find>
-      <find>name</find>
-      <find>getPrice</find>
-      <find>price</find>
-      <find>cfg</find>
-      <find>spring-config</find>
-      <find>dispatcher-servlet</find>
-      <find>form</find>
-      <find>.jsp</find>
-      <find>orderstatus</find>
-      <find>time</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>totalPrice</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -153,57 +315,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/FoodMenuDao.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/FoodMenuDaoHibernate.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/FoodMenuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/TakeoutMenuManageHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/TakeoutOrder.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CommentInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/util/TimeUtil.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/UpdateUserInfoHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/BussinessDao.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/util/MahoutUtil.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/BussinessDaoHibernate.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Comment.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java" />
-        <option value="$PROJECT_DIR$/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Collection.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/OrderDetailInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/User.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CollectedBussinessesInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/UserDaoHibernate.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/WebRoot/notification/image.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/image.jsp" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/BussinessService.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/BussinessServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQTakeoutOrderHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/OrderStatusHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/TakeoutOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/TakeoutOrderService.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/AdminHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CollectionAdminHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CommentHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ManageOrderStatusHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/OrderStatusManageHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/OrderStatusHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/TakeoutOrderInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SendMessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/console/api/UserApiController.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java" />
       </list>
     </option>
   </component>
@@ -230,7 +351,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings2.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -272,7 +393,7 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -285,108 +406,21 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="inquiry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="inquiry" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Androidpn-tomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Androidpn-tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="inqui&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;imageu&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/console/controller/ImageUploadController.java&#10;dis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;userdao&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/dao/hibernate/UserDaoHibernate.java&#10;inquiryhandler&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/org/androidpn/server/inquiry/InquiryHandler.class&#10;userservi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/UserService.java&#10;cfg&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/hibernate.cfg.xml&#10;comment&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Comment.java&#10;bussiness&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;buss&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/dao/BussinessDao.java&#10;spring&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/spring-config.xml&#10;spr&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/spring-config.xml&#10;takeoutorderser&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/TakeoutOrderService.java&#10;takeoutorderdao&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/dao/TakeoutOrderDao.java&#10;takeout&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/TakeoutOrder.java&#10;serviceLo&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/ServiceLocator.java&#10;takeoutorder&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/impl/TakeoutOrderServiceImpl.java&#10;sprign&#9;null&#9;null&#10;serviceloca&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/ServiceLocator.java&#10;Comment&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Comment.java" />
+    <property name="SearchEverywhereHistoryKey" value="userapi&#9;PSI&#9;JAVA://org.androidpn.server.console.api.UserApiController&#10;userservi&#9;PSI&#9;JAVA://org.androidpn.server.service.UserService&#10;user&#9;PSI&#9;JAVA://org.androidpn.server.model.User&#10;image&#9;PSI&#9;JAVA://org.androidpn.server.console.controller.ImageUploadController" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/WebRoot/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -477,7 +511,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="dzdp-server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.24" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.24" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -488,9 +522,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Androidpn-tomcat" />
-        <option name="HTTP_PORT" value="8888" />
-        <option name="JNDI_PORT" value="1088" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Androidpn-tomcat_4" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -499,7 +531,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49354" />
+        <option name="DEBUG_PORT" value="55130" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -567,207 +599,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4baf44e5-ac90-45e3-9f1f-0153507a98c7" name="Default" comment="" />
-      <created>1521896378637</created>
+      <changelist id="7b1f6783-e1ab-4938-b507-37679e0525e5" name="Default" comment="" />
+      <created>1526698029505</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1521896378637</updated>
-      <workItem from="1521896380282" duration="912000" />
-      <workItem from="1522065269561" duration="1427000" />
-      <workItem from="1522396667657" duration="270000" />
-      <workItem from="1522396950490" duration="424000" />
-      <workItem from="1522736224839" duration="5098000" />
-      <workItem from="1522804710406" duration="4243000" />
-      <workItem from="1522810825797" duration="12695000" />
-      <workItem from="1523150364373" duration="9843000" />
-      <workItem from="1523237473489" duration="4712000" />
-      <workItem from="1523279840703" duration="541000" />
-      <workItem from="1523325060338" duration="5114000" />
-      <workItem from="1523933013193" duration="2669000" />
-      <workItem from="1524124015407" duration="2398000" />
-      <workItem from="1524205529451" duration="530000" />
-      <workItem from="1524445749651" duration="1401000" />
-      <workItem from="1524447324007" duration="92000" />
-      <workItem from="1524447664714" duration="737000" />
-      <workItem from="1524453712771" duration="17518000" />
-      <workItem from="1524618792736" duration="5424000" />
-      <workItem from="1524645586878" duration="3123000" />
-      <workItem from="1524704453552" duration="7805000" />
-      <workItem from="1524725657351" duration="15803000" />
-      <workItem from="1524811775555" duration="80000" />
-      <workItem from="1524812149421" duration="5279000" />
-      <workItem from="1524824947671" duration="1338000" />
-      <workItem from="1524878302923" duration="4004000" />
-      <workItem from="1524893989122" duration="7603000" />
-      <workItem from="1525223162941" duration="10800000" />
-      <workItem from="1525264619912" duration="1490000" />
-      <workItem from="1525309501728" duration="11374000" />
-      <workItem from="1525351044177" duration="2037000" />
-      <workItem from="1525396059160" duration="14499000" />
-      <workItem from="1525829459332" duration="13819000" />
-      <workItem from="1526003221656" duration="16194000" />
+      <updated>1526698029505</updated>
+      <workItem from="1526698031029" duration="11913000" />
+      <workItem from="1526731379998" duration="453000" />
+      <workItem from="1526732012091" duration="3273000" />
     </task>
-    <task id="LOCAL-00001" summary="修改">
-      <created>1522805393311</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1522805393311</updated>
-    </task>
-    <task id="LOCAL-00002" summary="增加评论功能（未完成）">
-      <created>1522836106200</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1522836106200</updated>
-    </task>
-    <task id="LOCAL-00003" summary="评论功能完善">
-      <created>1523156286572</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1523156286572</updated>
-    </task>
-    <task id="LOCAL-00004" summary="主页推荐商家">
-      <created>1523173741660</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1523173741661</updated>
-    </task>
-    <task id="LOCAL-00005" summary="商家添加店铺">
-      <created>1523330533057</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1523330533057</updated>
-    </task>
-    <task id="LOCAL-00006" summary="用户关联商家">
-      <created>1523944071458</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1523944071458</updated>
-    </task>
-    <task id="LOCAL-00007" summary="添加商家、外卖菜单（未完成，先保存一下）">
-      <created>1524477006841</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1524477006841</updated>
-    </task>
-    <task id="LOCAL-00008" summary="外卖点餐">
-      <created>1524561034823</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1524561034823</updated>
-    </task>
-    <task id="LOCAL-00009" summary="外卖点餐">
-      <created>1524565303375</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1524565303375</updated>
-    </task>
-    <task id="LOCAL-00010" summary="外卖点餐">
-      <created>1524737614930</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1524737614930</updated>
-    </task>
-    <task id="LOCAL-00011" summary="订单列表">
-      <created>1524821207025</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1524821207025</updated>
-    </task>
-    <task id="LOCAL-00012" summary="我的店铺">
-      <created>1524881050261</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1524881050261</updated>
-    </task>
-    <task id="LOCAL-00013" summary="添加店铺">
-      <created>1524900963010</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1524900963010</updated>
-    </task>
-    <task id="LOCAL-00014" summary="删除菜单项">
-      <created>1524909454146</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1524909454146</updated>
-    </task>
-    <task id="LOCAL-00015" summary="订单详情">
-      <created>1525270107323</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1525270107323</updated>
-    </task>
-    <task id="LOCAL-00016" summary="优化">
-      <created>1525396842872</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1525396842872</updated>
-    </task>
-    <task id="LOCAL-00017" summary="评论功能完善">
-      <created>1525404850052</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1525404850052</updated>
-    </task>
-    <task id="LOCAL-00018" summary="上传图片">
-      <created>1525953712840</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1525953712840</updated>
-    </task>
-    <task id="LOCAL-00019" summary="bug与完善">
-      <created>1526003812146</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1526003812146</updated>
-    </task>
-    <task id="LOCAL-00020" summary="订单状态管理">
-      <created>1526094175818</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1526094175818</updated>
-    </task>
-    <task id="LOCAL-00021" summary="发送验证码">
-      <created>1526110406231</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1526110406231</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191526000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="15639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -775,36 +619,36 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30402932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39918116" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -812,521 +656,823 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39918116" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3003663" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改" />
-    <MESSAGE value="增加评论功能（未完成）" />
-    <MESSAGE value="主页推荐商家" />
-    <MESSAGE value="商家添加店铺" />
-    <MESSAGE value="用户关联商家" />
-    <MESSAGE value="添加商家、外卖菜单（未完成，先保存一下）" />
-    <MESSAGE value="外卖点餐" />
-    <MESSAGE value="订单列表" />
-    <MESSAGE value="我的店铺" />
-    <MESSAGE value="添加店铺" />
-    <MESSAGE value="删除菜单项" />
-    <MESSAGE value="订单详情" />
-    <MESSAGE value="优化" />
-    <MESSAGE value="评论功能完善" />
-    <MESSAGE value="上传图片" />
-    <MESSAGE value="bug与完善" />
-    <MESSAGE value="订单状态管理" />
-    <MESSAGE value="发送验证码" />
-    <option name="LAST_COMMIT_MESSAGE" value="发送验证码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/UpdateUserInfoHandler.java</url>
-          <line>67</line>
+          <url>file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java</url>
+          <line>38</line>
           <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="68" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="69" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/auth/AuthManager.java">
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-core-0.9.jar!/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="125" column="29" lean-forward="false" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/codec/XmppEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/codec/XmppDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/presence/PresenceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/ssl/SSLKeyManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/package.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/XmppServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/PacketRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/SessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-webmvc-2.5.6.jar!/org/springframework/web/servlet/mvc/multiaction/MultiActionController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DemoAndroidpn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-webmvc-2.5.6.jar!/org/springframework/web/servlet/mvc/multiaction/ParameterMethodNameResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="90" column="72" lean-forward="true" selection-start-line="90" selection-start-column="72" selection-end-line="90" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/BussinessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="1725">
+          <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1526623394000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1526623394000" expanded="false" signature="166:1523" ph="..." />
+            <marker date="1526623394000" expanded="true" signature="2295:2341" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2425:2487" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2593:2670" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2799:4895" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="4926:4937" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="4958:4964" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="4994:5304" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="5362:8244" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="8320:9328" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="8679:8795" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="8725:8744" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="8771:8785" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="9376:9732" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="9789:10166" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="10329:10843" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="10976:16830" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="16987:17494" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="17621:19144" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="19269:19702" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="19813:19992" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="20047:20058" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20087:20093" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="20148:20159" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20188:20194" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="20252:20263" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20292:20298" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="20368:20418" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20505:20573" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20650:20714" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20784:20834" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20920:20987" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21073:21145" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21229:21300" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21353:21404" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21457:21508" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21589:21663" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21759:21843" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21936:22003" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="22086:22149" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="22217:22504" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="22546:22557" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22600:22606" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22643:22654" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22694:22700" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22737:22748" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22788:22794" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22824:22835" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22890:22896" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java">
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mina-core-2.0.0-RC1.jar!/org/apache/mina/core/filterchain/DefaultIoFilterChain.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/image.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/TakeoutOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQTakeoutOrderHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        <state relative-caret-position="9885">
+          <caret line="697" column="28" lean-forward="false" selection-start-line="697" selection-start-column="28" selection-end-line="697" selection-end-column="28" />
           <folding>
-            <element signature="e#2917#2935#0" expanded="false" />
+            <marker date="1521884882821" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521884882821" expanded="false" signature="156:796" ph="..." />
+            <marker date="1521884882821" expanded="true" signature="1358:1898" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="1933:1944" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="1964:1970" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="2011:2107" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2152:2377" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2443:2698" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2737:2832" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2896:2997" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3048:3147" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3202:3303" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3379:3484" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3554:3642" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3711:3809" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3897:4075" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4162:4330" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4385:4530" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4585:4919" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4999:5418" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="5494:5683" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="5762:6106" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="6210:6639" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="6695:7153" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="7253:8070" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="8138:8776" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="8845:9114" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9189:9456" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9501:9669" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9708:9804" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9878:10153" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10191:10286" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10359:10633" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10671:10925" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10998:11272" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11325:11502" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11592:11872" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11926:12197" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="12288:12573" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="12629:12965" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13063:13349" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13404:13508" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13600:14177" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14238:14349" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14451:14794" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14830:14927" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15002:15274" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15308:15520" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15562:15774" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="15816:15827" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="15862:15868" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="15914:15925" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="15962:15968" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="16035:16046" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="16087:16093" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="16124:16763" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="16810:22066" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17182:20197" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17603:20172" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17671:17856" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17923:18107" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18174:18358" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18442:18632" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18718:18911" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18996:19191" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19283:19479" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19571:19771" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19836:20022" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="20068:20095" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20132:20154" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="20230:20245" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20262:20272" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="20309:20324" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20343:20353" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="20403:20579" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="20622:20637" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20660:20670" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="20705:21519" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="21580:21669" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="21731:21821" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="21851:21866" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="21915:21925" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="21974:21989" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="22050:22060" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="22128:25898" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="22159:22170" ph="{}" />
+            <marker date="1521884882821" expanded="true" signature="22266:22994" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="23089:23157" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="23252:24025" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24137:24211" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24325:24643" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24756:25340" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25460:25553" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25673:25743" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25836:25892" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25953:27056" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25984:25995" ph="{}" />
+            <marker date="1521884882821" expanded="true" signature="26115:26854" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="26947:27050" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="61" column="52" lean-forward="false" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/notification/image.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/FoodMenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/BussinessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="77" lean-forward="false" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/FoodMenuHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CommentHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/OrderDetailInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/InfoInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/HolderInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CollectionAdminHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/AdminHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ManageOrderStatusHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/OrderStatusManageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CollectedBussinessesInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/TakeoutMenuManageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/TakeoutOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/OrderStatusHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/TakeoutOrderInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/TakeoutOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/CommentInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="690">
+          <caret line="66" column="91" lean-forward="true" selection-start-line="66" selection-start-column="91" selection-end-line="66" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="1020">
+          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/qcloudsms-1.0.2.jar!/com/github/qcloudsms/SmsSingleSender.class">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/util/ResultModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SendMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="1065">
+          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#758#766#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#5003#5004#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/ClientSession.java">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="271" column="35" lean-forward="false" selection-start-line="271" selection-start-column="35" selection-end-line="271" selection-end-column="35" />
+        <state relative-caret-position="690">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="123" column="51" lean-forward="false" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/api/UserApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <element signature="e#8677#8678#0" expanded="true" />
-            <element signature="e#8719#8720#0" expanded="true" />
-            <element signature="e#8767#8768#0" expanded="true" />
-            <element signature="e#8805#8806#0" expanded="true" />
-            <element signature="e#8852#8853#0" expanded="true" />
-            <element signature="e#8894#8895#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/UpdateUserInfoHandler.java">
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-core-0.9.jar!/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="76" selection-end-column="96" />
-          <folding />
+        <state relative-caret-position="1725">
+          <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+          <folding>
+            <marker date="1526623394000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1526623394000" expanded="false" signature="166:1523" ph="..." />
+            <marker date="1526623394000" expanded="true" signature="2295:2341" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2425:2487" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2593:2670" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2799:4895" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="4926:4937" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="4958:4964" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="4994:5304" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="5362:8244" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="8320:9328" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="8679:8795" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="8725:8744" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="8771:8785" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="9376:9732" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="9789:10166" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="10329:10843" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="10976:16830" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="16987:17494" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="17621:19144" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="19269:19702" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="19813:19992" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="20047:20058" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20087:20093" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="20148:20159" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20188:20194" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="20252:20263" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20292:20298" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="20368:20418" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20505:20573" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20650:20714" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20784:20834" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20920:20987" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21073:21145" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21229:21300" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21353:21404" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21457:21508" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21589:21663" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21759:21843" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21936:22003" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="22086:22149" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="22217:22504" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="22546:22557" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22600:22606" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22643:22654" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22694:22700" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22737:22748" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22788:22794" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22824:22835" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22890:22896" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mina-core-2.0.0-RC1.jar!/org/apache/mina/core/filterchain/DefaultIoFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9885">
+          <caret line="697" column="28" lean-forward="false" selection-start-line="697" selection-start-column="28" selection-end-line="697" selection-end-column="28" />
+          <folding>
+            <marker date="1521884882821" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521884882821" expanded="false" signature="156:796" ph="..." />
+            <marker date="1521884882821" expanded="true" signature="1358:1898" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="1933:1944" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="1964:1970" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="2011:2107" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2152:2377" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2443:2698" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2737:2832" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2896:2997" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3048:3147" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3202:3303" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3379:3484" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3554:3642" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3711:3809" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3897:4075" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4162:4330" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4385:4530" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4585:4919" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4999:5418" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="5494:5683" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="5762:6106" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="6210:6639" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="6695:7153" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="7253:8070" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="8138:8776" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="8845:9114" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9189:9456" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9501:9669" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9708:9804" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9878:10153" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10191:10286" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10359:10633" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10671:10925" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10998:11272" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11325:11502" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11592:11872" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11926:12197" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="12288:12573" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="12629:12965" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13063:13349" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13404:13508" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13600:14177" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14238:14349" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14451:14794" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14830:14927" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15002:15274" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15308:15520" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15562:15774" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="15816:15827" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="15862:15868" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="15914:15925" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="15962:15968" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="16035:16046" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="16087:16093" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="16124:16763" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="16810:22066" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17182:20197" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17603:20172" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17671:17856" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17923:18107" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18174:18358" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18442:18632" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18718:18911" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18996:19191" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19283:19479" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19571:19771" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19836:20022" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="20068:20095" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20132:20154" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="20230:20245" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20262:20272" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="20309:20324" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20343:20353" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="20403:20579" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="20622:20637" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20660:20670" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="20705:21519" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="21580:21669" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="21731:21821" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="21851:21866" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="21915:21925" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="21974:21989" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="22050:22060" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="22128:25898" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="22159:22170" ph="{}" />
+            <marker date="1521884882821" expanded="true" signature="22266:22994" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="23089:23157" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="23252:24025" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24137:24211" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24325:24643" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24756:25340" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25460:25553" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25673:25743" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25836:25892" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25953:27056" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25984:25995" ph="{}" />
+            <marker date="1521884882821" expanded="true" signature="26115:26854" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="26947:27050" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-128">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="123" column="51" lean-forward="false" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="50" column="71" lean-forward="true" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
           <folding>
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#5003#5004#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-core-0.9.jar!/org/apache/mahout/cf/taste/impl/model/AbstractDataModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mina-core-2.0.0-RC1.jar!/org/apache/mina/filter/codec/ProtocolCodecFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/router/IQRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/util/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="554" column="18" lean-forward="false" selection-start-line="554" selection-start-column="18" selection-end-line="554" selection-end-column="18" />
+          <folding>
+            <element signature="e#23018#23019#0" expanded="false" />
+            <element signature="e#23057#23058#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/BussinessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/util/MahoutUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mahout-core-0.9.jar!/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+          <folding>
+            <marker date="1526623394000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1526623394000" expanded="false" signature="166:1523" ph="..." />
+            <marker date="1526623394000" expanded="true" signature="2295:2341" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2425:2487" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2593:2670" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="2799:4895" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="4926:4937" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="4958:4964" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="4994:5304" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="5362:8244" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="8320:9328" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="8679:8795" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="8725:8744" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="8771:8785" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="9376:9732" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="9789:10166" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="10329:10843" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="10976:16830" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="16987:17494" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="17621:19144" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="19269:19702" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="19813:19992" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="20047:20058" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20087:20093" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="20148:20159" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20188:20194" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="20252:20263" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="20292:20298" ph=" }" />
+            <marker date="1526623394000" expanded="true" signature="20368:20418" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20505:20573" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20650:20714" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20784:20834" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="20920:20987" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21073:21145" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21229:21300" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21353:21404" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21457:21508" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21589:21663" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21759:21843" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="21936:22003" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="22086:22149" ph="{...}" />
+            <marker date="1526623394000" expanded="true" signature="22217:22504" ph="{...}" />
+            <marker date="1526623394000" expanded="false" signature="22546:22557" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22600:22606" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22643:22654" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22694:22700" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22737:22748" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22788:22794" ph=" }" />
+            <marker date="1526623394000" expanded="false" signature="22824:22835" ph=" { " />
+            <marker date="1526623394000" expanded="false" signature="22890:22896" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="126" column="49" lean-forward="true" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+        <state relative-caret-position="1545">
+          <caret line="123" column="51" lean-forward="false" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="216" column="35" lean-forward="true" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="63" column="69" lean-forward="false" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="66" column="91" lean-forward="false" selection-start-line="66" selection-start-column="91" selection-end-line="66" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/api/UserApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="149" column="19" lean-forward="false" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
+          <folding>
+            <element signature="e#3576#3577#0" expanded="false" />
+            <element signature="e#3609#3610#0" expanded="false" />
+            <element signature="e#3730#3731#0" expanded="false" />
+            <element signature="e#3761#3762#0" expanded="false" />
+            <element signature="e#3809#3810#0" expanded="false" />
+            <element signature="e#3849#3850#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/ImageUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mina-core-2.0.0-RC1.jar!/org/apache/mina/core/filterchain/DefaultIoFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="697" column="28" lean-forward="false" selection-start-line="697" selection-start-column="28" selection-end-line="697" selection-end-column="28" />
+          <folding>
+            <marker date="1521884882821" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521884882821" expanded="false" signature="156:796" ph="..." />
+            <marker date="1521884882821" expanded="true" signature="1358:1898" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="1933:1944" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="1964:1970" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="2011:2107" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2152:2377" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2443:2698" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2737:2832" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="2896:2997" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3048:3147" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3202:3303" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3379:3484" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3554:3642" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3711:3809" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="3897:4075" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4162:4330" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4385:4530" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4585:4919" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="4999:5418" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="5494:5683" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="5762:6106" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="6210:6639" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="6695:7153" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="7253:8070" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="8138:8776" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="8845:9114" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9189:9456" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9501:9669" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9708:9804" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="9878:10153" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10191:10286" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10359:10633" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10671:10925" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="10998:11272" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11325:11502" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11592:11872" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="11926:12197" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="12288:12573" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="12629:12965" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13063:13349" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13404:13508" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="13600:14177" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14238:14349" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14451:14794" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="14830:14927" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15002:15274" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15308:15520" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="15562:15774" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="15816:15827" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="15862:15868" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="15914:15925" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="15962:15968" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="16035:16046" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="16087:16093" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="16124:16763" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="16810:22066" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17182:20197" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17603:20172" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17671:17856" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="17923:18107" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18174:18358" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18442:18632" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18718:18911" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="18996:19191" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19283:19479" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19571:19771" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="19836:20022" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="20068:20095" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20132:20154" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="20230:20245" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20262:20272" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="20309:20324" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20343:20353" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="20403:20579" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="20622:20637" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="20660:20670" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="20705:21519" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="21580:21669" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="21731:21821" ph="{...}" />
+            <marker date="1521884882821" expanded="false" signature="21851:21866" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="21915:21925" ph=" }" />
+            <marker date="1521884882821" expanded="false" signature="21974:21989" ph=" { " />
+            <marker date="1521884882821" expanded="false" signature="22050:22060" ph=" }" />
+            <marker date="1521884882821" expanded="true" signature="22128:25898" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="22159:22170" ph="{}" />
+            <marker date="1521884882821" expanded="true" signature="22266:22994" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="23089:23157" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="23252:24025" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24137:24211" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24325:24643" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="24756:25340" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25460:25553" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25673:25743" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25836:25892" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25953:27056" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="25984:25995" ph="{}" />
+            <marker date="1521884882821" expanded="true" signature="26115:26854" ph="{...}" />
+            <marker date="1521884882821" expanded="true" signature="26947:27050" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#5003#5004#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

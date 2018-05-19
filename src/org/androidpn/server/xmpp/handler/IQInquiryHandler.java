@@ -7,6 +7,7 @@ import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.MahoutUtil;
 import org.androidpn.server.util.ResultModel;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.session.ClientSession;
@@ -29,6 +30,8 @@ public class IQInquiryHandler extends IQHandler {
 
     public IQInquiryHandler () {
         userService = ServiceLocator.getUserService();
+//        MahoutUtil mahoutUtil = MahoutUtil.getInstance();
+//        mahoutUtil.createNewDataSet();
     }
 
     @Override

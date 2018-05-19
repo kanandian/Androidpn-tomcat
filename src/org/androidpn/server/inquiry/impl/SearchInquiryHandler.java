@@ -25,7 +25,7 @@ public class SearchInquiryHandler implements InquiryHandler {
 
     @Override
     public IQ handle(IQ reply, String title) {
-        probeResponse = DocumentHelper.createElement(QName.get("search",
+        probeResponse = DocumentHelper.createElement(QName.get("activity",
                 NAMESPACE));
 
         List<Bussiness> bussinessList = bussinessService.getBussinesses();

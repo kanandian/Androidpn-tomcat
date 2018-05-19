@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="resources:hibernate.cfg.xml/Hibernate" uuid="1807490d-14d7-4334-917e-59677e82078f">
+    <data-source source="LOCAL" name="resources:hibernate.cfg.xml/Hibernate" uuid="4c3bc230-91b5-4456-87ca-ddb857f1c80f">
       <synchronize>true</synchronize>
       <imported>true</imported>
       <configured-by-url>true</configured-by-url>
@@ -9,25 +9,26 @@
       <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
       <jdbc-url>${jdbc.url}</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="dataSource" uuid="9bdd5006-1f90-41ba-b56e-1e4946590f57">
+    <data-source source="LOCAL" name="WebRoot:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="43ff7ae0-de3e-49ab-a8d2-1b9e954c0fb9">
+      <synchronize>true</synchronize>
       <imported>true</imported>
-      <remarks>$PROJECT_DIR$/resources/spring-config.xml</remarks>
-      <jdbc-driver>${jdbcDriverClassName}</jdbc-driver>
-      <jdbc-url>${jdbcUrl}</jdbc-url>
+      <remarks>$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.url}</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="dataSource" uuid="7a8cc8a8-8675-4791-ad11-3159f9eab65c">
+    <data-source source="LOCAL" name="dataSource" uuid="046e6d7c-e07a-42fd-80e3-daa57d75b182">
+      <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml</remarks>
       <jdbc-driver>${jdbcDriverClassName}</jdbc-driver>
       <jdbc-url>${jdbcUrl}</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="WebRoot:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="fdd253c5-bb4b-4c06-98ef-33801aa7f3f8">
+    <data-source source="LOCAL" name="dataSource" uuid="bd40b95a-4c86-4784-9fdf-abf99e0df7c2">
       <synchronize>true</synchronize>
       <imported>true</imported>
-      <configured-by-url>true</configured-by-url>
-      <remarks>$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml</remarks>
-      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
-      <jdbc-url>${jdbc.url}</jdbc-url>
+      <remarks>$PROJECT_DIR$/resources/spring-config.xml</remarks>
+      <jdbc-driver>${jdbcDriverClassName}</jdbc-driver>
+      <jdbc-url>${jdbcUrl}</jdbc-url>
     </data-source>
   </component>
 </project>

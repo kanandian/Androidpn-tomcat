@@ -207,5 +207,19 @@ public class UserServiceImpl implements UserService {
         return userDao.getBussinessesByIds(idlist);
     }
 
+    @Override
+    public void updateImageForUser(String userName, String imageURL) {
+        try {
+            User user = userDao.getUserByUsername(userName);
+            if (user != null) {
+                user.setImageURL(imageURL);
+            }
+            userDao.saveUser(user);
+        } catch (UserNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 }

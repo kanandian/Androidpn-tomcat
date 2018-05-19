@@ -76,6 +76,9 @@ public class User implements Serializable {
     @Column(name = "is_real_user")
     private Boolean isRealUser;
 
+    @Column(name = "image_url")
+    private String imageURL;
+
     @Transient
     private boolean online;
 
@@ -150,6 +153,14 @@ public class User implements Serializable {
 
     public void setRealUser(Boolean realUser) {
         isRealUser = realUser;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 
     public int getUserType() {

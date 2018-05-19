@@ -11,6 +11,8 @@ public interface BussinessDao {
     public List<Bussiness> getBussinesses();
     public Bussiness saveBussiness(Bussiness bussiness);
 
+    public List<Bussiness> getBussinessesByIds(List<Long> ids);
+
     public List<Bussiness> getBussinessesByClassification(String classification);
     public List<Bussiness> getBussinessesByTag(List<String> tagList);
 
@@ -19,4 +21,6 @@ public interface BussinessDao {
     public void updateByComment(long bussinessId, Comment comment);
 
     public List<Bussiness> getBussinessesByUserName(String userName);
+
+    public List<Comment> getAllComments();
 }

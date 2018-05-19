@@ -90,8 +90,9 @@ public class XmppIoHandler implements IoHandler {
         // Create a new connection
         Connection connection = new Connection(session);
         session.setAttribute(CONNECTION, connection);
-        session.setAttribute(STANZA_HANDLER, new StanzaHandler(serverName,
-                connection));
+        StanzaHandler handler = new StanzaHandler(serverName,
+                connection);
+        session.setAttribute(STANZA_HANDLER, handler);
     }
 
     /**

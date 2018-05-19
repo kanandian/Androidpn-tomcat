@@ -12,6 +12,8 @@ public interface BussinessService {
     public Bussiness getBussiness(String bussinessId);
     public List<Bussiness> getBussinesses();
 
+    public List<Bussiness> getBussinessesByIds(List<Long> ids);
+
     public ResultModel addComment(String bussinessId, Comment comment);
 
     public List<Bussiness> getBussinessesByClassification(String classification);
@@ -20,4 +22,6 @@ public interface BussinessService {
     public List<Bussiness> getBussinessesByUserName(String userName);
 
     public void updateImageForBussiness(String bussinessId, String imageURL);
+
+    public List<Comment> getAllComments();
 }

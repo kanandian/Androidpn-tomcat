@@ -33,6 +33,11 @@ public class BussinessServiceImpl implements BussinessService {
     }
 
     @Override
+    public List<Bussiness> getBussinessesByIds(List<Long> ids) {
+        return getBussinessesByIds(ids);
+    }
+
+    @Override
     public ResultModel addComment(String bussinessId, Comment comment) {
         long bussinessID = Long.parseLong(bussinessId);
         bussinessDao.updateByComment(bussinessID, comment);
@@ -62,6 +67,11 @@ public class BussinessServiceImpl implements BussinessService {
         bussiness.setImageURL(imageURL);
 
         bussinessDao.saveBussiness(bussiness);
+    }
+
+    @Override
+    public List<Comment> getAllComments() {
+        return bussinessDao.getAllComments();
     }
 
     public BussinessDao getBussinessDao() {

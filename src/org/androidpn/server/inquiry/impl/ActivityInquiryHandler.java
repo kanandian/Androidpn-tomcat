@@ -5,11 +5,14 @@ import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.MahoutUtil;
+import org.apache.mahout.cf.taste.common.TasteException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,28 +52,35 @@ public class ActivityInquiryHandler implements InquiryHandler {
                     addItem(bussiness);
                 }
             } else {
-                List<String> tagList = userService.getPerferences(userName);
-
-                if (tagList != null && !tagList.isEmpty()) {
-                    List<Bussiness> bussinessList = bussinessService.getBussinessesByTag(tagList);
-
-                    if (bussinessList != null && !bussinessList.isEmpty()) {
-                        for (Bussiness bussiness : bussinessList) {
-                            addItem(bussiness);
-                        }
-                    } else {
-                        bussinessList = bussinessService.getBussinesses();
-                        for (Bussiness bussiness : bussinessList) {
-                            addItem(bussiness);
-                        }
-                    }
-                } else {
-                    List<Bussiness> bussinessList = new ArrayList<Bussiness>();
+                List<Bussiness> bussinessList = null;//MahoutUtil.getInstance().getPerferencesBussinesses(userName, 3);
+                if (bussinessList == null || bussinessList.isEmpty()) {
                     bussinessList = bussinessService.getBussinesses();
+                }
                     for (Bussiness bussiness : bussinessList) {
                         addItem(bussiness);
                     }
-                }
+//                List<String> tagList = userService.getPerferences(userName);
+//
+//                if (tagList != null && !tagList.isEmpty()) {
+//                    List<Bussiness> bussinessList = bussinessService.getBussinessesByTag(tagList);
+//
+//                    if (bussinessList != null && !bussinessList.isEmpty()) {
+//                        for (Bussiness bussiness : bussinessList) {
+//                            addItem(bussiness);
+//                        }
+//                    } else {
+//                        bussinessList = bussinessService.getBussinesses();
+//                        for (Bussiness bussiness : bussinessList) {
+//                            addItem(bussiness);
+//                        }
+//                    }
+//                } else {
+//                    List<Bussiness> bussinessList = new ArrayList<Bussiness>();
+//                    bussinessList = bussinessService.getBussinesses();
+//                    for (Bussiness bussiness : bussinessList) {
+//                        addItem(bussiness);
+//                    }
+//                }
             }
         } else {
             List<Bussiness> bussinessList = bussinessService.getBussinessesByClassification(title);

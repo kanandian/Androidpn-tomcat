@@ -32,6 +32,11 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
     }
 
     @Override
+    public List<Bussiness> getBussinessesByIds(List<Long> ids) {
+        return getHibernateTemplate().find("from Bussiness b where b.bussinessId in ?", ids);
+    }
+
+    @Override
     public List<Bussiness> getBussinessesByClassification(String classification) {
         return getHibernateTemplate().find("from Bussiness b where b.classification = '"+classification+"'");
     }
@@ -86,6 +91,11 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
     @Override
     public List<Bussiness> getBussinessesByUserName(String userName) {
         return getHibernateTemplate().find("from Bussiness b where b.holder = '"+userName+"'");
+    }
+
+    @Override
+    public List<Comment> getAllComments() {
+        return getHibernateTemplate().find("from Comment c");
     }
 
 }

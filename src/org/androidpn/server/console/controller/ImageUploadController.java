@@ -1,7 +1,9 @@
 package org.androidpn.server.console.controller;
 
+import org.androidpn.server.model.User;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
+import org.androidpn.server.service.UserService;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -22,9 +24,11 @@ import java.util.UUID;
 public class ImageUploadController extends MultiActionController {
 
     private BussinessService bussinessService;
+    private UserService userService;
 
     public ImageUploadController() {
         bussinessService = ServiceLocator.getBussinessService();
+        userService = ServiceLocator.getUserService();
     }
 
     public ModelAndView list(HttpServletRequest request,
@@ -36,14 +40,20 @@ public class ImageUploadController extends MultiActionController {
         ServletFileUpload servletFileUpload = new ServletFileUpload(factory);
         List<FileItem> fileItemList = servletFileUpload.parseRequest(request);
 
+
         for (FileItem fileItem : fileItemList) {
             if ("image".equals(fileItem.getFieldName())) {
 //                fileItem.getString("utf-8");
                 imageURL = uploadImage(request, fileItem);
 
                 String imageName = fileItem.getName();
-                String bussinessId = imageName.split("[.]")[0];
-                bussinessService.updateImageForBussiness(bussinessId, imageURL);
+                String id = imageName.split("[.:]")[1];
+
+                if (imageName.contains("bussiness")) {
+                    bussinessService.updateImageForBussiness(id, imageURL);
+                } else if (imageName.contains("user")) {
+                    userService.updateImageForUser(id, imageURL);
+                }
             }
         }
 
@@ -78,7 +88,8 @@ public class ImageUploadController extends MultiActionController {
             inputStream.close();
             fileOutputStream.close();
 
-            String serverName = request.getServerName();
+//            String serverName = request.getServerName();
+            String serverName = "localhost";
             int port = request.getServerPort();
             String imageURL = "http://"+serverName+":"+port+"/bussinessimage/"+imageName;
 

@@ -61,4 +61,6 @@ public interface UserService {
 
     public List<Bussiness> getCollectedBussinesses(String userName);
 
+    public void updateImageForUser(String userName, String imageURL);
+
 }

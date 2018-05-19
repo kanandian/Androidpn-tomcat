@@ -33,14 +33,13 @@ public class IQLoginHandler extends IQHandler {
 
     public IQLoginHandler() {
         userService = ServiceLocator.getUserService();
-        probeResponse = DocumentHelper.createElement(QName.get("login",
-                NAMESPACE));
     }
 
     @Override
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
+        probeResponse = DocumentHelper.createElement(QName.get("login",
+                NAMESPACE));
         IQ reply = null;
-
         System.out.println();
         System.out.println("my received" + packet.toXML());
         System.out.println();
@@ -85,7 +84,6 @@ public class IQLoginHandler extends IQHandler {
 
                 reply.setChildElement(probeResponse);
 
-
 //            else {
 //                reply.setTo((JID) null);
 //                reply.setChildElement(probeResponse.createCopy());
@@ -114,10 +112,18 @@ public class IQLoginHandler extends IQHandler {
     }
 
     private void createResultElement(Element probeResponse, User user) {
+        String imageURL = user.getImageURL();
         probeResponse.addElement("userName").setText(user.getUsername());
-        probeResponse.addElement("password").setText(user.getPassword());
         probeResponse.addElement("name").setText(user.getName());
         probeResponse.addElement("mobile").setText(user.getMobile());
+        if (imageURL != null) {
+            probeResponse.addElement("imageURL").setText(imageURL);
+        }
+        if (user.getRealUser()) {
+            probeResponse.addElement("person").setText("1");
+        } else {
+            probeResponse.addElement("person").setText("0");
+        }
     }
 
 
