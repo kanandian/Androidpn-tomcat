@@ -9,6 +9,8 @@ public class Comment {
     private String userName;
     private String content;
 
+    private long userId;
+
     private String createTime;
 
     private int star;
@@ -86,5 +88,13 @@ public class Comment {
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 }

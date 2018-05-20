@@ -34,7 +34,7 @@ public class BussinessServiceImpl implements BussinessService {
 
     @Override
     public List<Bussiness> getBussinessesByIds(List<Long> ids) {
-        return getBussinessesByIds(ids);
+        return bussinessDao.getBussinessesByIds(ids);
     }
 
     @Override

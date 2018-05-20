@@ -113,6 +113,7 @@ public class IQLoginHandler extends IQHandler {
 
     private void createResultElement(Element probeResponse, User user) {
         String imageURL = user.getImageURL();
+        probeResponse.addElement("userId").setText(String.valueOf(user.getId()));
         probeResponse.addElement("userName").setText(user.getUsername());
         probeResponse.addElement("name").setText(user.getName());
         probeResponse.addElement("mobile").setText(user.getMobile());

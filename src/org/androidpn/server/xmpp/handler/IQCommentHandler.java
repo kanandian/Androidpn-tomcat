@@ -66,6 +66,7 @@ public class IQCommentHandler extends IQHandler {
                 } else {
                     reply = IQ.createResultIQ(packet);
 
+                    String userId = query.elementText("userid");
                     String bussinessId = query.elementText("bussinessid");
                     String fromUserName = query.elementText("fromusername");
                     String content = query.elementText("content");
@@ -80,6 +81,7 @@ public class IQCommentHandler extends IQHandler {
                     comment.setStar((int) Double.parseDouble(star));
                     comment.setAmount(Double.parseDouble(amount));
                     comment.setImageURL(imageURL);
+                    comment.setUserId(Long.parseLong(userId));
 
                     ResultModel resultModel = bussinessService.addComment(bussinessId, comment);
 

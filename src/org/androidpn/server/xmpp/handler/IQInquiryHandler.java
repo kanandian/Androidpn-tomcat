@@ -30,8 +30,8 @@ public class IQInquiryHandler extends IQHandler {
 
     public IQInquiryHandler () {
         userService = ServiceLocator.getUserService();
-//        MahoutUtil mahoutUtil = MahoutUtil.getInstance();
-//        mahoutUtil.createNewDataSet();
+        MahoutUtil mahoutUtil = MahoutUtil.getInstance();
+        mahoutUtil.createNewDataSet();
     }
 
     @Override

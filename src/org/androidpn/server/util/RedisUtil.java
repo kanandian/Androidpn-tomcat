@@ -21,7 +21,7 @@ public class RedisUtil {
         jedisPoolConfig.setMaxTotal(30);
         //设置最大空闲连接数
         jedisPoolConfig.setMaxIdle(10);
-        JedisPool jedisPool = new JedisPool(jedisPoolConfig, "localhost", 6379);
+        jedisPool = new JedisPool(jedisPoolConfig, "localhost", 6379);
     }
 
     public static RedisUtil getInstance() {

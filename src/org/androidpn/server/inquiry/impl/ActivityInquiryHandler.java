@@ -52,7 +52,7 @@ public class ActivityInquiryHandler implements InquiryHandler {
                     addItem(bussiness);
                 }
             } else {
-                List<Bussiness> bussinessList = null;//MahoutUtil.getInstance().getPerferencesBussinesses(userName, 3);
+                List<Bussiness> bussinessList = MahoutUtil.getInstance().getPerferencesBussinesses(userName, 3);
                 if (bussinessList == null || bussinessList.isEmpty()) {
                     bussinessList = bussinessService.getBussinesses();
                 }

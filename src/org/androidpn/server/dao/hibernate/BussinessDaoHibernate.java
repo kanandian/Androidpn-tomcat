@@ -6,6 +6,7 @@ import org.androidpn.server.model.Comment;
 import org.androidpn.server.util.ResultModel;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BussinessDaoHibernate extends HibernateDaoSupport implements BussinessDao {
@@ -33,7 +34,18 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
 
     @Override
     public List<Bussiness> getBussinessesByIds(List<Long> ids) {
-        return getHibernateTemplate().find("from Bussiness b where b.bussinessId in ?", ids);
+        if (ids == null || ids.isEmpty()) {
+            return new ArrayList<Bussiness>();
+        }
+        StringBuilder condition = new StringBuilder();
+        condition.append("(");
+        condition.append(ids.get(0));
+        for (int i=1;i<ids.size();i++) {
+            condition.append(","+ids.get(i));
+        }
+        condition.append(")");
+        String con = condition.toString();
+        return getHibernateTemplate().find("from Bussiness b where b.bussinessId in "+con);
     }
 
     @Override
