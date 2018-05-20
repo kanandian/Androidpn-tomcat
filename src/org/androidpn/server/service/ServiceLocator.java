@@ -18,6 +18,7 @@
 package org.androidpn.server.service;
 
 import org.androidpn.server.model.FoodMenu;
+import org.androidpn.server.model.Payment;
 import org.androidpn.server.xmpp.XmppServer;
 
 /** 
@@ -31,6 +32,7 @@ public class ServiceLocator {
     public static String BUSSINESS_SERVICE = "bussinessService";
     public static String MENU_FOOD_SERVICE = "foodMenuService";
     public static String TAKEOUT_ORDER_SERVICE = "takeoutOrderService";
+    public static String PAYMENT_SERVICE = "paymentService";
 
     /**
      * Generic method to obtain a service object for a given name. 
@@ -62,5 +64,10 @@ public class ServiceLocator {
     public static TakeoutOrderService getTakeoutOrderService() {
         return (TakeoutOrderService) XmppServer.getInstance().getBean(TAKEOUT_ORDER_SERVICE);
     }
+
+    public static PaymentService getPaymentService() {
+        return (PaymentService) XmppServer.getInstance().getBean(PAYMENT_SERVICE);
+    }
+
 
 }

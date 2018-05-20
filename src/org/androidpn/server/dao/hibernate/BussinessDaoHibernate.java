@@ -86,6 +86,7 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
         bussiness.setLevel(bussiness.getLevel()+comment.getStar());
 
         getHibernateTemplate().saveOrUpdate(bussiness);
+        getHibernateTemplate().flush();
     }
 
     @Override

@@ -1,10 +1,8 @@
 package org.androidpn.server.xmpp.handler;
 
 import gnu.inet.encoding.StringprepException;
-import org.androidpn.server.service.ServiceLocator;
-import org.androidpn.server.service.UserExistsException;
-import org.androidpn.server.service.UserNotFoundException;
-import org.androidpn.server.service.UserService;
+import org.androidpn.server.model.Payment;
+import org.androidpn.server.service.*;
 import org.androidpn.server.util.ResultModel;
 import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.session.ClientSession;
@@ -16,22 +14,27 @@ import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.PacketError;
 
+import java.util.Date;
+
 public class IQPaymentHandler extends IQHandler {
 
     private static final String NAMESPACE = "androidpn:iq:payment";
 
     private UserService userService;
 
+    private PaymentService paymentService;
+
     private Element probeResponse;
 
     public IQPaymentHandler() {
         userService = ServiceLocator.getUserService();
-        probeResponse = DocumentHelper.createElement(QName.get("payment",
-                NAMESPACE));
+        paymentService = ServiceLocator.getPaymentService();
     }
 
     @Override
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
+        probeResponse = DocumentHelper.createElement(QName.get("payment",
+                NAMESPACE));
         IQ reply = null;
 
         ClientSession session = sessionManager.getSession(packet.getFrom());
@@ -66,7 +69,19 @@ public class IQPaymentHandler extends IQHandler {
 
                     String fromUserName = query.elementText("fromusername");
                     String toUserName = query.elementText("tousername");
+                    String bussinessName = query.elementText("bussinessname");
+                    long bussinessId = Long.parseLong(query.elementText("bussinessid"));
                     double price = Double.parseDouble(query.elementText("price"));
+
+                    Payment payment = new Payment();
+                    payment.setFromUserName(fromUserName);
+                    payment.setToUserName(toUserName);
+                    payment.setBussinessId(bussinessId);
+                    payment.setPrice(price);
+                    payment.setBussinessName(bussinessName);
+                    payment.setCreateTime(new Date().getTime());
+
+                    paymentService.savePayment(payment);
 
                     ResultModel resultModel = userService.payment(fromUserName, toUserName, price);
 

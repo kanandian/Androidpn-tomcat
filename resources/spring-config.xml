@@ -77,6 +77,10 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
+	<bean id="paymentDao" class="org.androidpn.server.dao.hibernate.PaymentDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
 	<!-- =============================================================== -->
@@ -96,6 +100,10 @@
 
 	<bean id="takeoutOrderService" class="org.androidpn.server.service.impl.TakeoutOrderServiceImpl">
 		<property name="takeoutOrderDao" ref="takeoutOrderDao" />
+	</bean>
+
+	<bean id="paymentService" class="org.androidpn.server.service.impl.PaymentServiceImpl">
+		<property name="paymentDao" ref="paymentDao" />
 	</bean>
 
 
