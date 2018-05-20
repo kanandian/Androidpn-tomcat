@@ -127,6 +127,7 @@ public class IQRegistrationHandler extends IQHandler {
                             user.setEmail(email);
                             user.setMobile(mobile);
                             user.setRealUser(true);
+                            user.setImageURL("http://localhost:8080/bussinessimage/userdefault.jpg");
                             userService.saveUser(user);
 
                             JID from = session.getAddress();

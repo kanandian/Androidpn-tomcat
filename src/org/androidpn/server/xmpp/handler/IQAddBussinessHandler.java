@@ -21,13 +21,14 @@ public class IQAddBussinessHandler extends IQHandler {
 
     public IQAddBussinessHandler() {
         bussinessService = ServiceLocator.getBussinessService();
-        probeResponse = DocumentHelper.createElement(QName.get("payment",
-                "androidpn:iq:payment"));
     }
 
     @Override
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
         IQ reply = null;
+
+        probeResponse = DocumentHelper.createElement(QName.get("payment",
+                "androidpn:iq:payment"));
 
         System.out.println();
         System.out.println("my received" + packet.toXML());
@@ -76,6 +77,7 @@ public class IQAddBussinessHandler extends IQHandler {
                 bussiness.setMobile(mobile);
                 bussiness.setDes(des);
                 bussiness.setHolder(holder);
+                bussiness.setImageURL("http://localhost:8080/bussinessimage/bussinessdefault.jpg");
 
                 bussinessService.saveBussiness(bussiness);
 

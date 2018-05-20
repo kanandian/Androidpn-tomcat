@@ -71,6 +71,7 @@ public class IQCommentHandler extends IQHandler {
                     String content = query.elementText("content");
                     String star = query.elementText("star");
                     String amount = query.elementText("amount");
+                    String imageURL = query.elementText("imageurl");
 
                     Comment comment = new Comment();
                     comment.setCreateTime(TimeUtil.getCurrentDateStr());
@@ -78,6 +79,7 @@ public class IQCommentHandler extends IQHandler {
                     comment.setContent(content);
                     comment.setStar((int) Double.parseDouble(star));
                     comment.setAmount(Double.parseDouble(amount));
+                    comment.setImageURL(imageURL);
 
                     ResultModel resultModel = bussinessService.addComment(bussinessId, comment);
 

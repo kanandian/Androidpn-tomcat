@@ -43,6 +43,7 @@
 		<mapping class="org.androidpn.server.model.TakeoutOrder" />
 		<mapping class="org.androidpn.server.model.TakeoutOrderItem" />
 		<mapping class="org.androidpn.server.model.Collection" />
+		<mapping class="org.androidpn.server.model.Payment" />
 		<mapping class="org.androidpn.server.util.UserPerference" />
 
 	</session-factory>

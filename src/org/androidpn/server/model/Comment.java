@@ -14,6 +14,8 @@ public class Comment {
     private int star;
     private double amount;
 
+    private String imageURL;
+
     private Bussiness bussiness;
 
     public Comment() {
@@ -78,5 +80,11 @@ public class Comment {
         this.amount = amount;
     }
 
+    public String getImageURL() {
+        return imageURL;
+    }
 
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
 }
