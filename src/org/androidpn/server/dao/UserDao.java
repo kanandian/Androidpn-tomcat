@@ -50,6 +50,8 @@ public interface UserDao {
 
     public void removeCollection(String userName, long bussinessId);
 
+    public boolean existCollection(String userName, long bussinessId);
+
     public List<Long> getCollectedBussinessesId(String userName);
 
     public List<Bussiness> getBussinessesByIds(List<Long> idlist);

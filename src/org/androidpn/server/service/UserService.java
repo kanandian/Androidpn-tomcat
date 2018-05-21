@@ -59,6 +59,8 @@ public interface UserService {
 
     public void removeCollection(String userName, String bussinessId);
 
+    public boolean existColldection(String userName, String bussinessId);
+
     public List<Bussiness> getCollectedBussinesses(String userName);
 
     public void updateImageForUser(String userName, String imageURL);

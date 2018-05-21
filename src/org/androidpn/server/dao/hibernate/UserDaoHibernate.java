@@ -90,6 +90,15 @@ public class UserDaoHibernate extends HibernateDaoSupport implements UserDao {
 	}
 
 	@Override
+	public boolean existCollection(String userName, long bussinessId) {
+		List<Collection> collectionList = getHibernateTemplate().find("from Collection c where c.userName = ? and c.bussinessId = ?", new Object[]{userName, bussinessId});
+		if (collectionList == null || collectionList.isEmpty()) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
 	public List<Long> getCollectedBussinessesId(String userName) {
 		List<Collection> collectionList = getHibernateTemplate().find("from Collection c where c.userName = ?", userName);
 		List<Long> idlist = new ArrayList<Long>();

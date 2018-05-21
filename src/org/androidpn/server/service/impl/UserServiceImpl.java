@@ -202,6 +202,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public boolean existColldection(String userName, String bussinessId) {
+        long bussinessID = Long.parseLong(bussinessId);
+        return userDao.existCollection(userName, bussinessID);
+    }
+
+    @Override
     public List<Bussiness> getCollectedBussinesses(String userName) {
         List<Long> idlist = userDao.getCollectedBussinessesId(userName);
         return userDao.getBussinessesByIds(idlist);
