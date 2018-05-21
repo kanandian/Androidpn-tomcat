@@ -4,6 +4,7 @@ import org.androidpn.server.inquiry.InquiryHandler;
 import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.model.TakeoutOrder;
 import org.androidpn.server.model.TakeoutOrderItem;
+import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.TakeoutOrderService;
 import org.dom4j.DocumentHelper;
@@ -19,11 +20,13 @@ public class TakeoutOrderInquiryHandler implements InquiryHandler {
     private static final String NAMESPACE = "androidpn:order:takeout";
 
     private TakeoutOrderService takeoutOrderService;
+    private BussinessService bussinessService;
 
     private Element probeResponse;
 
     public TakeoutOrderInquiryHandler() {
         takeoutOrderService = ServiceLocator.getTakeoutOrderService();
+        bussinessService = ServiceLocator.getBussinessService();
         probeResponse = DocumentHelper.createElement(QName.get("order",
                 NAMESPACE));
     }
@@ -59,10 +62,16 @@ public class TakeoutOrderInquiryHandler implements InquiryHandler {
     }
 
     public void addTakeoutOrder(TakeoutOrder takeoutOrder) {
+        Bussiness bussiness = bussinessService.getBussiness(String.valueOf(takeoutOrder.getBussinessId()));
         Element item = DocumentHelper.createElement(QName.get("item",
                 NAMESPACE));
+        if (bussiness != null) {
+            item.addAttribute("bussinessname", bussiness.getBusinessName());
+            item.addAttribute("imageurl", bussiness.getImageURL());
+        } else {
+            item.addAttribute("bussinessname", takeoutOrder.getBussinessName());
+        }
         item.addAttribute("orderid", String.valueOf(takeoutOrder.getOrderId()));
-        item.addAttribute("bussinessname", takeoutOrder.getBussinessName());
         item.addAttribute("address", takeoutOrder.getAddress());
         item.addAttribute("bussinessid", String.valueOf(takeoutOrder.getBussinessId()));
         item.addAttribute("mobile", takeoutOrder.getMobile());
