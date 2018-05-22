@@ -52,6 +52,8 @@ public class SessionManager {
 
     private Map<String, ClientSession> clientSessions = new ConcurrentHashMap<String, ClientSession>();
 
+    private Map<String, ClientSession> userSession = new ConcurrentHashMap<String, ClientSession>();
+
     private final AtomicInteger connectionsCounter = new AtomicInteger(0);
 
     private ClientSessionListener clientSessionListener = new ClientSessionListener();
@@ -110,6 +112,19 @@ public class SessionManager {
     public void addSession(ClientSession session) {
         preAuthSessions.remove(session.getStreamID().toString());
         clientSessions.put(session.getAddress().toString(), session);
+    }
+
+    public void addUserSessino(ClientSession session) {
+        String userName = session.getAddress().getNode();
+        userSession.put(userName, session);
+    }
+
+    public ClientSession getUserSession(String userName) {
+        if (userName == null || "".equals(userName)) {
+            return null;
+        }
+
+        return userSession.get(userName);
     }
 
     /**

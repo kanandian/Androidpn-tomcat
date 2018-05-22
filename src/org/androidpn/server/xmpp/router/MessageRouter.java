@@ -17,7 +17,13 @@
  */
 package org.androidpn.server.xmpp.router;
 
+import org.androidpn.server.xmpp.message.MessageHandler;
+import org.androidpn.server.xmpp.session.ClientSession;
+import org.androidpn.server.xmpp.session.Session;
+import org.androidpn.server.xmpp.session.SessionManager;
+import org.xmpp.packet.JID;
 import org.xmpp.packet.Message;
+import org.xmpp.packet.Packet;
 
 /** 
  * This class is to route Message packets to their corresponding handler.
@@ -26,10 +32,15 @@ import org.xmpp.packet.Message;
  */
 public class MessageRouter {
 
+    private SessionManager sessionManager;
+    private MessageHandler messageHandler;
+
     /**
      * Constucts a packet router.
      */
     public MessageRouter() {
+        sessionManager = SessionManager.getInstance();
+        messageHandler = new MessageHandler();
     }
 
     /**
@@ -38,7 +49,27 @@ public class MessageRouter {
      * @param packet the packet to route
      */
     public void route(Message packet) {
-        throw new RuntimeException("Please implement this!");
+        if (packet == null) {
+            throw new NullPointerException();
+        }
+
+        JID sender = packet.getFrom();
+        ClientSession session = sessionManager.getSession(sender);
+
+
+        if (session == null
+                || session.getStatus() == Session.STATUS_AUTHENTICATED) {
+            handle(packet);
+        }
     }
 
+    public void handle(Packet packet) {
+        MessageHandler handler = getMessageHandler();
+
+        handler.process(packet);
+    }
+
+    public MessageHandler getMessageHandler() {
+        return messageHandler;
+    }
 }

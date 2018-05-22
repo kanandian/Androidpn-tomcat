@@ -5,7 +5,9 @@ import org.androidpn.server.inquiry.impl.ActivityInquiryHandler;
 import org.androidpn.server.inquiry.impl.BussinessInquiryHandler;
 import org.androidpn.server.inquiry.impl.InfoInquiryHandler;
 import org.androidpn.server.inquiry.impl.SearchInquiryHandler;
+import org.androidpn.server.model.ChatMessage;
 import org.androidpn.server.model.User;
+import org.androidpn.server.service.ChatMessageService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserNotFoundException;
 import org.androidpn.server.service.UserService;
@@ -21,18 +23,23 @@ import org.dom4j.Element;
 import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
+import org.xmpp.packet.Message;
 import org.xmpp.packet.PacketError;
+
+import java.util.List;
 
 public class IQLoginHandler extends IQHandler {
 
     private static final String NAMESPACE = "androidpn:iq:login";
 
     private UserService userService;
+    private ChatMessageService chatMessageService;
 
     private Element probeResponse;
 
     public IQLoginHandler() {
         userService = ServiceLocator.getUserService();
+        chatMessageService = ServiceLocator.getChatMessageService();
     }
 
     @Override
@@ -72,6 +79,21 @@ public class IQLoginHandler extends IQHandler {
                         JID from = session.getAddress();
                         JID newFrom = new JID(userName, from.getDomain(), from.getResource());
                         changeUserInfo(session, newFrom, password);
+
+//                        SessionManager.getInstance().addUserSessino(session);
+                        List<ChatMessage> chatMessageList = chatMessageService.getMessagesByUserName(userName);
+                        if (chatMessageList != null && !chatMessageList.isEmpty()) {
+                            for (ChatMessage chatMessage : chatMessageList) {
+                                Message message = new Message();
+                                message.setBody(chatMessage.getContent());
+                                message.setFrom(chatMessage.getFromUserJID());
+                                message.setTo(session.getAddress());
+
+                                session.deliver(message);
+
+                                chatMessageService.removeMessage(chatMessage.getMessageId());
+                            }
+                        }
                     }
 
                 } catch (UserNotFoundException e) {

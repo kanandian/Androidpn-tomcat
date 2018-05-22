@@ -62,7 +62,7 @@ public class MahoutUtil {
              writer = new FileWriter(file);
              List<Comment> commentList = bussinessService.getAllComments();
 
-             redisUtil.clearAll();
+//             redisUtil.clearAll();
 //             List<Long> userIdList  = new ArrayList<Long>(commentList.size());
 //             List<String> userNameList = new ArrayList<String>(commentList.size());
 

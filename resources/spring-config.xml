@@ -81,6 +81,10 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
+	<bean id="chatMessageDao" class="org.androidpn.server.dao.hibernate.ChatMessageDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
 	<!-- =============================================================== -->
@@ -104,6 +108,10 @@
 
 	<bean id="paymentService" class="org.androidpn.server.service.impl.PaymentServiceImpl">
 		<property name="paymentDao" ref="paymentDao" />
+	</bean>
+
+	<bean id="chatMessageService" class="org.androidpn.server.service.impl.ChatMessageServiceImpl">
+		<property name="chatMessageDao" ref="chatMessageDao" />
 	</bean>
 
 
