@@ -18,6 +18,7 @@ import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.PacketError;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -91,6 +92,9 @@ public class IQInquiryHandler extends IQHandler {
                 } else if ("collection".equals(target)) {
                     InquiryHandler collectedBussinessInquiryHandler = new CollectedBussinessesInquiryHandler();
                     reply = collectedBussinessInquiryHandler.handle(reply, title);
+                } else if ("image".equals(target)) {
+                    InquiryHandler imageURLInquiryHandler = new ImageURLInquiryHandler();
+                    reply = imageURLInquiryHandler.handle(reply, title);
                 }
             }
         } else if (IQ.Type.set.equals(packet.getType())) {
