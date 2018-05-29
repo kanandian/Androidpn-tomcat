@@ -74,6 +74,23 @@ public class BussinessServiceImpl implements BussinessService {
         return bussinessDao.getAllComments();
     }
 
+    @Override
+    public void updateBussiness(Bussiness bussiness) {
+        Bussiness oldBussiness = bussinessDao.getBussiness(bussiness.getBussinessId());
+
+        oldBussiness.setStartTime(bussiness.getStartTime());
+        oldBussiness.setEndTime(bussiness.getEndTime());
+        oldBussiness.setDes(bussiness.getDes());
+        oldBussiness.setMobile(bussiness.getMobile());
+        oldBussiness.setBusinessName(bussiness.getBusinessName());
+//        oldBussiness.setTag(bussiness.getTag());
+//        oldBussiness.setClassification(bussiness.getClassification());
+
+        bussinessDao.saveBussiness(oldBussiness);
+
+
+    }
+
     public BussinessDao getBussinessDao() {
         return bussinessDao;
     }

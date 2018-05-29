@@ -68,6 +68,9 @@ public class SearchInquiryHandler implements InquiryHandler {
         item.addAttribute("level", String.valueOf(bussiness.getAvgLevel()));
         item.addAttribute("des", bussiness.getDes());
         item.addAttribute("holder", bussiness.getHolder());
+        item.addAttribute("starttime", (bussiness.getStartTime() != null) ? bussiness.getStartTime() : "");
+        item.addAttribute("endtime", (bussiness.getEndTime() != null) ? bussiness.getEndTime() : "");
+        item.addAttribute("feature", (bussiness.getFeature() != null) ? bussiness.getFeature() : "");
         probeResponse.add(item);
     }
 }

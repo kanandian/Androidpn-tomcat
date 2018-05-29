@@ -24,4 +24,6 @@ public interface BussinessService {
     public void updateImageForBussiness(String bussinessId, String imageURL);
 
     public List<Comment> getAllComments();
+
+    public void updateBussiness(Bussiness bussiness);
 }

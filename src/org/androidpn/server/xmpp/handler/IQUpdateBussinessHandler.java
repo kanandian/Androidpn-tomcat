@@ -13,13 +13,14 @@ import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.PacketError;
 
-public class IQAddBussinessHandler extends IQHandler {
-    private static final String NAMESPACE = "androidpn:add:bussiness";
+public class IQUpdateBussinessHandler extends IQHandler {
+
+    private static final String NAMESPACE = "androidpn:update:bussiness";
 
     BussinessService bussinessService;
     Element probeResponse;
 
-    public IQAddBussinessHandler() {
+    public IQUpdateBussinessHandler() {
         bussinessService = ServiceLocator.getBussinessService();
     }
 
@@ -27,8 +28,8 @@ public class IQAddBussinessHandler extends IQHandler {
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
         IQ reply = null;
 
-        probeResponse = DocumentHelper.createElement(QName.get("payment",
-                "androidpn:iq:payment"));
+        probeResponse = DocumentHelper.createElement(QName.get("admin",
+                "androidpn:admin:operation"));
 
         System.out.println();
         System.out.println("my received" + packet.toXML());
@@ -58,56 +59,31 @@ public class IQAddBussinessHandler extends IQHandler {
             if (session.getStatus() == Session.STATUS_AUTHENTICATED) {
                 // TODO
                 Element query = packet.getChildElement();
-                String imageURL = query.elementText("imageURL");
+                long bussinessId = Long.parseLong(query.elementText("bussinessId"));
                 String bussinessName = query.elementText("businessName");
-                String classification = query.elementText("classification");
-                String tag = query.elementText("tag");
-                String feature = query.elementText("feature");
-                String location = query.elementText("location");
+//                String location = query.elementText("location");
                 String mobile = query.elementText("mobile");
                 String des = query.elementText("des");
-                String holder = query.elementText("holder");
+//                String holder = query.elementText("holder");
                 String fromTime = query.elementText("fromtime");
                 String toTime = query.elementText("totime");
 
                 Bussiness bussiness = new Bussiness();
-
-                bussiness.setImageURL(imageURL);
+                bussiness.setBussinessId(bussinessId);
                 bussiness.setBusinessName(bussinessName);
-                bussiness.setClassification(classification);
-                bussiness.setTag(tag);
-                bussiness.setFeature(feature);
-                bussiness.setLocation(location);
                 bussiness.setMobile(mobile);
                 bussiness.setDes(des);
-                bussiness.setHolder(holder);
                 bussiness.setStartTime(fromTime);
                 bussiness.setEndTime(toTime);
-                bussiness.setImageURL("http://localhost:8080/bussinessimage/bussinessdefault.jpg");
 
-                bussinessService.saveBussiness(bussiness);
+                bussinessService.updateBussiness(bussiness);
 
                 probeResponse.addElement("errcode").setText("0");
                 probeResponse.addElement("errmessage").setText("成功");
 
-                reply.setChildElement(probeResponse);
-//                String title = query.elementText("title");
-//
-//                String userName = query.elementText("username");
-//                String content = query.elementText("content");
-//
-//                if ("comment".equals(target)) {
-//                    AdminHandler commentHandler = new CommentHandler(title, userName);
-//                    commentHandler.handle(title, content);
-//                }
             }
-        }
-        // Send the response directly to the session
-        if (reply != null) {
-            session.process(reply);
-            System.out.println();
-            System.out.println("my response" + reply.toXML());
-            System.out.println();
+
+
         }
         return null;
     }

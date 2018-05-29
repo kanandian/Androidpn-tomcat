@@ -1,11 +1,6 @@
 package org.androidpn.server.model;
 
 import org.androidpn.server.util.Location;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
-import org.dom4j.QName;
-import org.springframework.core.annotation.Order;
-import org.springframework.web.servlet.theme.SessionThemeResolver;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -20,12 +15,16 @@ public class Bussiness implements Serializable {
     private String businessName;
     private String classification;
     private String tag;
+    private String feature;
     private Location location;
     private String mobile;
     private double price;
     private int level;
     private int personCount;
     private String des;
+
+    private String startTime;
+    private String endTime;
 
     private String holder;
 
@@ -78,6 +77,14 @@ public class Bussiness implements Serializable {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    public String getFeature() {
+        return feature;
+    }
+
+    public void setFeature(String feature) {
+        this.feature = feature;
     }
 
     public String getLocation() {
@@ -168,6 +175,22 @@ public class Bussiness implements Serializable {
 
     public void setPersonCount(int personCount) {
         this.personCount = personCount;
+    }
+
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String fromTime) {
+        this.startTime = fromTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String toTime) {
+        this.endTime = toTime;
     }
 
     //    public String toXMLInummary(String NAMESPACE) {

@@ -57,6 +57,9 @@ public class BussinessInquiryHandler implements InquiryHandler {
         Element des = DocumentHelper.createElement("des");
         Element holder = DocumentHelper.createElement("holder");
         Element collected = DocumentHelper.createElement("collected");
+        Element startTime = DocumentHelper.createElement("starttime");
+        Element endtime = DocumentHelper.createElement("endtime");
+        Element feature = DocumentHelper.createElement("feature");
 
         //设置内容
         id.setText(String.valueOf(bussiness.getBussinessId()));
@@ -68,6 +71,9 @@ public class BussinessInquiryHandler implements InquiryHandler {
         mobile.setText(bussiness.getMobile());
         des.setText(bussiness.getDes());
         holder.setText(bussiness.getHolder());
+        startTime.setText(bussiness.getStartTime() != null ? bussiness.getStartTime() : "");
+        endtime.setText(bussiness.getEndTime() != null ? bussiness.getEndTime() : "");
+        feature.setText(bussiness.getFeature() != null ? bussiness.getFeature() : "");
 
         if (exist) {
             collected.setText("1");
@@ -86,6 +92,9 @@ public class BussinessInquiryHandler implements InquiryHandler {
         probeResponse.add(des);
         probeResponse.add(holder);
         probeResponse.add(collected);
+        probeResponse.add(startTime);
+        probeResponse.add(endtime);
+        probeResponse.add(feature);
     }
 
 }
