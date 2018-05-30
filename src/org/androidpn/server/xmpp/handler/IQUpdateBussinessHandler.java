@@ -60,31 +60,40 @@ public class IQUpdateBussinessHandler extends IQHandler {
                 // TODO
                 Element query = packet.getChildElement();
                 long bussinessId = Long.parseLong(query.elementText("bussinessId"));
-                String bussinessName = query.elementText("businessName");
+//                String bussinessName = query.elementText("businessName");
 //                String location = query.elementText("location");
                 String mobile = query.elementText("mobile");
                 String des = query.elementText("des");
 //                String holder = query.elementText("holder");
                 String fromTime = query.elementText("fromtime");
                 String toTime = query.elementText("totime");
+                String feature = query.elementText("feature");
 
                 Bussiness bussiness = new Bussiness();
                 bussiness.setBussinessId(bussinessId);
-                bussiness.setBusinessName(bussinessName);
                 bussiness.setMobile(mobile);
                 bussiness.setDes(des);
                 bussiness.setStartTime(fromTime);
                 bussiness.setEndTime(toTime);
+                bussiness.setFeature(feature);
 
                 bussinessService.updateBussiness(bussiness);
 
                 probeResponse.addElement("errcode").setText("0");
                 probeResponse.addElement("errmessage").setText("成功");
 
+                reply.setChildElement(probeResponse);
             }
 
 
         }
+
+        // Send the response directly to the session
+        if (reply != null) {
+            System.out.println("my response : "+reply.toXML());
+            session.process(reply);
+        }
+
         return null;
     }
 

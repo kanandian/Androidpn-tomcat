@@ -78,11 +78,12 @@ public class BussinessServiceImpl implements BussinessService {
     public void updateBussiness(Bussiness bussiness) {
         Bussiness oldBussiness = bussinessDao.getBussiness(bussiness.getBussinessId());
 
+        oldBussiness.setFeature(bussiness.getFeature());
         oldBussiness.setStartTime(bussiness.getStartTime());
         oldBussiness.setEndTime(bussiness.getEndTime());
         oldBussiness.setDes(bussiness.getDes());
         oldBussiness.setMobile(bussiness.getMobile());
-        oldBussiness.setBusinessName(bussiness.getBusinessName());
+//        oldBussiness.setBusinessName(bussiness.getBusinessName());
 //        oldBussiness.setTag(bussiness.getTag());
 //        oldBussiness.setClassification(bussiness.getClassification());
 
