@@ -5,7 +5,9 @@ import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.service.UserService;
+import org.androidpn.server.util.Location;
 import org.androidpn.server.util.MahoutUtil;
+import org.androidpn.server.util.SortUtil;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
@@ -15,6 +17,7 @@ import org.xmpp.packet.IQ;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class ActivityInquiryHandler implements InquiryHandler {
 
@@ -24,38 +27,56 @@ public class ActivityInquiryHandler implements InquiryHandler {
     private BussinessService bussinessService;
     private Element probeResponse;
 
-    public ActivityInquiryHandler() {
+    private Location location;
+
+    public ActivityInquiryHandler(String location) {
         userService = ServiceLocator.getUserService();
         bussinessService = ServiceLocator.getBussinessService();
-        probeResponse = DocumentHelper.createElement(QName.get("activity",
-                NAMESPACE));
+        if (location == null || "".equals(location)) {
+            this.location = null;
+        } else  {
+            this.location = new Location(location);
+        }
     }
 
     @Override
     public IQ handle(IQ reply, String title) {
+        probeResponse = DocumentHelper.createElement(QName.get("activity",
+                NAMESPACE));
         if("main".equals(title)) {
-            List<Bussiness> bussinessList = bussinessService.getBussinesses();
+            List<Bussiness> bussinessList = null;
+            if (this.location == null) {
+                bussinessList = bussinessService.getBussinesses();
+            } else {
+                bussinessList = bussinessService.getBussinessOrderByDistance(location);
+            }
             for(Bussiness bussiness : bussinessList) {
                 addItem(bussiness);
             }
         } else if ("shoplist".equals(title)) {
-            List<Bussiness> bussinessList = bussinessService.getBussinesses();
+            List<Bussiness> bussinessList = null;
+            if (this.location == null) {
+                bussinessList = bussinessService.getBussinesses();
+            } else {
+                bussinessList = bussinessService.getBussinessOrderByDistance(location);
+            }
             for(Bussiness bussiness : bussinessList) {
                 addItem(bussiness);
             }
         } else if (title.contains("perference")) {
             String userName = title.split(":")[1];
 
-            if (userName == null || "null".equals(userName)) {
+            if (userName == null || "null".equals(userName) || "".equals(userName)) {
                 List<Bussiness> bussinessList = bussinessService.getBussinesses();
                 for (Bussiness bussiness : bussinessList) {
                     addItem(bussiness);
                 }
             } else {
-                List<Bussiness> bussinessList = MahoutUtil.getInstance().getPerferencesBussinesses(userName, 3);
+                List<Bussiness> bussinessList = MahoutUtil.getInstance().getPerferencesBussinesses(userName, 30);
                 if (bussinessList == null || bussinessList.isEmpty()) {
                     bussinessList = bussinessService.getBussinesses();
                 }
+                SortUtil.sortBussinessesByDistance(bussinessList, location);
                     for (Bussiness bussiness : bussinessList) {
                         addItem(bussiness);
                     }
@@ -84,6 +105,7 @@ public class ActivityInquiryHandler implements InquiryHandler {
             }
         } else {
             List<Bussiness> bussinessList = bussinessService.getBussinessesByClassification(title);
+            SortUtil.sortBussinessesByDistance(bussinessList, location);
             for (Bussiness bussiness : bussinessList) {
                 addItem(bussiness);
             }

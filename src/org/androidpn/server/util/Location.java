@@ -1,5 +1,7 @@
 package org.androidpn.server.util;
 
+import org.androidpn.server.model.Bussiness;
+
 import java.io.Serializable;
 
 public class Location implements Serializable {
@@ -46,5 +48,10 @@ public class Location implements Serializable {
     @Override
     public String toString() {
         return this.address+":"+this.longitude+","+this.latitude;
+    }
+
+    public double getDistance(Bussiness bussiness) {
+        Location location = bussiness.getLocationObj();
+        return LocationUtil.getDistance(this.getLatitude(), this.getLongitude(), location.getLatitude(), location.getLongitude());
     }
 }

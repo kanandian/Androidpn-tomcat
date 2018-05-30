@@ -62,14 +62,16 @@ public class IQInquiryHandler extends IQHandler {
                 String title = query.elementText("title");
 
                 if("activity".equals(target)) {
-                    InquiryHandler activityInquiryHandler = new ActivityInquiryHandler();
+                    String location = query.elementText("location");
+                    InquiryHandler activityInquiryHandler = new ActivityInquiryHandler(location);
                     reply = activityInquiryHandler.handle(reply, title);
                 } else if("bussiness".equals(target)) {
                     String userName = query.elementText("username");
                     InquiryHandler bussinessInquiryHandler = new BussinessInquiryHandler(userName);
                     reply = bussinessInquiryHandler.handle(reply, title);
                 } else if("search".equals(target)) {
-                    InquiryHandler searchInquiryHandler = new SearchInquiryHandler();
+                    String location = query.elementText("location");
+                    InquiryHandler searchInquiryHandler = new SearchInquiryHandler(location);
                     reply = searchInquiryHandler.handle(reply, title);
                 } else if("info".equals(target)) {
                     InquiryHandler infoInquiryHandler = new InfoInquiryHandler();

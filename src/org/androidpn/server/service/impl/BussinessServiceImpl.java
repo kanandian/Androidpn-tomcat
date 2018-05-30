@@ -4,7 +4,10 @@ import org.androidpn.server.dao.BussinessDao;
 import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.model.Comment;
 import org.androidpn.server.service.BussinessService;
+import org.androidpn.server.util.Location;
 import org.androidpn.server.util.ResultModel;
+import org.androidpn.server.util.SortUtil;
+import org.hsqldb.lib.Sort;
 
 import java.util.List;
 
@@ -33,6 +36,13 @@ public class BussinessServiceImpl implements BussinessService {
     }
 
     @Override
+    public List<Bussiness> getBussinessOrderByDistance(Location location) {
+        List<Bussiness> bussinessList = this.getBussinesses();
+        SortUtil.sortBussinessesByDistance(bussinessList, location);
+        return bussinessList;
+    }
+
+    @Override
     public List<Bussiness> getBussinessesByIds(List<Long> ids) {
         return bussinessDao.getBussinessesByIds(ids);
     }
@@ -47,6 +57,15 @@ public class BussinessServiceImpl implements BussinessService {
     @Override
     public List<Bussiness> getBussinessesByClassification(String classification) {
         return bussinessDao.getBussinessesByClassification(classification);
+    }
+
+    @Override
+    public List<Bussiness> getBussinessesByClassificationOrderByDistance(String classification, Location location) {
+        List<Bussiness> bussinessList = this.getBussinessesByClassification(classification);
+
+        SortUtil.sortBussinessesByDistance(bussinessList, location);
+
+        return bussinessList;
     }
 
     @Override

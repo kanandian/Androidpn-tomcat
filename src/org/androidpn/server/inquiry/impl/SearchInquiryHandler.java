@@ -4,6 +4,8 @@ import org.androidpn.server.inquiry.InquiryHandler;
 import org.androidpn.server.model.Bussiness;
 import org.androidpn.server.service.BussinessService;
 import org.androidpn.server.service.ServiceLocator;
+import org.androidpn.server.util.Location;
+import org.androidpn.server.util.SortUtil;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
@@ -19,8 +21,15 @@ public class SearchInquiryHandler implements InquiryHandler {
     private BussinessService bussinessService;
     private Element probeResponse;
 
-    public SearchInquiryHandler() {
+    private Location location;
+
+    public SearchInquiryHandler(String location) {
         bussinessService = ServiceLocator.getBussinessService();
+        if (location == null || "".equals(location)) {
+            this.location = null;
+        } else  {
+            this.location = new Location(location);
+        }
     }
 
     @Override
@@ -31,6 +40,8 @@ public class SearchInquiryHandler implements InquiryHandler {
         List<Bussiness> bussinessList = bussinessService.getBussinesses();
 
 //        String[] keys = title.split(" ");
+
+        SortUtil.sortBussinessesByDistance(bussinessList, location);
 
         for(Bussiness bussiness : bussinessList) {
             if(check(bussiness, title)) {

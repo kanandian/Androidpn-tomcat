@@ -119,6 +119,11 @@ public class Bussiness implements Serializable {
         return level/personCount;
     }
 
+    @Transient
+    public Location getLocationObj() {
+        return location;
+    }
+
     public double getPrice() {
         return price;
     }
