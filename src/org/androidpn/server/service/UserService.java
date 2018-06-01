@@ -43,11 +43,15 @@ public interface UserService {
 
     public User getUserByUsername(String username) throws UserNotFoundException;
 
+    public User getUserByMobile(String mobile);
+
     public void removeUser(Long userId);
 
     public ResultModel payment(String fromUserName, String toUserName, double price) throws UserNotFoundException;
 
     public boolean existUser(String userName);
+
+    public boolean existMobile(String mobile);
 
     public List<String> getPerferences(String userName);
 

@@ -66,6 +66,8 @@ public class IQRouter {
         iqHandlers.add(new UpdateUserInfoHandler());
         iqHandlers.add(new IQCommentHandler());
         iqHandlers.add(new IQUpdateBussinessHandler());
+        iqHandlers.add(new UpdatePasswordHandler());
+        iqHandlers.add(new IQForgotPasswordHandler());
     }
 
     /**

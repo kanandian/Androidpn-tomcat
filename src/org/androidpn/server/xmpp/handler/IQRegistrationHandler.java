@@ -101,7 +101,13 @@ public class IQRegistrationHandler extends IQHandler {
 
 
                     if (userService.existUser(userName)) {
-                        probeResponse.addElement("message").setText("用户名已存在");
+                        probeResponse.addElement("errcode").setText("1");
+                        probeResponse.addElement("errmessage").setText("用户名已存在");
+                        reply = IQ.createResultIQ(packet);
+                        reply.setChildElement(probeResponse);
+                    } else if (userService.existMobile(mobile)) {
+                        probeResponse.addElement("errcode").setText("1");
+                        probeResponse.addElement("errmessage").setText("该电话号码已注册过");
                         reply = IQ.createResultIQ(packet);
                         reply.setChildElement(probeResponse);
                     } else {

@@ -46,6 +46,8 @@ public interface UserDao {
 
     public User getUserByUsername(String username) throws UserNotFoundException;
 
+    public User getUserByMobile(String mobile);
+
     public void addCollection(Collection collection);
 
     public void removeCollection(String userName, long bussinessId);

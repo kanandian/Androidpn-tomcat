@@ -79,6 +79,15 @@ public class UserDaoHibernate extends HibernateDaoSupport implements UserDao {
 	}
 
 	@Override
+	public User getUserByMobile(String mobile) {
+		List<User> users = getHibernateTemplate().find("from User u where u.mobile = ?", mobile);
+		if (users == null || users.isEmpty()) {
+			return null;
+		}
+		return users.get(0);
+	}
+
+	@Override
 	public void addCollection(Collection collection) {
 		getHibernateTemplate().saveOrUpdate(collection);
 	}

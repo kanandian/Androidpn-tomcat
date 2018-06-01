@@ -93,6 +93,11 @@ public class UserServiceImpl implements UserService {
         return (User) userDao.getUserByUsername(username);
     }
 
+    @Override
+    public User getUserByMobile(String mobile) {
+        return userDao.getUserByMobile(mobile);
+    }
+
     public void removeUser(Long userId) {
         log.debug("removing user: " + userId);
         userDao.removeUser(userId);
@@ -133,6 +138,15 @@ public class UserServiceImpl implements UserService {
         try {
             User user = userDao.getUserByUsername(userName);
         } catch (UserNotFoundException e) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean existMobile(String mobile) {
+        User user = userDao.getUserByMobile(mobile);
+        if (user == null) {
             return false;
         }
         return true;
