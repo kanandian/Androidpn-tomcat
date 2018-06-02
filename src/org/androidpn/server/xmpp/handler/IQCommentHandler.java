@@ -28,13 +28,13 @@ public class IQCommentHandler extends IQHandler {
 
     public IQCommentHandler() {
         bussinessService = ServiceLocator.getBussinessService();
-        probeResponse = DocumentHelper.createElement(QName.get("admin",
-                "androidpn:admin:operation"));
     }
 
     @Override
     public IQ handleIQ(IQ packet) throws UnauthorizedException {
         IQ reply = null;
+        probeResponse = DocumentHelper.createElement(QName.get("admin",
+                "androidpn:admin:operation"));
 
         ClientSession session = sessionManager.getSession(packet.getFrom());
         if (session == null) {

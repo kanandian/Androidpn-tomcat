@@ -23,4 +23,6 @@ public interface BussinessDao {
     public List<Bussiness> getBussinessesByUserName(String userName);
 
     public List<Comment> getAllComments();
+
+    public void deleteBussiness(long bussinessId);
 }

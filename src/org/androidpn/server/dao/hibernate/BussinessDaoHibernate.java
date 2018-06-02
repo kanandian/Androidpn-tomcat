@@ -111,4 +111,13 @@ public class BussinessDaoHibernate extends HibernateDaoSupport implements Bussin
         return getHibernateTemplate().find("from Comment c");
     }
 
+    @Override
+    public void deleteBussiness(long bussinessId) {
+        Bussiness bussiness = getBussiness(bussinessId);
+
+        if (bussiness != null) {
+            getHibernateTemplate().delete(bussiness);
+        }
+    }
+
 }

@@ -30,4 +30,6 @@ public interface BussinessService {
     public List<Comment> getAllComments();
 
     public void updateBussiness(Bussiness bussiness);
+
+    public void deleteBussiness(String bussinessId);
 }

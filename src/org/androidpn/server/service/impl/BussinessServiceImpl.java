@@ -111,6 +111,12 @@ public class BussinessServiceImpl implements BussinessService {
 
     }
 
+    @Override
+    public void deleteBussiness(String bussinessId) {
+        long bussinessID = Long.parseLong(bussinessId);
+        bussinessDao.deleteBussiness(bussinessID);
+    }
+
     public BussinessDao getBussinessDao() {
         return bussinessDao;
     }
