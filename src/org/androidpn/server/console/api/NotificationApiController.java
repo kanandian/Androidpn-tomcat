@@ -39,6 +39,7 @@ public class NotificationApiController extends MultiActionController {
 				"broadcast", "Y");
 		String username = ServletRequestUtils.getStringParameter(request,
 				"username");
+		String bussinessId = ServletRequestUtils.getStringParameter(request, "bussinessId");
 		String title = ServletRequestUtils.getStringParameter(request, "title");
 		String message = ServletRequestUtils.getStringParameter(request,
 				"message");
@@ -48,10 +49,10 @@ public class NotificationApiController extends MultiActionController {
 		logger.debug("apiKey=" + apiKey);
 
 		if (broadcast.equalsIgnoreCase("Y")) {
-			notificationManager.sendBroadcast(apiKey, title, message, uri);
+			notificationManager.sendBroadcast(apiKey, title, message, uri, bussinessId);
 		} else {
 			notificationManager.sendNotifcationToUser(apiKey, username, title,
-					message, uri);
+					message, uri, bussinessId);
 		}
 		
 		response.getWriter().print("{\"result\":\"0\",\"description\":\"success\"}");

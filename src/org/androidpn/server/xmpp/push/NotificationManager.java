@@ -19,6 +19,8 @@ package org.androidpn.server.xmpp.push;
 
 import java.util.Random;
 
+import org.androidpn.server.model.Bussiness;
+import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.xmpp.session.ClientSession;
 import org.androidpn.server.xmpp.session.SessionManager;
 import org.apache.commons.logging.Log;
@@ -57,9 +59,9 @@ public class NotificationManager {
      * @param uri the uri
      */
     public void sendBroadcast(String apiKey, String title, String message,
-            String uri) {
+            String uri, String bussinessId) {
         log.debug("sendBroadcast()...");
-        IQ notificationIQ = createNotificationIQ(apiKey, title, message, uri);
+        IQ notificationIQ = createNotificationIQ(apiKey, title, message, uri, bussinessId);
         for (ClientSession session : sessionManager.getSessions()) {
             if (session.getPresence().isAvailable()) {
                 notificationIQ.setTo(session.getAddress());
@@ -77,9 +79,9 @@ public class NotificationManager {
      * @param uri the uri
      */
     public void sendNotifcationToUser(String apiKey, String username,
-            String title, String message, String uri) {
+            String title, String message, String uri, String bussinessId) {
         log.debug("sendNotifcationToUser()...");
-        IQ notificationIQ = createNotificationIQ(apiKey, title, message, uri);
+        IQ notificationIQ = createNotificationIQ(apiKey, title, message, uri, bussinessId);
         ClientSession session = sessionManager.getSession(username);
         if (session != null) {
             if (session.getPresence().isAvailable()) {
@@ -93,7 +95,7 @@ public class NotificationManager {
      * Creates a new notification IQ and returns it.
      */
     private IQ createNotificationIQ(String apiKey, String title,
-            String message, String uri) {
+            String message, String uri, String bussinessId) {
         Random random = new Random();
         String id = Integer.toHexString(random.nextInt());
         // String id = String.valueOf(System.currentTimeMillis());
@@ -105,6 +107,28 @@ public class NotificationManager {
         notification.addElement("title").setText(title);
         notification.addElement("message").setText(message);
         notification.addElement("uri").setText(uri);
+
+        if (bussinessId != null && !"".equals(bussinessId)) {
+            Bussiness bussiness = ServiceLocator.getBussinessService().getBussiness(bussinessId);
+
+            if (bussiness != null) {
+                notification.addElement("bussinessid").setText(bussinessId);
+                notification.addElement("bussinessname").setText(bussiness.getBusinessName());
+                notification.addElement("classification").setText(bussiness.getClassification());
+                notification.addElement("des").setText(bussiness.getDes());
+                notification.addElement("imageurl").setText(bussiness.getImageURL());
+                notification.addElement("level").setText(String.valueOf(bussiness.getAvgLevel()));
+                notification.addElement("location").setText(bussiness.getLocation());
+                notification.addElement("mobile").setText(bussiness.getMobile());
+                notification.addElement("price").setText(String.valueOf(bussiness.getAvgPrice()));
+                notification.addElement("tag").setText(bussiness.getTag());
+                notification.addElement("holder").setText(bussiness.getHolder());
+                notification.addElement("starttime").setText((bussiness.getStartTime() != null) ? bussiness.getStartTime() : "");
+                notification.addElement("endtime").setText((bussiness.getEndTime() != null) ? bussiness.getEndTime() : "");
+                notification.addElement("feature").setText((bussiness.getFeature() != null) ? bussiness.getFeature() : "");
+            }
+        }
+
 
         IQ iq = new IQ();
         iq.setType(IQ.Type.set);
