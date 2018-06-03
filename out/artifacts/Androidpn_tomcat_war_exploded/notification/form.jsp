@@ -26,6 +26,10 @@
 	<td>Username:</td>
 	<td><input type="text" id="username" name="username" value="" style="width:380px;" /></td>
 </tr>
+	<tr>
+		<td>bussinessId:</td>
+		<td><input type="text" id="bussinessId" name="bussinessId" value="" style="width:380px;" /></td>
+	</tr>
 <tr>
 	<td>Title:</td>
 	<td><input type="text" id="title" name="title" value="Dokdo Island" style="width:380px;" /></td>

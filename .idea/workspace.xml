@@ -6,14 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b1f6783-e1ab-4938-b507-37679e0525e5" name="Default" comment="删除店铺">
+    <list default="true" id="7b1f6783-e1ab-4938-b507-37679e0525e5" name="Default" comment="通知功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/notification/form.jsp" afterPath="$PROJECT_DIR$/WebRoot/notification/form.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/DemoAndroidpn.java" afterPath="$PROJECT_DIR$/src/DemoAndroidpn.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/api/NotificationApiController.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/api/NotificationApiController.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/DemoAndroidpn.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/DemoAndroidpn.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/console/api/NotificationApiController.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/console/api/NotificationApiController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/NotificationController.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/NotificationController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/NotificationManager.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/NotificationManager.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/pages/notification/form.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/pages/notification/form.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/notification/form.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/notification/form.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +64,7 @@
       <file leaf-file-name="NotificationManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="280">
               <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding />
             </state>
@@ -604,7 +604,7 @@
       <workItem from="1527835625967" duration="269000" />
       <workItem from="1527835918050" duration="5018000" />
       <workItem from="1527938605669" duration="3158000" />
-      <workItem from="1527991174351" duration="3311000" />
+      <workItem from="1527991174351" duration="3396000" />
     </task>
     <task id="LOCAL-00001" summary="登录逻辑和长传图片">
       <created>1526741533052</created>
@@ -697,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527945283172</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="通知功能">
+      <created>1528011119136</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1528011119137</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101423000" />
+    <option name="totallyTimeSpent" value="101508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -794,7 +801,8 @@
     <MESSAGE value="根据位置的推荐" />
     <MESSAGE value="修改密码和忘记密码" />
     <MESSAGE value="删除店铺" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除店铺" />
+    <MESSAGE value="通知功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="通知功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1262,7 +1270,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="280">
           <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding />
         </state>
