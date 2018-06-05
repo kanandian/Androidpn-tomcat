@@ -20,11 +20,11 @@ public class TakeoutOrderDaoHibernate extends HibernateDaoSupport implements Tak
 
     @Override
     public List<TakeoutOrder> getTakeoutOrderListByBussinessId(long bussinessId) {
-        return getHibernateTemplate().find("from TakeoutOrder to where to.bussinessId=?", bussinessId);
+        return getHibernateTemplate().find("from TakeoutOrder to where to.bussinessId=? order by to.orderId desc ", bussinessId);
     }
 
     @Override
     public List<TakeoutOrder> getTakeourOrderListByUserName(String userName) {
-        return getHibernateTemplate().find("from TakeoutOrder to where to.fromUserName=?", userName);
+        return getHibernateTemplate().find("from TakeoutOrder to where to.fromUserName=? order by to.orderId desc ", userName);
     }
 }
