@@ -36,7 +36,7 @@ public class IQInquiryHandler extends IQHandler {
     }
 
     @Override
-    public IQ handleIQ(IQ packet) throws UnauthorizedException {
+    public IQ handleIQ(IQ packet) {
         IQ reply = null;
 
         System.out.println();
@@ -141,6 +141,7 @@ public class IQInquiryHandler extends IQHandler {
 
                     probeResponse.addElement("errcode").setText(String.valueOf(resultModel.getErrcode()));
                     probeResponse.addElement("errmessage").setText(resultModel.getErrMessage());
+                    probeResponse.addElement("action").setText("sendmessage");
                     reply.setChildElement(probeResponse);
                 }
             }

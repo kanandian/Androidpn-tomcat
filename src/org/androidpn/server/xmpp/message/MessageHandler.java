@@ -36,7 +36,7 @@ public class MessageHandler {
         ResultModel resultModel = new ResultModel();
 
         JID toUser = message.getTo();
-        String toUserName = toUser.getNode();
+        String toUserName = toUser.getDomain();
         JID sender = message.getFrom();
         String content = message.getBody();
 
