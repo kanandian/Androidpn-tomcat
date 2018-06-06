@@ -93,6 +93,8 @@ public class ActivityInquiryHandler implements InquiryHandler {
                     }
                 }
 
+                bussinessList = setToList(bussinesses);
+
                 SortUtil.sortBussinessesByDistance(bussinessList, location);
                     for (Bussiness bussiness : bussinessList) {
                         addItem(bussiness);

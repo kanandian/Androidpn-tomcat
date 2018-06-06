@@ -202,11 +202,7 @@ public class Bussiness implements Serializable {
     public boolean equals(Object obj) {
         if (obj instanceof Bussiness) {
             Bussiness bussiness = (Bussiness) obj;
-            if (bussiness.getBussinessId() == this.getBussinessId()) {
-                return true;
-            } else {
-                return false;
-            }
+            return bussiness.getBusinessName().equals(this.getBusinessName());
         }
         return false;
     }

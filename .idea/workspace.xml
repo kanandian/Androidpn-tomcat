@@ -6,14 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b1f6783-e1ab-4938-b507-37679e0525e5" name="Default" comment="订单查询降序">
+    <list default="true" id="7b1f6783-e1ab-4938-b507-37679e0525e5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/model/Bussiness.class" afterPath="$PROJECT_DIR$/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/model/Bussiness.class" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,14 +33,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IQRegistrationHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IQRegistrationHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="190" column="9" lean-forward="true" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="184" column="9" lean-forward="true" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
               <folding>
                 <element signature="e#9889#9890#0" expanded="true" />
                 <element signature="e#9921#9922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQInquiryHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="65" column="73" lean-forward="false" selection-start-line="65" selection-start-column="73" selection-end-line="65" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivityInquiryHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+              <folding>
+                <element signature="e#3044#3055#0" expanded="true" />
+                <element signature="e#5548#5559#0" expanded="true" />
+                <element signature="e#5823#5834#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQCommentHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding>
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bussiness.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="170" column="5" lean-forward="true" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
+              <folding>
+                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
+                <element signature="e#4385#4386#0" expanded="true" />
+                <element signature="e#4440#4441#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,11 +186,11 @@
         <option value="$PROJECT_DIR$/src/org/androidpn/server/console/api/NotificationApiController.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/TakeoutOrderDaoHibernate.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/model/User.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java" />
       </list>
     </option>
   </component>
@@ -342,7 +402,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="iqregis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java&#10;iqlogin&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java&#10;user&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/User.java&#10;bussiness&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;activi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java&#10;iqinquiry&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;orderdao&#9;PSI&#9;JAVA://org.androidpn.server.dao.TakeoutOrderDao&#10;regis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java&#10;userservi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/UserService.java&#10;iqregistration&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQRegistrationHandler&#10;sort&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/SortUtil.java&#10;inquiry&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/InfoInquiryHandler.java&#10;update&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQUpdateBussinessHandler.java&#10;addbuss&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java&#10;buss&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;bussines&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;mahout&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/MahoutUtil.java&#10;message&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/message/MessageHandler.java&#10;spring&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/resources/spring-config.xml&#10;dispat&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;bussinessserv&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/impl/BussinessServiceImpl.java&#10;userapi&#9;PSI&#9;JAVA://org.androidpn.server.console.api.UserApiController&#10;servi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class&#10;xmppserv&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.XmppServer&#10;cfg&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/hibernate.cfg.xml&#10;dis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;dispatch&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;urlmapping&#9;PSI&#9;JAVA://org.directwebremoting.servlet.UrlProcessor#urlMapping&#10;iqin&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;inquiryhand&#9;PSI&#9;JAVA://org.androidpn.server.inquiry.InquiryHandler&#10;lo&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java&#10;chatMessage&#9;PSI&#9;JAVA://org.androidpn.server.model.ChatMessage&#10;login&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQLoginHandler&#10;messagehand&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/message/MessageHandler.java&#10;sessionman&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/session/SessionManager.java&#10;serviceLoca&#9;PSI&#9;JAVA://org.androidpn.server.service.ServiceLocator&#10;spring-con&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/spring-config.xml&#10;cgf&#9;PSI&#9;JAVA://sun.rmi.transport.proxy.CGIForwardCommand&#10;sess&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/session/SessionManager.java&#10;ioa&#9;PSI&#9;JAVA://org.apache.mina.core.service.IoAcceptor&#10;redis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/RedisUtil.java&#10;acti&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java&#10;search&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java&#10;userser&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/impl/UserServiceImpl.java&#10;inqui&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;mah&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/MahoutUtil.java&#10;iqcomment&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java&#10;iqpay&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java&#10;serviceloca&#9;PSI&#9;JAVA://org.androidpn.server.service.ServiceLocator&#10;spring-config&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/spring-config.xml" />
+    <property name="SearchEverywhereHistoryKey" value="bussiness&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;iqinqui&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;iqregis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java&#10;iqlogin&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java&#10;user&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/User.java&#10;activi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java&#10;iqinquiry&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;orderdao&#9;PSI&#9;JAVA://org.androidpn.server.dao.TakeoutOrderDao&#10;regis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java&#10;userservi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/UserService.java&#10;iqregistration&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQRegistrationHandler&#10;sort&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/SortUtil.java&#10;inquiry&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/InfoInquiryHandler.java&#10;update&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQUpdateBussinessHandler.java&#10;addbuss&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQAddBussinessHandler.java&#10;buss&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;bussines&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/model/Bussiness.java&#10;mahout&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/MahoutUtil.java&#10;message&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/message/MessageHandler.java&#10;spring&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/resources/spring-config.xml&#10;dispat&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;bussinessserv&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/impl/BussinessServiceImpl.java&#10;userapi&#9;PSI&#9;JAVA://org.androidpn.server.console.api.UserApiController&#10;servi&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/out/artifacts/Androidpn_tomcat_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class&#10;xmppserv&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.XmppServer&#10;cfg&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/hibernate.cfg.xml&#10;dis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;dispatch&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/dispatcher-servlet.xml&#10;urlmapping&#9;PSI&#9;JAVA://org.directwebremoting.servlet.UrlProcessor#urlMapping&#10;iqin&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;inquiryhand&#9;PSI&#9;JAVA://org.androidpn.server.inquiry.InquiryHandler&#10;lo&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQLoginHandler.java&#10;chatMessage&#9;PSI&#9;JAVA://org.androidpn.server.model.ChatMessage&#10;login&#9;PSI&#9;JAVA://org.androidpn.server.xmpp.handler.IQLoginHandler&#10;messagehand&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/message/MessageHandler.java&#10;sessionman&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/session/SessionManager.java&#10;serviceLoca&#9;PSI&#9;JAVA://org.androidpn.server.service.ServiceLocator&#10;spring-con&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/WebRoot/WEB-INF/classes/spring-config.xml&#10;cgf&#9;PSI&#9;JAVA://sun.rmi.transport.proxy.CGIForwardCommand&#10;sess&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/session/SessionManager.java&#10;ioa&#9;PSI&#9;JAVA://org.apache.mina.core.service.IoAcceptor&#10;redis&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/RedisUtil.java&#10;acti&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java&#10;search&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/inquiry/impl/SearchInquiryHandler.java&#10;userser&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/service/impl/UserServiceImpl.java&#10;inqui&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java&#10;mah&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/util/MahoutUtil.java&#10;iqcomment&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java&#10;iqpay&#9;FILE&#9;file:///Users/macpro/IdeaProjects/Androidpn-tomcat/src/org/androidpn/server/xmpp/handler/IQPaymentHandler.java&#10;serviceloca&#9;PSI&#9;JAVA://org.androidpn.server.service.ServiceLocator" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -548,7 +608,7 @@
       <workItem from="1527835625967" duration="269000" />
       <workItem from="1527835918050" duration="5018000" />
       <workItem from="1527938605669" duration="3158000" />
-      <workItem from="1527991174351" duration="12038000" />
+      <workItem from="1527991174351" duration="14508000" />
     </task>
     <task id="LOCAL-00001" summary="登录逻辑和长传图片">
       <created>1526741533052</created>
@@ -662,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528166371498</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="一堆修改">
+      <created>1528269287284</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1528269287285</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110150000" />
+    <option name="totallyTimeSpent" value="112620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -761,7 +828,8 @@
     <MESSAGE value="删除店铺" />
     <MESSAGE value="通知功能" />
     <MESSAGE value="订单查询降序" />
-    <option name="LAST_COMMIT_MESSAGE" value="订单查询降序" />
+    <MESSAGE value="一堆修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="一堆修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -803,7 +871,7 @@
           <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -948,17 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQAuthHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -971,14 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1092,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="88" column="71" lean-forward="false" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/TakeoutOrderInquiryHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1162,36 +1203,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#4378#4379#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/BussinessDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#3044#3055#0" expanded="true" />
-            <element signature="e#5491#5502#0" expanded="true" />
-            <element signature="e#5766#5777#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,11 +1253,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQRegistrationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="190" column="9" lean-forward="true" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
+        <state relative-caret-position="102">
+          <caret line="184" column="9" lean-forward="true" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
           <folding>
             <element signature="e#9889#9890#0" expanded="true" />
             <element signature="e#9921#9922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="65" column="73" lean-forward="false" selection-start-line="65" selection-start-column="73" selection-end-line="65" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Bussiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="170" column="5" lean-forward="true" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
+          <folding>
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#4385#4386#0" expanded="true" />
+            <element signature="e#4440#4441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/inquiry/impl/ActivityInquiryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+          <folding>
+            <element signature="e#3044#3055#0" expanded="true" />
+            <element signature="e#5548#5559#0" expanded="true" />
+            <element signature="e#5823#5834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQCommentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
           </folding>
         </state>
       </provider>
