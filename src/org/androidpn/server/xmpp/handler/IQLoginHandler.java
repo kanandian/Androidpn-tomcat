@@ -139,6 +139,7 @@ public class IQLoginHandler extends IQHandler {
         probeResponse.addElement("userName").setText(user.getUsername());
         probeResponse.addElement("name").setText(user.getName());
         probeResponse.addElement("mobile").setText(user.getMobile());
+        probeResponse.addElement("usertype").setText(String.valueOf(user.getUserType()));
         if (imageURL != null) {
             probeResponse.addElement("imageURL").setText(imageURL);
         }

@@ -15,9 +15,7 @@ import org.dom4j.QName;
 import org.xmpp.packet.IQ;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 public class ActivityInquiryHandler implements InquiryHandler {
 
@@ -75,7 +73,26 @@ public class ActivityInquiryHandler implements InquiryHandler {
                 List<Bussiness> bussinessList = MahoutUtil.getInstance().getPerferencesBussinesses(userName, 30);
                 if (bussinessList == null || bussinessList.isEmpty()) {
                     bussinessList = bussinessService.getBussinesses();
+
                 }
+
+                List<Bussiness> removeList = new ArrayList<Bussiness>();
+                for (Bussiness bussiness : bussinessList) {
+                    if (location.getDistance(bussiness) > 15000) {
+                        removeList.add(bussiness);
+                    }
+                }
+                bussinessList.removeAll(removeList);
+
+
+                Set<Bussiness> bussinesses = listToSet(bussinessList);
+                for (Bussiness bussiness : bussinessService.getBussinessOrderByDistance(location)) {
+                    bussinesses.add(bussiness);
+                    if (bussinesses.size() >= 30) {
+                        break;
+                    }
+                }
+
                 SortUtil.sortBussinessesByDistance(bussinessList, location);
                     for (Bussiness bussiness : bussinessList) {
                         addItem(bussiness);
@@ -114,6 +131,27 @@ public class ActivityInquiryHandler implements InquiryHandler {
         reply.setChildElement(probeResponse);
 
         return reply;
+    }
+
+    public Set<Bussiness> listToSet(List<Bussiness> bussinessList) {
+        Set<Bussiness> bussinesses = new HashSet<Bussiness>();
+
+        for (Bussiness bussiness : bussinessList) {
+            bussinesses.add(bussiness);
+        }
+
+        return bussinesses;
+
+    }
+
+    public List<Bussiness> setToList(Set<Bussiness> bussinesses) {
+        List<Bussiness> bussinessList = new ArrayList<Bussiness>();
+
+        for (Bussiness bussiness : bussinesses) {
+            bussinessList.add(bussiness);
+        }
+
+        return bussinessList;
     }
 
 

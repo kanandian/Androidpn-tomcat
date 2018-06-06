@@ -198,6 +198,24 @@ public class Bussiness implements Serializable {
         this.endTime = toTime;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Bussiness) {
+            Bussiness bussiness = (Bussiness) obj;
+            if (bussiness.getBussinessId() == this.getBussinessId()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.getBussinessId().hashCode();
+    }
+
     //    public String toXMLInummary(String NAMESPACE) {
 //        //需要发送imageURL、bussinessame、location、tag
 //        Element probeResponse = DocumentHelper.createElement(QName.get("query",

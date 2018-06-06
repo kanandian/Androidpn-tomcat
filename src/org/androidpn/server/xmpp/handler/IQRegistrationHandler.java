@@ -89,6 +89,7 @@ public class IQRegistrationHandler extends IQHandler {
                     String email = query.elementText("email");
                     String mobile = query.elementText("mobile");
                     String vcode = query.elementText("vcode");
+                    String userType = query.elementText("usertype");
 //                    String username = query.elementText("username");
 //                    String password = query.elementText("password");
 //                    String email = query.elementText("email");
@@ -134,6 +135,7 @@ public class IQRegistrationHandler extends IQHandler {
                             user.setMobile(mobile);
                             user.setRealUser(true);
                             user.setImageURL("http://localhost:8080/bussinessimage/userdefault.jpg");
+                            user.setUserType(Integer.parseInt(userType));
                             userService.saveUser(user);
 
                             JID from = session.getAddress();
